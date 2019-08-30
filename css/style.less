@@ -84,7 +84,7 @@
 					align-items: center;
 					list-style: none;
 					&__item {
-						p {
+						a {
 							padding-right: 40px;
 							padding-left: 20px;
 							font-size: 13px;
@@ -499,6 +499,16 @@
 				.contact__contacts {
 					display: flex;
 					align-items: center;
+					.contact__contacts__top {
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+					}
+					.contact__contacts__bottom {
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+					}
 					.contact__contacts__link {
 						display: inline-block;
 						font-weight: 300;
@@ -506,6 +516,7 @@
 						font-family: 'Lato', sans-serif;
 						color: #fff;
 						padding-right: 40px;
+						cursor: pointer;
 					}
 					.contact__first {
 						display: inline-block;
@@ -596,6 +607,15 @@
 			}
 		}
 	}
+}
+.up__btn {
+	right: 0;
+	position: absolute;
+	display: block;
+	background:	#333;
+	padding: 10px 20px;
+	border-radius: 10%;
+	color: #fff;
 }
 
 .footer {
