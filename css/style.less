@@ -642,6 +642,11 @@
 		}
 		.navmob {
 			display: block;
+			background: @dark-grey;
+			position: fixed;
+			width: 100%;
+			z-index: 100;
+
 			.navmob__container {
 				width: 100%;
 				display: flex;
@@ -665,6 +670,7 @@
 						align-items: center;
 						flex-wrap: wrap;
 						position: relative;
+						
 						.hamb-top {
 							display: block;
 							height: 2px;
@@ -713,7 +719,17 @@
 						cursor: pointer;
 						width: 100%;
 						border: 1px solid #111;
-						padding: 5px;
+						padding: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						
+						div {
+							height: 20px;
+							width: 20px;
+							display: inline-block;
+							margin-right: 5px;
+						}
 						a {
 							cursor: pointer;
 						}
@@ -735,7 +751,7 @@
 						margin-top: 10px;
 						width: 100%;
 						border: 1px solid #111;
-						padding: 5px;
+						padding: 10px;
 					}
 					&__item:hover {
 						background-color: @blue;
@@ -757,6 +773,7 @@
 					text-align: center;
 					.head__services {
 						margin-top: 130px;
+						font-size: 38px;
 					}
 				}
 				.slick-dots {
@@ -793,8 +810,9 @@
 		.services__bottom {
 			justify-content: center;
 			.services__bottom__item {
-				margin-bottom: 20;
-				margin-right: 0;
+				margin-bottom: 20px;
+				margin-right: 20px;
+				margin-left: 20px;
 			}
 		}
 	}
@@ -867,7 +885,6 @@
 		bottom: -120px;
 	}
 
-
 	.reviews {
 		&__slide {
 			&__content {
@@ -919,6 +936,7 @@
 			.contact__container__left {
 				text-align: center;
 				width: 100%;
+				display: block;
 				h2 {
 					padding-top: 20px;
 					padding-bottom: 20px;
@@ -994,3 +1012,4 @@
 		} 
 	}
 }
+
