@@ -670,7 +670,7 @@
 						align-items: center;
 						flex-wrap: wrap;
 						position: relative;
-						
+
 						.hamb-top {
 							display: block;
 							height: 2px;
@@ -685,6 +685,18 @@
 							background-color: #111;
 							transition: 0.5s;
 							align-self: flex-end;
+						}
+						&.hamb__active .hamb-bot {
+							transform: rotate(-45deg);
+							transition: 0.5s;
+							position: absolute;
+							top: 5px;
+						}
+						&.hamb__active .hamb-top {
+							transform: rotate(45deg);
+							transition: 0.5s;
+							position: absolute;
+							top: 5px;
 						}
 					}
 				}
@@ -723,6 +735,11 @@
 						display: flex;
 						align-items: center;
 						justify-content: center;
+						background-color: #6ba2fa;
+						-webkit-box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.55);
+						-moz-box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.55);
+						box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.55);
+						
 						
 						div {
 							height: 20px;
@@ -732,6 +749,7 @@
 						}
 						a {
 							cursor: pointer;
+							color: #fff;
 						}
 					}
 					.navmob__menu__item:hover {
@@ -752,6 +770,9 @@
 						width: 100%;
 						border: 1px solid #111;
 						padding: 10px;
+						-webkit-box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.25);
+						-moz-box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.25);
+						box-shadow: 2px 15px 17px 0px rgba(0,0,0,0.25);
 					}
 					&__item:hover {
 						background-color: @blue;
