@@ -503,11 +503,13 @@
 						cursor: pointer;
 						display: flex;
 						align-items: center;
+						justify-content: space-between;
 					}
 					.contact__contacts__bottom {
 						cursor: pointer;
 						display: flex;
 						align-items: center;
+						justify-content: space-between;
 					}
 					.contact__contacts__link {
 						display: inline-block;
@@ -521,11 +523,13 @@
 					.contact__first {
 						display: inline-block;
 						height: 40px;
-						width: 40px;
+						width: 20px;
 						background-image: url(../img/smartphone-call.svg);
 						background-repeat: no-repeat;
+						background-position: center;
 						color: #fff;
 						margin-right: 10px;
+						
 					}
 					.contact__second {
 						display: inline-block;
@@ -534,7 +538,8 @@
 						background-image: url(../img/envelope.svg);
 						background-repeat: no-repeat;
 						color: #fff;
-						margin-right: 10px;
+						margin-right: 14px;
+						
 					}
 				}
 			}
@@ -965,6 +970,7 @@
 				.contact__contacts {
 					display: flex;
 					flex-wrap: wrap;
+					flex-direction: column;
 					justify-content: center;
 					.contact__contacts__link {
 						padding-right: 0;
@@ -972,6 +978,7 @@
 					.contact__contacts__top {
 						display: flex;
 						align-items: center;
+						
 					}
 					.contact__contacts__bottom {
 						display: flex;
