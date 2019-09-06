@@ -1,0 +1,727 @@
+// colors 
+@blue: #11749e;
+@light-white: #5993b2;
+@dark-white: #e2e2e2;
+.header {
+	background-image: url(../img/logo-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100vh;
+	&__container {
+		border-bottom: 1px solid #757575;
+		&__top {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding-top: 22px;
+		
+		.header__logo {
+			padding-left: 20px;
+			padding-bottom: 10px;
+			&__box {
+				width: 67px;
+				height: 67px;
+				background-color: @blue;
+				display: block;
+				text-align: center;
+				-webkit-box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
+				-moz-box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
+				box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
+				span {
+					display: block;
+					padding-top: 12px;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 500;
+					font-size: 34px;
+					color: #fff;
+				}
+			}
+		}
+	}
+		&__nav {
+			margin-left: 240px;
+			.navigation {
+				display: flex;
+				align-items: center;
+				list-style: none;
+				&__item {
+					text-align: center;
+					padding-left: 45px;
+					&__link {
+						display: block;
+						transition: none;
+						font-size: 20px;
+						color: #fff;
+						height: 100px;
+						font-family: "Myriad Pro";
+						font-weight: 500;
+						padding-top: 40px;
+					}
+					&__link:hover {
+						border-bottom: 4px solid @blue;
+					}
+				}
+			}
+		}
+		&__right {
+			padding-left: 20px;
+			display: flex;
+			justify-content: center;
+			.header__social__facebook {
+				margin-left: 20px;
+				transition-timing-function: linear;
+				color: #fff;
+				transition: 0.4s;
+				i {
+					font-size: 20px;
+				}
+			}
+			.header__social__twiter {
+				margin-left: 20px;
+				transition-timing-function: linear;
+				color: #fff;
+				transition: 0.4s;
+				i {
+					font-size: 20px;
+				}
+			}
+			.header__social__skype {
+				margin-left: 20px;
+				transition-timing-function: linear;
+				color: #fff;
+				transition: 0.4s;
+				i {
+					font-size: 20px;
+				}
+			}
+			.header__social__linkedin {
+				margin-left: 20px;
+				transition-timing-function: linear;
+				color: #fff;
+				transition: 0.4s;
+				i {
+					font-size: 20px;
+				}
+			}
+			.header__social__facebook:hover {
+			 	color: #3b5998;
+			 	transition: 0.4s;
+			}
+			.header__social__twiter:hover {
+				color: #00acee;
+				transition: 0.4s;
+			}
+			.header__social__skype:hover {
+				color: #00aff0;
+				transition: 0.4s;
+			}
+			.header__social__linkedin:hover {
+				color: #0077B5;
+				transition: 0.4s;
+			}
+		}
+	}
+
+	.header__bottom {
+		max-width: 1400px;
+		margin: 0 auto;
+		text-align: center;
+		.header__title {
+			padding-top: 270px;
+			text-transform: uppercase;
+			font-family: "Gotham Pro";
+			font-weight: bold;
+			font-size: 150px;
+			color: #f5f5f5;
+		}
+		.header__under__title {
+			font-family: 'Gotham Pro';
+			font-weight: 500;
+			font-size: 24px;
+			color: @blue;
+			letter-spacing: 22px;
+			padding-bottom: 110px;
+			text-transform: uppercase;
+			padding-top: 15px;
+		}
+		.header__botoom__down {
+			margin: 0 auto;
+			.header__scroll__top {
+				font-family: 'Open Sans';
+				font-weight: normal;
+				font-size: 13px;
+				color: #f5f5f5;
+				padding-bottom: 20px;
+			}
+			.header__scroll {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.header__scroll__circle {
+					display: block;
+					position: relative;
+					cursor: pointer;
+					height: 62px;
+					width: 62px;
+					border: 2px solid #fff;
+					border-radius: 50%;
+				}
+				.header__scroll__circle:before {
+					position: absolute;
+					width: 13px;
+					height: 13px;
+					content: '';
+					border-bottom: 2px solid #fff;
+					border-right: 2px solid #fff;
+					top: 0;
+					right: 40%;
+					transform: rotate(45deg);
+					transition: none;
+					animation: stb 2s infinite;
+				}
+			}
+			@keyframes stb {
+				from{
+					top: 5px;
+					bottom: 10px;
+					opacity: 1;
+				}
+				to {
+					top: 35px;
+					bottom: 35px;
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+.agency {
+	background-color: @blue;
+	margin: 0 auto;
+	&__container {
+		&__top {
+			text-align: center;
+			text-transform: uppercase;
+			position: relative;
+			.agency__title {
+				font-family: "Gotham Pro";
+				color: #fff;
+				font-weight: 500;
+				font-size: 37px;
+				opacity: 1;
+				top: 65%;
+				left: 29%;
+				padding-bottom: 50px;
+				position: absolute;
+			}
+			.agency__bacground {
+				padding-top: 130px;
+				font-family: 'Roboto Condensed Bold', arial;
+				color: #5993b2;
+				font-size: 247px;
+				font-weight: bold;
+				opacity: 0.8;
+			}
+		}
+		&__bottom {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			.agency__item {
+				width: 33%;
+				text-align: center;
+				&__top {
+					display: block;
+					left: 30%;
+					width: 130px;
+					height: 130px;
+					background-color: #2e85aa;
+					border: 1px solid transparent;
+					border-radius: 50%;
+					position: relative;
+					margin-bottom: 10px;
+					.agency__icon {
+						background-image: url(../img/Write.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						position: absolute;
+						width: 45px;
+						height: 45px;
+						top: 32%;
+						right: 32%;
+					}
+					.agency__icon__loup {
+						background-image: url(../img/Search.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						position: absolute;
+						width: 45px;
+						height: 45px;
+						top: 32%;
+						right: 32%;
+					}
+					.agency__icon__sad {
+						background-image: url(../img/Simon-says.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						position: absolute;
+						width: 45px;
+						height: 45px;
+						top: 32%;
+						right: 32%;
+					}
+				}
+				&__bottom {
+					h3 {
+						font-family: "Gotham Pro";
+						color: #fff;
+						font-weight: 500;
+						font-size: 18px;
+						text-transform: uppercase;
+						padding-top: 10px;
+						padding-bottom: 20px;
+					} 
+					p {
+						font-family: 'Gotham';
+						font-weight: normal;
+						color: #fff;
+						font-size: 15px;
+						line-height: 25px;
+						display: block;
+						padding-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.akita {
+	&__container {
+		&__top {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.akita__left {
+				width: 50%;
+				height: 488px;
+				padding-left: 215px;
+				padding-top: 80px;
+				padding-right: 100px;
+				color: #fff;
+				background-color: #222222;
+				&__container {
+					max-width: 1400px;
+					margin: 0 auto;
+					.akita__top {
+						display: flex;
+						align-items: center;
+						padding-bottom: 20px;
+						&__date {
+							font-size: 13px;
+							font-family: 'Gotham';
+							font-weight: normal;
+							color: #fff;
+						}
+						span {
+							width: 15px;
+							height: 1px;
+							background-color: #fff;
+							display: block;
+							transform: rotate(90deg);
+						}
+					}
+					h3 {
+						font-family: 'Gotham Pro';
+						font-weight: 500;
+						font-size: 25px;
+						color: #fff;
+						text-transform: uppercase;
+						padding-bottom: 30px;
+					}
+					.akita__desc {
+						font-size: 15px;
+						line-height: 25px;
+						font-family: 'Gotham';
+						font-weight: normal;
+						color: #fff;
+						padding-bottom: 20px;
+					}
+					.akita__text {
+						font-size: 15px;
+						line-height: 25px;
+						font-family: 'Gotham';
+						font-weight: normal;
+						color: #fff;
+						padding-bottom: 20px;
+					}
+				}
+			}
+			.akita__right {
+				width: 50%;
+				background-image: url(../img/Layer-881.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 488px;
+			}
+		}
+			&__bottom {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			.akita__right {
+				width: 50%;
+				height: 488px;
+				padding-left: 80px;
+				padding-top: 80px;
+				padding-right: 100px;
+				color: #222222;
+				background-color: #f3f3f3;
+				&__container {
+					max-width: 1400px;
+					margin: 0 auto;
+					.akita__top {
+						display: flex;
+						align-items: center;
+						padding-bottom: 20px;
+						&__date {
+							font-size: 13px;
+							font-family: 'Gotham';
+							font-weight: normal;
+							color: #222222;
+						}
+						span {
+							width: 15px;
+							height: 1px;
+							background-color: #222222;
+							display: block;
+							transform: rotate(90deg);
+						}
+					}
+					h3 {
+						font-family: 'Gotham Pro';
+						font-weight: 500;
+						font-size: 25px;
+						color: #222222;
+						text-transform: uppercase;
+						padding-bottom: 30px;
+					}
+					.akita__desc {
+						font-size: 15px;
+						line-height: 25px;
+						font-family: 'Gotham';
+						font-weight: normal;
+						color: #222222;
+						padding-bottom: 20px;
+					}
+					.akita__text {
+						font-size: 15px;
+						line-height: 25px;
+						font-family: 'Gotham';
+						font-weight: normal;
+						color: #222222;
+						padding-bottom: 20px;
+					}
+				}
+			}
+			.akita__left {
+				width: 50%;
+				background-image: url(../img/Layer-901.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 488px;
+			}
+		}
+	}
+}
+
+.blog {
+	background-color: #fff;
+	&__container {
+		&__top {
+			text-align: center;
+			text-transform: uppercase;
+			position: relative;
+			.blog__background {
+				padding-top: 130px;
+				font-family: 'Roboto Condensed Bold', arial;
+				color: #e2e2e2;
+				font-size: 247px;
+				font-weight: bold;
+				opacity: 0.8;
+			}
+			.blog__title {
+				font-family: "Gotham Pro";
+				color: #222;
+				font-weight: 500;
+				font-size: 37px;
+				opacity: 1;
+				top: 57%;
+				left: 41%;
+				padding-bottom: 50px;
+				position: absolute;
+			}
+			.blog__description {
+				text-transform: none;
+				font-size: 30px;
+				color: #222;
+				font-family: 'Gotham';
+				font-weight: normal;
+				margin-bottom: 40px;
+			}
+		}
+		&__bottom {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.blog__item {
+				width: 25%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.blog__image {
+					height: 295px;
+					width: 295px;
+				}
+				.blog__title {
+					text-transform: uppercase;
+					color: @blue;
+					font-family: 'Gotham Pro';
+					font-weight: 500;
+					font-size: 18px;
+					margin-top: 30px;
+					margin-bottom: 20px;
+				}
+				.blog__description {
+					text-align: center;
+					font-size: 15px;
+					font-family: 'Gotham';
+					font-weight: normal;
+					color: #222;
+					line-height: 25px;
+					padding-bottom: 80px;
+				}
+			}
+		}
+	}
+}
+
+.draw {
+	background-color: @blue;
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&__left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 60px;
+			padding-bottom: 100px;
+			width: 50%;
+			margin-right: 20px;
+			.draw__icon {
+				background-image: url(../img/Write.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 100px;
+				height: 50px;
+				margin-right: 20px;
+				display: block;
+			}
+			.draw__text {
+				font-size: 15px;
+				color: #fff;
+				font-family: 'Gotham';
+				font-weight: normal;
+				line-height: 20px;
+			}
+		}
+		&__right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 60px;
+			padding-bottom: 100px;
+			width: 50%;
+			.draw__icon {
+				background-image: url(../img/Write.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 100px;
+				height: 50px;
+				margin-right: 20px;
+				display: block;
+			}
+			.draw__text {
+				font-size: 15px;
+				color: #fff;
+				font-family: 'Gotham';
+				font-weight: normal;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+.progress {
+	background-image: url(../img/background__second.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 100vh;
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&__left {
+			color: #fff;
+			width: 50%;
+			.progress__top {
+				font-family: 'Gotham Pro';
+				font-weight: 500;
+				font-size: 25px;
+				padding-bottom: 30px;
+				text-transform: uppercase;
+			}
+			.progress__middle {
+				font-size: 15px;
+				font-family: 'Gotham';
+				font-weight: normal;
+				padding-bottom: 40px;
+				line-height: 20px;
+			}
+			.progress__design {
+				width: 370px;
+				height: 37px;
+				background-color: @blue;
+				text-transform: uppercase;
+				padding-top: 10px;
+				padding-left: 10px;
+				p {
+					font-family: 'Gotham Pro';
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 20px;
+				}
+			}
+			.progress__code {
+				width: 398px;
+				height: 37px;
+				background-color: @blue;
+				text-transform: uppercase;
+				padding-top: 10px;
+				padding-left: 10px;
+				margin-top: 20px;
+				p {
+					font-family: 'Gotham Pro';
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 20px;
+				}
+			}
+			.progress__layout {
+				width: 429px;
+				height: 37px;
+				background-color: @blue;
+				text-transform: uppercase;
+				padding-top: 10px;
+				padding-left: 10px;
+				margin-top: 20px;
+				p {
+					font-family: 'Gotham Pro';
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 20px;
+				}
+			}
+		}
+		&__right {
+			padding-top: 100px;
+		}
+	}
+}
+
+.team {
+	&__container {
+		&__top {
+			position: relative;
+			text-align: center;
+			.team__background {
+				padding-top: 70px;
+				font-family: 'Roboto Condensed Bold', arial;
+				color: #e2e2e2;
+				font-size: 247px;
+				font-weight: bold;
+				opacity: 0.8;
+			}
+			.team__title {
+				font-family: "Gotham Pro";
+				color: #222;
+				font-weight: 500;
+				font-size: 37px;
+				opacity: 1;
+				top: 57%;
+				left: 43%;
+				padding-bottom: 50px;
+				position: absolute;
+				text-transform: uppercase;
+			}
+			.team__description {
+				text-transform: none;
+				font-size: 30px;
+				color: #222;
+				font-family: 'Gotham';
+				font-weight: normal;
+				margin-bottom: 40px;
+			}
+		}
+		&__bottom {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.team__item {
+				margin-left: 30px;
+				&__img {
+					height: 416px;
+					width: 268px;
+					position: relative;
+					margin-bottom: 60px;
+					.team__box {
+						background-color: #fff;
+						width: 216px;
+						height: 63px;
+						display: block;
+						bottom: 0;
+						position: absolute;
+						left: 10%;
+						text-align: center;
+						.team__name {
+							padding-top: 20px;
+							text-transform: uppercase;
+							color: @blue;
+							font-size: 20px;
+							font-family: "Gotham Pro";
+							font-weight: 500;
+							padding-bottom: 20px;
+						}
+						.team__work {
+							color: #222;
+							font-size: 15px;
+							font-family: "Gotham Pro";
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}
