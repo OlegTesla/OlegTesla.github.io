@@ -861,6 +861,7 @@
 
 .btn-up {
 	display: block;
+	z-index: 99;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -896,7 +897,7 @@
 		position: fixed;
 		display: block;
 		left: 0;top: 0;
-		width: 30%;
+		width: 40%;
 		height: 100vh;
 		display: flex;
 		align-items: center;
@@ -916,18 +917,12 @@
 		height: 50%;
 		flex-direction: column;
 	}
-	.menu-list:hover {
-		transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
-	}
 	.menu-list a {
 		text-decoration: none;
-		display: block;
-		width: 230px;
 		padding: 10px;
 		text-align: center;
 		color: #fff;
-		//border-bottom: 1px solid #fff;
-		border: 1px solid #fff;
+		border-bottom: 1px solid #fff;
 	}
 	.menu-btn {
 		width: 30px;
