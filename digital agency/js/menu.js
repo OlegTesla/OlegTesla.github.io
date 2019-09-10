@@ -3,12 +3,6 @@ $('.menu-btn').on('click', function(e) {
 	$('.navmob').toggleClass('menu_active');
 	$('.content').toggleClass('content_active');
 });
-
-/*$("a[href='#akita']").click(function() {
-  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  return false;
-});*/
-
 $(document).ready(function() {
 $(".header__scroll__circle").click(function() {
      $('html, body').animate({
@@ -16,11 +10,14 @@ $(".header__scroll__circle").click(function() {
      }, 1500);
  });
 });
-
 $(document).ready(function() {
 $(".btn-up").click(function() {
      $('html, body').animate({
          scrollTop: $(".header").offset().top
      }, 1000);
  });
+});
+
+$(".form__input").click(function() {
+	$('.name').toggleClass('input-active');
 });
