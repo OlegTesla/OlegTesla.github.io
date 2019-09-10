@@ -6,7 +6,7 @@
 	background-image: url(../img/logo-background.webp);
 	background-repeat: no-repeat;
 	background-position: top;
-	height: 100vh;
+	padding-bottom: 50px;
 	&__container {
 		border-bottom: 1px solid #757575;
 		&__top {
@@ -604,7 +604,7 @@
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	height: 100vh;
+	padding-bottom: 50px;
 	&__container {
 		display: flex;
 		justify-content: center;
@@ -1253,9 +1253,19 @@
 				.progress__middle {
 					padding-left: 20px;
 					padding-right: 20px;
+
 				}
 				.progress__design {
-
+					display: block;
+					width: 90%;
+				}
+				.progress__code {
+					display: block;
+					width: 90%;
+				}
+				.progress__layout {
+					display: block;
+					width: 90%;
 				}
 			}
 			&__right {
@@ -1430,6 +1440,16 @@
 					flex-direction: column;
 					align-items: center;
 					width: 100%;
+				}
+			}
+		}
+	}
+	.progress {
+		&__container {
+			&__right {
+				img {
+					height: 500px;
+					width: 300px;
 				}
 			}
 		}
