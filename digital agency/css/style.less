@@ -3,7 +3,7 @@
 @light-white: #5993b2;
 @dark-white: #e2e2e2;
 .header {
-	background-image: url(../img/logo-background.webp);
+	background-image: url(../img/logo-background.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	padding-bottom: 50px;
@@ -20,6 +20,8 @@
 			padding-bottom: 10px;
 			&__box {
 				width: 67px;
+				transition: 0.7s;
+				transition-timing-function: linear;
 				height: 67px;
 				background-color: @blue;
 				display: block;
@@ -27,7 +29,7 @@
 				-webkit-box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
 				-moz-box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
 				box-shadow: 11px 10px 0px -1px rgba(240,237,240,0.8);
-				span {
+				a {
 					display: block;
 					padding-top: 12px;
 					font-family: 'Open Sans', sans-serif;
@@ -35,6 +37,11 @@
 					font-size: 34px;
 					color: #fff;
 				}
+			}
+			&__box:hover {
+				transition: 0.7s;
+				transition-timing-function: linear;	
+				background-color: #0097e6;
 			}
 		}
 	}
@@ -76,7 +83,7 @@
 					font-size: 20px;
 				}
 			}
-			.header__social__twiter {
+			.header__social__telegram {
 				margin-left: 20px;
 				transition-timing-function: linear;
 				color: #fff;
@@ -107,7 +114,7 @@
 			 	color: #3b5998;
 			 	transition: 0.4s;
 			}
-			.header__social__twiter:hover {
+			.header__social__telegram:hover {
 				color: #00acee;
 				transition: 0.4s;
 			}
@@ -143,6 +150,16 @@
 			padding-bottom: 110px;
 			text-transform: uppercase;
 			padding-top: 15px;
+			.header__social {
+				font-family: 'Gotham Pro';
+				font-weight: 500;
+				font-size: 24px;
+				color: @blue;
+				letter-spacing: 22px;
+				padding-bottom: 110px;
+				text-transform: uppercase;
+				padding-top: 15px;
+			}
 		}
 		.header__botoom__down {
 			margin: 0 auto;
@@ -379,7 +396,7 @@
 			}
 			.akita__right {
 				width: 50%;
-				background-image: url(../img/Layer-881.webp);
+				background-image: url(../img/Layer-881.jpg);
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 488px;
@@ -447,7 +464,7 @@
 			}
 			.akita__left {
 				width: 50%;
-				background-image: url(../img/Layer-901.webp);
+				background-image: url(../img/Layer-901.jpg);
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 488px;
@@ -497,12 +514,13 @@
 			justify-content: center;
 			align-items: center;
 			.blog__item {
+				margin-bottom: 20px;
 				width: 25%;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
 				border: 1px solid transparent;
-				border-radius: 5%;
+				border-radius: 10%;
 				transition: 0.8s;
 				transition-timing-function: linear;
 				padding-top: 20px;
@@ -531,7 +549,7 @@
 			}
 			.blog__item:hover {
 				border: 1px solid transparent;
-				border-radius: 5%;
+				border-radius: 10%;
 				background-color: #dfe6e9;
 				transition: 0.8s;
 				transition-timing-function: linear;
@@ -600,7 +618,7 @@
 }
 
 .progress {
-	background-image: url(../img/background__second.webp);
+	background-image: url(../img/background__second.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -778,7 +796,7 @@
 }
 
 .form {
-	background-image: url(../img/background__second.webp);
+	background-image: url(../img/background__second.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -910,13 +928,14 @@
 
 .footer {
 	background-color: #282828;
-	height: 100px;
+	height: 120px;
 	color: #fff;
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 50px;
+		margin-left: 20px;
 		&__left {
 			font-size: 15px;
 			font-family: 'Myriad Pro';
@@ -931,10 +950,17 @@
 			font-family: 'Myriad Pro';
 			font-weight: normal;
 			color: #fff;
+			margin-right: 20px;
 			span {
 				display: inline-block;
 				height: 20px;
 				width: 20px;
+			}
+			.footer__social {
+				font-size: 13px;
+				font-family: 'Myriad Pro';
+				font-weight: normal;
+				color: #fff;
 			}
 		}
 	}
@@ -952,7 +978,7 @@
 	text-align: center;
 	font-size: 20px;
 	font-family: 'Gotham Pro';
-	font-weight: bold;
+	font-weight: normal;
 	color: #fff;
 	line-height: 25px;
 	transition: 1s;
@@ -1002,7 +1028,6 @@
 	opacity: 1;
 	background-color: #00a8ff;
 	transition: 1s;
-	color: #fbc531;
 }
 
 
