@@ -8,6 +8,9 @@
 @dark-blue: #2c3a42;
 @background-blue: #2a3b40;
 
+body {
+	position: relative;
+}
 // Header //
 .header {
 	background-image: url(../img/Header.png);
@@ -16,6 +19,9 @@
 	background-size: cover;
 	&__container {
 		padding-bottom: 220px;
+		.header__navmob {
+			display: none;
+		}
 		.header__navigation {
 			height: 75px;
 			display: flex;
@@ -274,6 +280,7 @@
 		background-position: center;
 		height: 400px;
 		width: 243px;
+		z-index: 80;
 	}
 	.snow__right {
 		position: absolute;
@@ -283,6 +290,7 @@
 		height: 400px;
 		width: 243px;
 		right: 0;
+		z-index: 80;
 	}
 	&__container {
 		text-align: center;
@@ -685,6 +693,24 @@
 		}
 	}
 }
+.up {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	background-color: #fff;
+	opacity: 0.5;
+	text-align: center;
+	right: 0;
+	.up__btn {
+		line-height: 30px;
+		padding: 5px;
+		font-family: Raleway,sans-serif;
+		font-weight: 400;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+}
+
 
 .social {
 	background-color: #2a3b40;
@@ -848,7 +874,7 @@
 	}
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 948px) {
 	.header {
 		&__container {
 			display: flex;
@@ -862,6 +888,7 @@
 				width: 100%;
 				padding: 10px;
 				position: fixed;
+				display: block;
 				background-color: #2a3b40;
 				z-index: 100;
 				&__logo {
@@ -1173,6 +1200,104 @@
 				.social__text {
 					margin: 10px;
 					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 948px) and (max-width: 1200px) {
+	.indian {
+		&__container {
+			&__top {
+				.indian__left {
+					margin: 10px;
+					width: 50%;
+					.indian__left__desc {
+						width: 100%;	
+					}
+				}
+				.indian__right {
+					width: 500px;
+					height: 350px;
+					margin: 10px;
+				}
+			}
+		}
+	}
+	.new {
+		&__container {
+			&__item {
+				width: 33%;
+				margin: 10px;
+			}
+		}
+	}
+
+	.plate {
+		&__container {
+			width: 100%;
+			&__middle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				.plate__container__item {
+					display: flex;
+					flex-wrap: wrap;
+					width: 33%;
+				}
+			}
+		}
+	}
+	.traditional {
+		&__container {
+			&__middle {
+				font-size: 15px;
+				margin: 10px;
+			}
+		}
+	}
+	.discover {
+		&__container {
+			.discover__middle {
+				&__left {
+					margin: 10px;
+				}
+				&__right {
+					margin: 10px;
+				}
+			}
+		}
+	}
+
+	.book {
+		&__container {
+			&__middle {
+				.book__left {
+					margin: 10px;
+				}
+			}
+		}
+	}
+
+	.food {
+		&__container {
+			&__bottom {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.food__item {
+					width: 290px;
+					margin: 10px;
+					&__top {
+						width: 290px;
+						height: 300px;
+					}
+					&__bottom {
+						width: 290px;
+					}
 				}
 			}
 		}
