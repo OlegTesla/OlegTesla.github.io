@@ -7,7 +7,7 @@ $('.header__slaider').slick({
 });
 
 // second slaider
-$('.best__container').slick({
+$('.best__container,.best__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -24,3 +24,10 @@ $('.clients__sliader').slick({
 	dots: true,
 	arrows: false
 });
+
+// tabs
+$(".tab_item").not(":first").hide();
+$(".wrapper,.tab").click(function() {
+	$(".wrapper,.tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
