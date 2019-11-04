@@ -7,7 +7,7 @@ $('.header__slaider').slick({
 });
 
 // second slaider
-$('.best__container,.best__slider').slick({
+$('.best__container,.best__slider,.related__container').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -23,6 +23,15 @@ $('.clients__sliader').slick({
 	autoplay: true,
 	dots: true,
 	arrows: false
+});
+
+// four slaider
+$('.awards__container__slaider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	dots: true,
+	arrows: true
 });
 
 // tabs

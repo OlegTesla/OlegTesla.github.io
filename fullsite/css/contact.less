@@ -33,7 +33,7 @@ a {
 			font-weight: 700;
 			.header__clemo {
 				color: @black;
-			}	
+			}
 		}
 		&__navigation {
 			.header__item {
@@ -96,343 +96,21 @@ a {
 		}
 	}
 }
-// styles of section about us
-.about {
-	border-bottom: 1px solid grey;
-	&__container {
-		&__head {
-			text-align: center;
-			font-size: 60px;
-			font-weight: 300;
-			margin: 0;
-			padding-top: 80px;
-			padding-bottom: 80px;
-		}
-		&__middle {
-			margin-bottom: 100px;
-			display: flex;
-			-webkit-justify-content: center;
-			        justify-content: center;
-			// styles of line in 2 box
-			    .about__line {
-					width: 55px;
-					height: 2px;
-					background-color: #000;
-				}
-				// styles left side
-		    .about__left {
-		    	margin-right: 100px;
-			    .about__img {
-					width: 560px;
-					height: 560px;
-					background-color: #e6e6e6;
-				}
-				.about__we {
-					font-size: 40px;
-					font-weight: 700;
-					margin: 0;
-					margin-left: 70px;
-					
-				}
-		    }
-		    // styles right side
-		    .about__right {
-		    	.about__text {
-		    		font-weight: 300;
-		    		font-size: 18px;
-		    		line-height: 30px;
-		    		padding-bottom: 30px;
-		    		margin: 0;
-		    		color: @text-color;
-		    	}
-
-		    	// styles of btn
-		    	.about__btn {
-					display: inline-block;
-					width: 182px;
-					color: @text-color;
-					margin: 0;
-					height: 50px;
-					border: 1px solid #e5e5e5;
-					background-color: #fff;
-					padding: 15px 40px;
-					color: @black;
-					-webkit-border-radius: 50px;
-					        border-radius: 50px;
-						-webkit-transition: 0.7s;
-						   -moz-transition: 0.7s;
-						    -ms-transition: 0.7s;
-						     -o-transition: 0.7s;
-						        transition: 0.7s;
-				}
-				.about__btn:hover {
-					-webkit-box-shadow: 0 0 10px #575fcf;
-					        box-shadow: 0 0 10px #575fcf;
-					-webkit-transition: 0.7s;
-					   -moz-transition: 0.7s;
-					    -ms-transition: 0.7s;
-					     -o-transition: 0.7s;
-					        transition: 0.7s;
-				    text-shadow: 2px 2px 2px #575fcf;
-				}
-		    }
-		}
-	}	
-}
-
-// styles of best section
-.best {
-	&__head {
-		&__number {
-			display: flex;
-			-webkit-justify-content: space-between;
-			        justify-content: space-between;
-			    -webkit-align-items: center;
-			            align-items: center;
-		    .best__item {
-		    	text-align: center;
-		    	margin: 0 auto;
-		    	margin-top: 70px;
-		    	margin-bottom: 70px;
-		    	&__head {
-		    		font-size: 40px;
-					font-weight: 700;
-					margin-bottom: 10px;
-		    	}
-		    	&__middle {
-		    		width: 55px;
-					height: 2px;
-					background-color: #000;	
-					margin: 0 auto;
-		    	}
-		    	&__bottom {
-		    		margin-top: 10px;
-		    		font-weight: 300;
-	    			font-size: 18px;
-	    			color: @text-color;
-		    	}
-		    }
-		}
-	}
-}
-
-//styles of price 
-.price {
-	background-color: #000;
-	&__container {
-		display: flex;
-		-webkit-justify-content: center;
-		        justify-content: center;
-		    -webkit-align-items: center;
-		            align-items: center;
-		    margin: 0 auto;
-		    padding-top: 100px;
-		    padding-bottom: 100px;
-		.price__name {
-			padding-right: 50px;
-			color: #FFF;
-			margin: 0;
-			font-weight: 300;
-		}
-		.price__line {
-			margin-right: 50px;
-			width: 55px;
-			height: 2px;
-			background-color: #FFF;
-		}
-		.price__box {
-			display: flex;
-			-webkit-justify-content: space-around;
-			        justify-content: space-around;
-			    -webkit-align-items: center;
-			            align-items: center;
-			    margin-right: 100px;
-			&__dollar {
-				background-image: url(../img/dollar-symbol.svg);
-				background-position: center;
-				background-repeat: no-repeat;
-				height: 40px;
-				width: 40px;
-				margin: 0;
-				margin-right: 5px;
-			}
-			&__count {
-				color: #FFF;
-				font-size: 40px;
-				font-weight: 700;
-				margin: 0;
-				margin-right: 15px;
-			}
-			&__slach {
-				font-size: 30px;
-				font-weight: 300;
-				color: #8E8E8E;
-				margin: 0;
-				margin-right: 10px;
-			}
-			&__event {
-				font-size: 30px;
-				font-weight: 300;
-				color: #8E8E8E;
-				margin: 0;
-			}
-		}
-		.price__btn {
-			width: 168px;
-			display: block;
-			text-align: center;
-			margin: 0;
-			height: 50px;
-			background-color: #fff;
-			padding: 15px;
-			color: @black;
-			-webkit-border-radius: 50px;
-			        border-radius: 50px;
-				-webkit-transition: 0.7s;
-				   -moz-transition: 0.7s;
-				    -ms-transition: 0.7s;
-				     -o-transition: 0.7s;
-				        transition: 0.7s;
-		}
-		.price__btn:hover {
-			background-color: #25CCF7;
-			-webkit-transition: 0.7s;
-			   -moz-transition: 0.7s;
-			    -ms-transition: 0.7s;
-			     -o-transition: 0.7s;
-			        transition: 0.7s;
-			    -webkit-box-shadow: 0 0 20px #25CCF7;
-			            box-shadow: 0 0 20px #25CCF7;
-		}
-	}
-}
-
-// clients styles
-.clients {
-	padding-top: 80px;
-	&__container {
-		text-align: center;
-		padding-bottom: 80px;
-		.clients__container__title {
-			margin: 0;
-			font-size: 60px;
-			font-weight: 300;
-			padding-bottom: 70px;
-		}
-		.clients__frank {
-			display: flex;
-			-webkit-justify-content: center;
-			        justify-content: center;
-			    -webkit-align-items: flex-start;
-			            align-items: flex-start;
-		    &__left {
-		    	width: 50%;
-		    	padding-right: 100px;
-		    	display: flex;
-		    	-webkit-flex-direction: column;
-		    	    -ms-flex-direction: column;
-		    	        flex-direction: column;
-		    	    -webkit-align-items: flex-end;
-		    	            align-items: flex-end;
-		    	
-		    	.clients__sims {
-		    		margin: 0;
-		    		font-weight: 700;
-		    		font-size: 40px;
-		    		color: @black;
-		    		padding-bottom: 20px;
-		    	}
-		    	.clients__underline {
-		    		width: 60px;
-					height: 3px;
-					background-color: @black;
-					margin-bottom: 20px;
-		    	}
-		    	.clients__joob {
-		    		font-weight: 300;
-		    		font-size: 18px;
-		    		color: @black;
-		    		margin: 0;
-		    	}
-		    }
-		    &__right {
-		    	width: 50%;
-		    	display: block;
-		    	.clients__descr {
-					margin: 0;
-					text-align: left;
-					font-weight: 300;
-					font-size: 18px;
-					color: @text-color;
-					line-height: 30px;
-		    	}
-		    }
-		}
-	}
-
-	// styles of slaoder 
-	.clients__sliader {
-		.clients__slaider__item {
-			display: flex;
-			.clients__img {
-				width: 266px;
-				height: 140px;
-				background-color: #e6e6e6;
-				margin: 25px;
-			}
-		}
-		// styles of dots for slaider
-		.slick-dots {
-			bottom: -40px;
-			width: 10;
-			 li {
-				width: 12px;
-				height: 12px;
-				margin: 7px;
-			}
-			.slick-active {
-				width: 12px;
-				height: 12px;
-				background-color: @black;
-				-webkit-border-radius: 50%;
-				        border-radius: 50%;
-			}
-			.slick-active button:before {
-				color: transparent;
-			}
-			li button {
-				width: 12px;
-				height: 12px;
-			}
-			li button:before {
-				color: transparent;
-				-webkit-box-sizing: border-box;
-				   -moz-box-sizing: border-box;
-				        box-sizing: border-box;
-				border: 1px solid @black;
-				-webkit-border-radius: 50%;
-				        border-radius: 50%;
-				width: 12px;
-				height: 12px;
-				opacity: 1;
-			}
-		}
-	}
-}
 
 //styles of touch
 
 .touch {
-	margin-top: 80px;
-	background-color: #000;
-	color: #fff;
+	padding-bottom: 50px;
+	background-color: #fff;
 	&__container {
 		&__head {
 			font-weight: 300;
 			text-align: center;
 			font-size: 60px;
-			color: #bbbbbb;
-			padding-top: 90px;
+			color: @black;
+			margin: 0;
+			margin-top: 50px;
+			margin-bottom: 50px;
 		}
 		&__box {
 			display: flex;
@@ -458,7 +136,7 @@ a {
 						font-weight: 300;
 						padding-left: 20px;
 						line-height: 26px;
-						color: #fff;
+						color: @text-color;
 					}
 				}
 			// phone styles
@@ -474,7 +152,7 @@ a {
 						font-size: 18px;
 						font-weight: 300;
 						padding-left: 20px;
-						color: #fff;
+						color: @text-color;
 				    }
 				}
 				// email styles
@@ -489,7 +167,7 @@ a {
 						font-size: 18px;
 						font-weight: 300;
 						padding-left: 20px;
-						color: #fff;
+						color: @text-color;
 				    }
 				}
 				.touch__social {
@@ -510,8 +188,8 @@ a {
 							        align-items: center;
 							-webkit-border-radius: 40px;
 							        border-radius: 40px;
-							background-color: #FFF;
-							color: @black;
+							background-color: @black;
+							color: #fff;
 							text-align: center;
 							position: relative;
 							font-size: 25px;
@@ -526,14 +204,14 @@ a {
 							        align-items: center;
 							-webkit-border-radius: 40px;
 							        border-radius: 40px;
-							background-color: #FFF;
-							color: @black;
+							background-color: @black;
+							color: #fff;
 							text-align: center;
 							position: relative;
 							font-size: 25px;
 						}
 						.fa-pinterest {
-													height: 40px;
+							height: 40px;
 							width: 40px;
 							display: flex;
 							-webkit-justify-content: center;
@@ -542,8 +220,8 @@ a {
 							        align-items: center;
 							-webkit-border-radius: 40px;
 							        border-radius: 40px;
-							background-color: #FFF;
-							color: @black;
+							background-color: @black;
+							color: #fff;
 							text-align: center;
 							position: relative;
 							font-size: 25px;	
@@ -558,8 +236,8 @@ a {
 							        align-items: center;
 							-webkit-border-radius: 40px;
 							        border-radius: 40px;
-							background-color: #FFF;
-							color: @black;
+							background-color: @black;
+							color: #fff;
 							text-align: center;
 							position: relative;
 							font-size: 25px;	
@@ -574,8 +252,8 @@ a {
 							        align-items: center;
 							-webkit-border-radius: 40px;
 							        border-radius: 40px;
-							background-color: #FFF;
-							color: @black;
+							background-color: @black;
+							color: #fff;
 							text-align: center;
 							position: relative;
 							font-size: 25px;
@@ -760,9 +438,9 @@ a {
 					text-align: center;
 					margin: 0;
 					height: 50px;
-					background-color: #fff;
+					background-color: @black;
 					padding: 15px;
-					color: @black;
+					color: #fff;
 					-webkit-border-radius: 50px;
 					        border-radius: 50px;
 					margin-bottom: 100px;
@@ -787,6 +465,7 @@ a {
 	}
 }
 
+
 // footer 
  .footer {
  	.footer__container {
@@ -801,8 +480,8 @@ a {
  			padding-top: 50px;
  			padding-bottom: 15px;
  			.clem {
- 				color: @black;
  				padding-left: 5px;
+ 				color: @black;
  			}
  			.fa-copyright {
  				font-size: 17px;
@@ -816,4 +495,3 @@ a {
  		}
  	}
  }
-
