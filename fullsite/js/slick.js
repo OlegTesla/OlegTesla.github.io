@@ -3,7 +3,10 @@ $('.header__slaider').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	dots: true,
-	arrows: false
+	arrows: false,
+	cssEase: 'ease-out',
+	verticalSwiping: true,
+	vertical: true
 });
 
 // second slaider
@@ -12,6 +15,7 @@ $('.best__container,.best__slider,.related__container').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
+  cssEase: 'ease-out',
   dots: true,
   arrows: true
 });
@@ -21,6 +25,7 @@ $('.clients__sliader').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
+	cssEase: 'ease-out',
 	dots: true,
 	arrows: false
 });
@@ -30,6 +35,7 @@ $('.awards__container__slaider').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
+	cssEase: 'ease-out',
 	dots: true,
 	arrows: true
 });

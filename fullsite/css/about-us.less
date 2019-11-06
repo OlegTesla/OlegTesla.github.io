@@ -31,6 +31,9 @@ a {
 		        justify-content: space-between;
 		    -webkit-align-items: center;
 		            align-items: center;
+		.header__navmob {
+			display: none;
+		}
 		&__logo {
 			font-size: 30px;
 			font-weight: 700;
@@ -216,182 +219,180 @@ a {
 		    	}
 		    }
 		}
-		.best__slider {
-			height: 620px;
-			background-color: #ffe1bd;
-			&__item {
-				text-align: center;
-				.best__head {
-					padding-top: 70px;
-					padding-bottom: 40px;
-					margin: 0;
-					font-weight: 300;
-					font-size: 45px;
-				}
-				.ccc {
+	}
+	// main slaider //
+	&__container {
+		height: auto;
+		background-color: #ffe1bd;
+		&__item {
+			text-align: center;
+			.best__head {
+				padding-top: 70px;
+				padding-bottom: 40px;
+				margin: 0;
+				font-weight: 300;
+				font-size: 45px;
+			}
+			.ccc {
+				display: flex;
+				-webkit-justify-content: center;
+				        justify-content: center;
+				    -webkit-align-items: baseline;
+				            align-items: baseline;
+				.best__bottom {
+					width: 225px;
+					margin: 20px;
 					display: flex;
-					-webkit-justify-content: center;
-					        justify-content: center;
-					    -webkit-align-items: baseline;
-					            align-items: baseline;
-					.best__bottom {
-						width: 225px;
-						margin: 20px;
-						display: flex;
-						-webkit-flex-direction: column;
-						    -ms-flex-direction: column;
-						        flex-direction: column;
-						-webkit-align-items: center;
-						        align-items: center;
-						&__img {
-							width: 158px;
-							height: 158px;
-							-webkit-border-radius: 50%;
-							        border-radius: 50%;
-							background-color: #FFF;
-							margin: 0;
-						}
-						&__name {
-							font-size: 30px;
-							padding-top: 20px;
-							font-weight: 700;
-							margin: 0;
-						}
-						&__underline {
-							width: 55px;
-							height: 2px;
-							background-color: @black;
-							margin-top: 10px;
-						}
-						&__joob {
-							margin: 0;
-							padding-top: 20px;
-							font-weight: 300;
-						}
+					-webkit-flex-direction: column;
+					    -ms-flex-direction: column;
+					        flex-direction: column;
+					-webkit-align-items: center;
+					        align-items: center;
+					padding-bottom: 40px;
+					&__img {
+						width: 158px;
+						height: 158px;
+						-webkit-border-radius: 50%;
+						        border-radius: 50%;
+						background-color: #FFF;
+						margin: 0;
+					}
+					&__name {
+						font-size: 30px;
+						padding-top: 20px;
+						font-weight: 700;
+						margin: 0;
+					}
+					&__underline {
+						width: 55px;
+						height: 2px;
+						background-color: @black;
+						margin-top: 10px;
+					}
+					&__joob {
+						margin: 0;
+						padding-top: 20px;
+						font-weight: 300;
 					}
 				}
 			}
-			// styles of slick slaider
-			.slick-track {
-				height: 520px;
+		}
+		// styles of slick slaider
+		.slick-initialized .slick-slide {
+		    display: flex;
+		}
+		// styles of slick dots
+		.slick-track {
+			height: auto;
+		}
+		.slick-dots {
+			bottom: 10px;
+			 li {
+				width: 12px;
+				height: 12px;
+				margin: 7px;
 			}
-			.slick-initialized .slick-slide {
-			    display: flex;
+			.slick-active {
+				width: 12px;
+				height: 12px;
+				background-color: @black;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
 			}
-			// styles of slick dots
-			.slick-track {
-				height: 520px;
+			.slick-active button:before {
+				color: transparent;
 			}
-			.slick-dots {
-				bottom: 80px;
-				width: 10;
-				 li {
-					width: 12px;
-					height: 12px;
-					margin: 7px;
-				}
-				.slick-active {
-					width: 12px;
-					height: 12px;
-					background-color: @black;
-					-webkit-border-radius: 50%;
-					        border-radius: 50%;
-				}
-				.slick-active button:before {
-					color: transparent;
-				}
-				li button {
-					width: 12px;
-					height: 12px;
-				}
-				li button:before {
-					color: transparent;
-					-webkit-box-sizing: border-box;
-					   -moz-box-sizing: border-box;
-					        box-sizing: border-box;
-					border: 1px solid @black;
-					-webkit-border-radius: 50%;
-					        border-radius: 50%;
-					width: 12px;
-					height: 12px;
-					opacity: 1;
-				}
+			li button {
+				width: 12px;
+				height: 12px;
 			}
-			//styles of arrows next
-			.slick-next {
-				right: 50px;
+			li button:before {
+				color: transparent;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				border: 1px solid @black;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+				width: 12px;
+				height: 12px;
+				opacity: 1;
 			}
-			.slick-next {
-				font-size: 0;
-			    line-height: 0;
-			    position: absolute;
-			    top: 40%;
-			    display: block;
-			    border-right: 2px solid #fff;
-			    border-bottom: 2px solid #fff;
-			    -webkit-transform: rotate(-45deg);
-			       -moz-transform: rotate(-45deg);
-			        -ms-transform: rotate(-45deg);
-			         -o-transform: rotate(-45deg);
-			            transform: rotate(-45deg);
-				height: 30px;
-				width: 30px;
-				padding: 10px;
-				cursor: pointer;
-			    background: transparent;
-			}
-			.slick-next:active {
-				border-right: 2px solid #000;
-			    border-bottom: 2px solid #000;
-			}
-			.slick-next:focus {
-				border-right: 2px solid #000;
-			    border-bottom: 2px solid #000;
-			}
-			.slick-next:hover {
-				border-right: 2px solid #000;
-			    border-bottom: 2px solid #000;
-			}
-			.slick-prev:before, .slick-next:before {
-				color: #000;
-			    font-size: 40px;
-			    line-height: 1;
-			    opacity: .75;
-			}
-			//styles of arrows prev
-			.slick-prev {
-				font-size: 0;
-			    line-height: 0;
-			    position: absolute;
-			    top: 40%;
-			    left: 40px;
-			    display: block;
-			    border-left: 2px solid #fff;
-			    border-top: 2px solid #fff;
-			    -webkit-transform: rotate(-45deg);
-			       -moz-transform: rotate(-45deg);
-			        -ms-transform: rotate(-45deg);
-			         -o-transform: rotate(-45deg);
-			            transform: rotate(-45deg);
-				height: 30px;
-				width: 30px;
-				padding: 10px;
-				cursor: pointer;
-			    background: transparent;
-			    z-index: 99;
-			}
-			.slick-prev:active {
-				border-left: 2px solid #000;
-			    border-top: 2px solid #000;
-			}
-			.slick-prev:focus {
-				border-left: 2px solid #000;
-			    border-top: 2px solid #000;
-			}
-			.slick-prev:hover {
-				border-left: 2px solid #000;
-			    border-top: 2px solid #000;
-			}
+		}
+		//styles of arrows next
+		.slick-next {
+			right: 50px;
+		}
+		.slick-next {
+			font-size: 0;
+		    line-height: 0;
+		    position: absolute;
+		    top: 40%;
+		    display: block;
+		    border-right: 2px solid #fff;
+		    border-bottom: 2px solid #fff;
+		    -webkit-transform: rotate(-45deg);
+		       -moz-transform: rotate(-45deg);
+		        -ms-transform: rotate(-45deg);
+		         -o-transform: rotate(-45deg);
+		            transform: rotate(-45deg);
+			height: 30px;
+			width: 30px;
+			padding: 10px;
+			cursor: pointer;
+		    background: transparent;
+		}
+		.slick-next:active {
+			border-right: 2px solid #000;
+		    border-bottom: 2px solid #000;
+		}
+		.slick-next:focus {
+			border-right: 2px solid #000;
+		    border-bottom: 2px solid #000;
+		}
+		.slick-next:hover {
+			border-right: 2px solid #000;
+		    border-bottom: 2px solid #000;
+		}
+		.slick-prev:before, .slick-next:before {
+			color: #000;
+		    font-size: 40px;
+		    line-height: 1;
+		    opacity: .75;
+		}
+		//styles of arrows prev
+		.slick-prev {
+			font-size: 0;
+		    line-height: 0;
+		    position: absolute;
+		    top: 40%;
+		    left: 40px;
+		    display: block;
+		    border-left: 2px solid #fff;
+		    border-top: 2px solid #fff;
+		    -webkit-transform: rotate(-45deg);
+		       -moz-transform: rotate(-45deg);
+		        -ms-transform: rotate(-45deg);
+		         -o-transform: rotate(-45deg);
+		            transform: rotate(-45deg);
+			height: 30px;
+			width: 30px;
+			padding: 10px;
+			cursor: pointer;
+		    background: transparent;
+		    z-index: 99;
+		}
+		.slick-prev:active {
+			border-left: 2px solid #000;
+		    border-top: 2px solid #000;
+		}
+		.slick-prev:focus {
+			border-left: 2px solid #000;
+		    border-top: 2px solid #000;
+		}
+		.slick-prev:hover {
+			border-left: 2px solid #000;
+		    border-top: 2px solid #000;
 		}
 	}
 }
@@ -466,6 +467,7 @@ a {
 //styles of touch
 
 .touch {
+	margin-top: 80px;
 	background-color: #000;
 	color: #fff;
 	&__container {
@@ -475,8 +477,6 @@ a {
 			font-size: 60px;
 			color: #bbbbbb;
 			padding-top: 90px;
-			margin: 0;
-			margin-bottom: 50px;
 		}
 		&__box {
 			display: flex;
@@ -560,6 +560,20 @@ a {
 							position: relative;
 							font-size: 25px;
 						}
+						.fa-facebook-f:hover {
+							background-color: #FFE1BD;
+							color: @black;
+							-webkit-transition-timing-function: linear;
+							   -moz-transition-timing-function: linear;
+							    -ms-transition-timing-function: linear;
+							     -o-transition-timing-function: linear;
+							        transition-timing-function: linear;
+							-webkit-transition-duration: 0.7s;
+							   -moz-transition-duration: 0.7s;
+							    -ms-transition-duration: 0.7s;
+							     -o-transition-duration: 0.7s;
+							        transition-duration: 0.7s;
+						}
 						.fa-twitter {
 							height: 40px;
 							width: 40px;
@@ -576,8 +590,22 @@ a {
 							position: relative;
 							font-size: 25px;
 						}
+						.fa-twitter:hover {
+							background-color: #FFE1BD;
+							color: @black;
+							-webkit-transition-timing-function: linear;
+							   -moz-transition-timing-function: linear;
+							    -ms-transition-timing-function: linear;
+							     -o-transition-timing-function: linear;
+							        transition-timing-function: linear;
+							-webkit-transition-duration: 0.7s;
+							   -moz-transition-duration: 0.7s;
+							    -ms-transition-duration: 0.7s;
+							     -o-transition-duration: 0.7s;
+							        transition-duration: 0.7s;
+						}
 						.fa-pinterest {
-													height: 40px;
+							height: 40px;
 							width: 40px;
 							display: flex;
 							-webkit-justify-content: center;
@@ -591,6 +619,20 @@ a {
 							text-align: center;
 							position: relative;
 							font-size: 25px;	
+						}
+						.fa-pinterest:hover {
+							background-color: #FFE1BD;
+							color: @black;
+							-webkit-transition-timing-function: linear;
+							   -moz-transition-timing-function: linear;
+							    -ms-transition-timing-function: linear;
+							     -o-transition-timing-function: linear;
+							        transition-timing-function: linear;
+							-webkit-transition-duration: 0.7s;
+							   -moz-transition-duration: 0.7s;
+							    -ms-transition-duration: 0.7s;
+							     -o-transition-duration: 0.7s;
+							        transition-duration: 0.7s;
 						}
 						.fa-instagram {
 							height: 40px;
@@ -608,6 +650,20 @@ a {
 							position: relative;
 							font-size: 25px;	
 						}
+						.fa-instagram:hover {
+							background-color: #FFE1BD;
+							color: @black;
+							-webkit-transition-timing-function: linear;
+							   -moz-transition-timing-function: linear;
+							    -ms-transition-timing-function: linear;
+							     -o-transition-timing-function: linear;
+							        transition-timing-function: linear;
+							-webkit-transition-duration: 0.7s;
+							   -moz-transition-duration: 0.7s;
+							    -ms-transition-duration: 0.7s;
+							     -o-transition-duration: 0.7s;
+							        transition-duration: 0.7s;
+						}
 						.fa-telegram-plane {
 							height: 40px;
 							width: 40px;
@@ -623,6 +679,20 @@ a {
 							text-align: center;
 							position: relative;
 							font-size: 25px;
+						}
+						.fa-telegram-plane:hover {
+							background-color: #FFE1BD;
+							color: @black;
+							-webkit-transition-timing-function: linear;
+							   -moz-transition-timing-function: linear;
+							    -ms-transition-timing-function: linear;
+							     -o-transition-timing-function: linear;
+							        transition-timing-function: linear;
+							-webkit-transition-duration: 0.7s;
+							   -moz-transition-duration: 0.7s;
+							    -ms-transition-duration: 0.7s;
+							     -o-transition-duration: 0.7s;
+							        transition-duration: 0.7s;
 						}
 					}
 				}
@@ -859,4 +929,321 @@ a {
  			font-weight: 300;
  		}
  	}
+ }
+
+
+ // adaptiv mobile menu first 
+
+ @media screen and (max-width: 948px) {
+	.header {
+		.header__container__logo {
+			display: none;
+		}
+		.header__container__navigation {
+			display: none;
+		}
+		// navmob //
+		.header__navmob {
+			width: 100%;
+			height: auto;
+			top: 0;
+			padding: 10px;
+			position: fixed;
+			display: block;
+			background-color: #ffe1bd;
+			z-index: 100;
+			-webkit-box-shadow: 0 0 30px #4bcffa;
+			        box-shadow: 0 0 30px #4bcffa;
+			&__logo {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.header__name {
+					font-weight: 700;
+					font-size: 30px;
+					cursor: pointer;
+					color: #1e272e;
+				}
+				.header__logo__menu {
+					display: flex;
+					cursor: pointer;
+					align-items: center;
+					.burger {
+						display: flex;
+						flex-wrap: wrap;
+						position: relative;
+						margin-right: 10px;
+						width: 14px;
+						&__top {
+							display: block;
+							width: 14px;
+							height: 2px;
+							background-color: #1e272e;
+							margin-bottom: 5px;
+							transition: all ease .3s;
+						}
+						.burger__active {
+							transform: translate3d(0px, -3px, 0px) rotate(-45deg);
+						}
+						.burger__actives {
+							transform: translate3d(0px, 4px, 0px) rotate(45deg);
+						}
+						&__bottom {
+							display: block;
+							transition: all ease .3s;
+							width: 14px;
+							height: 2px;
+							background-color: #1e272e;
+						}
+					}
+					.navmob__menu {
+						text-transform: uppercase;
+						font-family: Raleway,sans-serif;
+						font-weight: 400;
+						font-size: 15px;
+						color: #1e272e;
+					}
+				}
+			}
+			.mobile__navmob__list {
+				background-color: #ffe1bd;
+				display: none;
+				.mobile__item__list {
+					display: block;
+					padding-left: 20px;
+					padding-right: 20px;
+					width: 100%;
+					line-height: 50px;
+					padding-bottom: 10px;
+					.mobile__link {
+						border-bottom: 1px solid #1e272e;
+						width: 100%;
+						display: block;
+						text-transform: uppercase;
+						color: #1e272e;
+						font-family: Raleway,sans-serif;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+
+	//about styles
+	.about {
+		&__container {
+			&__middle {
+				display: flex;
+				-webkit-flex-direction: column;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+					-webkit-align-items: center;
+					        align-items: center;
+				.about__left {
+					width: 100%;
+					.about__img {
+						width: 300px;
+						height: 300px;
+						margin: 0 auto;
+					}
+					.about__we {
+						margin-left: 0;
+						text-align: center;
+					}
+				}
+				.about__right {
+					.about__line {
+						margin: 0 auto;
+						margin-top: 20px;
+					}
+					.about__text {
+						text-align: center;
+						margin: 10px;
+					}
+					.about__btn {
+						margin: 0 auto;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	// styles of best
+	.best {
+		.best__head {
+			width: 100%;
+			&__number {
+				display: flex;
+				-webkit-flex-direction: column;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+					-webkit-align-items: center;
+					        align-items: center;
+
+			}
+		}
+		&__container {
+			.best__container .slick-track {
+				height: auto;
+			}
+			.best__container__item {
+				width: 100%;
+				.ccc {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					-webkit-flex-direction: column;
+					    -ms-flex-direction: column;
+					        flex-direction: column;
+						-webkit-align-items: center;
+						        align-items: center;	
+				}
+			}
+		}
+	}
+	// stles of instagram
+	.instagram {
+		&__container {
+			&__box {
+			width: 100%;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+				-webkit-align-items: center;
+				        align-items: center;
+			-webkit-justify-content: center;
+			        justify-content: center;
+				.instagram__item {
+					margin: 10px;
+				}
+			}
+		}
+	}
+	// touch styles
+	.touch {
+		&__container {
+			&__box {
+				width: 100%;
+				display: flex;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-align-items: center;
+			        align-items: center;
+			    .touch__container__left {
+			    	width: 100%;
+			    	-webkit-align-items: center;
+			    	        align-items: center;
+			    	    .touch__place {
+			    	    	margin: 10px;
+			    	    }
+			    	 	.touch__social {
+				    		.touch__social__link {
+				    			padding-right: 0;
+				    			margin: 10px;
+				    		}
+			    		}
+			   		 }
+			    .touch__container__right {
+			    	width: 100%;
+			    	margin-top: 40px;
+			    	.input__name {
+			    		.name {
+			    			width: 100%;
+			    			text-align: center;
+			    		}
+			    	}
+			    	.input__email {
+			    		.email {
+			    			width: 100%;
+			    			text-align: center;
+			    		}
+			    	}
+			    	.input__message {
+			    		.message {
+			    			width: 100%;
+			    			text-align: center;
+			    		}
+			    	}
+			    	.touch__btn {
+			    		margin: 0 auto;
+			    		margin-bottom: 50px;
+			    	}
+			    }
+			}
+		}
+	}
+}
+
+
+ @media screen and (min-width: 948px) and (max-width: 1199px) {
+ 	// header styles
+ 	.header {
+ 		&__container {
+ 			margin-left: 20px;
+ 			margin-right: 10px;
+ 		}
+ 	}
+ 	//about styles
+	.about {
+		&__container {
+			&__middle {
+				.about__left {
+					width: 50%;
+					.about__img {
+						width: 450px;
+						height: 450px;
+						margin: 10px;
+					}
+				}
+				.about__right {
+					width: 50%;
+					.about__line {
+						margin-top: 20px;
+					}
+					.about__text {
+						font-size: 16px;
+					}
+					.about__btn {
+						margin: 0 auto;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+ 	// styles of instagram
+ 	.instagram {
+		&__container {
+			&__box {
+			width: 100%;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+				-webkit-align-items: center;
+				        align-items: center;
+			-webkit-justify-content: center;
+			        justify-content: center;
+				.instagram__item {
+					margin: 10px;
+				}
+			}
+		}
+	}
+
+	// touch styles
+	.touch {
+		&__container {
+			&__box {
+				.touch__container__left {
+					margin: 10px;
+				}
+				.touch__container__right {
+					margin: 10px;
+				}
+			}
+		}
+	}
  }
