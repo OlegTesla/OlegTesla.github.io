@@ -11,3 +11,17 @@ $(".up__btn").click(function() {
      }, 1500);
  });
 });
+
+
+//navmob menu scroll function
+
+$(document).ready(function() {
+	$(".header__navmob").removeClass("default");
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 20) {
+			$(".header__navmob").addClass("default").fadeIn("2000");
+		} else {
+			$(".header__navmob").removeClass("default").fadeIn("slow");
+		};
+	});
+});

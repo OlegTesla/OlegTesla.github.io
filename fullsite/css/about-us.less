@@ -936,6 +936,11 @@ a {
 
  @media screen and (max-width: 948px) {
 	.header {
+		&__container {
+			padding-bottom: 0;
+			padding-top: 0;
+			border: none;
+		}
 		.header__container__logo {
 			display: none;
 		}
@@ -948,12 +953,11 @@ a {
 			height: auto;
 			top: 0;
 			padding: 10px;
-			position: fixed;
 			display: block;
 			background-color: #ffe1bd;
 			z-index: 100;
-			-webkit-box-shadow: 0 0 30px #4bcffa;
-			        box-shadow: 0 0 30px #4bcffa;
+			-webkit-box-shadow: 0 0 30px transparent;
+			        box-shadow: 0 0 30px transparent;
 			&__logo {
 				display: flex;
 				justify-content: space-between;
@@ -1026,6 +1030,14 @@ a {
 					}
 				}
 			}
+		}
+		.default {
+			top: 0;
+			position: fixed;
+			background-color: #ffe1bd;
+			z-index: 100;
+			-webkit-box-shadow: 0 0 30px #4bcffa;
+			        box-shadow: 0 0 30px #4bcffa;
 		}
 	}
 
