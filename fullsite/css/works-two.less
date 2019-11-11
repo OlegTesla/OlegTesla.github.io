@@ -329,6 +329,29 @@ a {
 		}
 	}
 
+// styles of btn to top
+	#myBtn {
+		position: fixed;
+		display: none;
+		border: none;
+		bottom: 20px;
+		right: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		z-index: 99;
+		outline: none;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		background-color: #ffe1bd;
+		padding: 20px;
+		color: @black;
+	}
+	#myBtn:hover {
+		background-color: @black;
+		color: #FFF;
+	}
+
+
 // footer 
  .footer {
  	border-top: 1px solid grey;
@@ -468,12 +491,19 @@ a {
 			        box-shadow: 0 0 30px #4bcffa;
 		}
 	}
+	// styles of awards
 	.awards {
 		&__container {
 			.awards__container__slaider {
 				.awards__slide  {
 					.awards__img {
 						width: 500px;
+						height: 500px;
+					}
+					.awards__score {
+						width: 10%;
+						margin-left: 20px;
+						margin-top: 50px;
 					}
 				}
 			}
@@ -512,6 +542,96 @@ a {
 					    	-webkit-justify-content: center;
 					    	        justify-content: center;
 					    }
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	.awards {
+		&__container {
+			.awards__container__slaider {
+				.awards__slide  {
+					.awards__img {
+							width: 300px;
+							height: 300px;
+						}
+					.awards__score {
+						width: 10%;
+						margin-left: 20px;
+						margin-top: 50px;
+						}
+					}
+				// slick styles of btn next and prev
+				.slick-prev {
+					top: -20px;
+					left: 35%;
+					padding-bottom: 80px;
+				}
+				.slick-next {
+					top: -20px;
+					padding-bottom: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 948px) {
+	.awards {
+		&__container {
+			.awards__container__slaider {
+				.awards__slide  {
+					.awards__img {
+							width: 500px;
+							height: 500px;
+						}
+						.awards__score {
+							width: 10%;
+							margin-left: 20px;
+							margin-top: 50px;
+						}
+					}
+				// slick styles of btn next and prev
+				.slick-prev {
+					top: -20px;
+					left: 35%;
+					padding-bottom: 80px;
+				}
+				.slick-next {
+					top: -20px;
+					padding-bottom: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 948px) {
+	.awards {
+		&__container {
+			.awards__container__slaider {
+				.awards__slide  {
+					.awards__img {
+							width: 500px;
+							height: 500px;
+						}
+						.awards__score {
+							width: 10%;
+							margin-left: 160px;
+							margin-top: 50px;
+						}
+					}
+				// slick styles of btn next and prev
+				.slick-prev {
+					top: -20px;
+					left: 35%;
+					padding-bottom: 80px;
+				}
+				.slick-next {
+					top: -20px;
+					padding-bottom: 80px;
 				}
 			}
 		}

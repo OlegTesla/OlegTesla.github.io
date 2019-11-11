@@ -121,6 +121,9 @@ a {
 					width: 55px;
 					height: 2px;
 					background-color: #000;
+					margin-top: 70px;
+					margin-bottom: 50px;
+					margin-left: 70px;
 				}
 				// styles left side
 		    .about__left {
@@ -422,6 +425,29 @@ a {
 		}
 	}
 }
+
+// styles of btn to top
+	#myBtn {
+		position: fixed;
+		display: none;
+		border: none;
+		bottom: 20px;
+		right: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		z-index: 99;
+		outline: none;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		background-color: #ffe1bd;
+		padding: 20px;
+		color: @black;
+	}
+	#myBtn:hover {
+		background-color: @black;
+		color: #FFF;
+	}
+
 
 //styles of touch
 
@@ -1015,6 +1041,12 @@ a {
 						height: 350px;
 						margin: 0 auto;
 					}
+					.about__line {
+						margin: 0 auto;
+						display: block;
+						margin-top: 40px;
+						margin-bottom: 20px;
+					}
 					.about__we {
 						margin-left: 0;
 						text-align: center;
@@ -1089,8 +1121,11 @@ a {
 				-webkit-flex-direction: column;
 				    -ms-flex-direction: column;
 				        flex-direction: column;
-					-webkit-align-items: center;
-					        align-items: center;
+				    -webkit-justify-content: center;
+				            justify-content: center;
+				    .best__item {
+				    	margin: 20px;
+				    }
 			}
 		}
 	}
@@ -1193,6 +1228,65 @@ a {
 	}
 }
 
+ @media screen and (min-width: 320px) and (max-width: 360px) {
+ 	//about styles
+	.about {
+		&__container {
+			&__middle {
+				display: flex;
+				-webkit-flex-direction: column;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+					-webkit-align-items: center;
+					        align-items: center;
+				.about__left {
+					width: 100%;
+					margin-right: 0;
+					.about__img {
+						width: 300px;
+						height: 300px;
+						margin: 0 auto;
+					}
+					.about__line {
+						margin: 0 auto;
+						display: block;
+						margin-top: 40px;
+						margin-bottom: 20px;
+					}
+					.about__we {
+						margin-left: 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+ }
+
+@media screen and (min-width: 499px) and (max-width: 948px) {
+	// styles of best
+	.best {
+		.best__head {
+			width: 100%;
+			&__number {
+				display: flex;
+				-webkit-flex-wrap: wrap;
+				    -ms-flex-wrap: wrap;
+				        flex-wrap: wrap;
+				    -webkit-justify-content: center;
+				            justify-content: center;
+				    -webkit-flex-direction: row;
+				        -ms-flex-direction: row;
+				            flex-direction: row;
+				    .best__item {
+				    	margin: 20px;
+				    	margin-top: 50px;
+				    	margin-bottom: 50px;
+				    }
+			}
+		}
+	}
+}
 
  @media screen and (min-width: 948px) and (max-width: 1199px) {
  	// header styles
@@ -1256,5 +1350,7 @@ a {
 			}
 		}
 	}
- }
+}
+
+
 
