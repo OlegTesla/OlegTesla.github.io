@@ -118,8 +118,6 @@ a {
 		&__middle {
 			margin-bottom: 100px;
 			display: flex;
-			-webkit-justify-content: space-between;
-			        justify-content: space-between;
 			// styles of line in 2 box
 			    .about__line {
 					width: 55px;
@@ -128,10 +126,17 @@ a {
 				}
 				// styles left side
 		    .about__left {
+		    	margin-right: 100px;
 			    .about__img {
 					width: 560px;
 					height: 560px;
 					background-color: #e6e6e6;
+					margin: 10px;
+				}
+				.about__line {
+					margin-top: 70px;
+					margin-bottom: 50px;
+					margin-left: 70px;
 				}
 				.about__we {
 					font-size: 40px;
@@ -143,6 +148,7 @@ a {
 		    }
 		    // styles right side
 		    .about__right {
+		    	margin: 10px;
 		    	.about__text {
 		    		font-weight: 300;
 		    		font-size: 18px;
@@ -481,6 +487,7 @@ a {
 		&__box {
 			display: flex;
 			.touch__container__left {
+				margin: 10px;
 				display: flex;
 				width: 50%;
 				-webkit-flex-direction: column;
@@ -698,6 +705,7 @@ a {
 				}
 			}
 			.touch__container__right {
+				margin: 10px;
 				.input__name {
 					.name {
 						background-color: transparent;
@@ -1053,10 +1061,16 @@ a {
 					        align-items: center;
 				.about__left {
 					width: 100%;
+					margin-right: 0;
 					.about__img {
 						width: 300px;
 						height: 300px;
 						margin: 0 auto;
+					}
+					.about__line {
+						margin: 0 auto;
+						margin-top: 20px;
+						margin-bottom: 20px;
 					}
 					.about__we {
 						margin-left: 0;
@@ -1259,3 +1273,26 @@ a {
 		}
 	}
  }
+
+
+  @media screen and (min-width: 1200px) and (max-width: 1390px) {
+  		 	// styles of instagram
+ 	.instagram {
+		&__container {
+			&__box {
+			width: 100%;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+				-webkit-align-items: center;
+				        align-items: center;
+			-webkit-justify-content: center;
+			        justify-content: center;
+				.instagram__item {
+					margin: 10px;
+				}
+			}
+		}
+	}
+  }
