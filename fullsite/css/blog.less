@@ -21,7 +21,6 @@ a {
 .header {
 	border-bottom: 1px solid grey;
 	&__container {
-		margin: 10px;
 		padding-top: 50px;
 		padding-bottom: 50px;
 		display: flex;
@@ -135,6 +134,7 @@ a {
 				margin-top: 100px;
 				width: 180px;
 				margin: 0 auto;
+				outline: none;
 				height: 50px;
 				border: 1px solid #e5e5e5;
 				background-color: @black;
@@ -223,6 +223,8 @@ a {
 		.blogs__btn {
 			display: block;
 			width: 170px;
+			outline: none;
+			border: none;
 			margin: 0;
 			height: 50px;
 			border: 1px solid #e5e5e5;
@@ -257,9 +259,9 @@ a {
 		display: none;
 		border: none;
 		bottom: 20px;
-		right: 30px;
+		right: 10px;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 16px;
+		font-size: 12px;
 		z-index: 99;
 		outline: none;
 		-webkit-border-radius: 10px;
@@ -454,6 +456,9 @@ a {
 							}
 							.blogs__item__right {
 								text-align: center;
+								.blogs__bottom__text {
+									margin: 10px;
+								}
 								.blogs__head {
 									text-align: center;
 								}
