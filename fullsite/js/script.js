@@ -53,3 +53,26 @@ function topFunction() {
   $('html,body').animate({ scrollTop: 0 }, 'slow');
   document.documentElement.scrollTop = 0;
 }
+
+
+// scroll of top btn
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+ $.fn.scrollToBot = function() {
+   var z = $("#services").offset().top;
+   $(this).click(function() {
+   $("html, body").animate({scrollTop: z}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+
+ $(".scroll-down").scrollToBot();
+});
