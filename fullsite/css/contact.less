@@ -100,6 +100,29 @@ a {
 	}
 }
 
+// styles of btn to top
+	#myBtn {
+		position: fixed;
+		display: none;
+		border: none;
+		bottom: 20px;
+		right: 10px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		z-index: 99;
+		outline: none;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		background-color: #ffe1bd;
+		padding: 20px;
+		color: @black;
+	}
+	#myBtn:hover {
+		background-color: @black;
+		color: #FFF;
+	}
+
+
 //styles of touch
 
 .touch {
@@ -469,6 +492,10 @@ a {
 		}
 	}
 }
+// styles of map
+.map {
+	overflow: hidden;
+}
 
 
 // footer 
@@ -617,16 +644,21 @@ a {
 			-webkit-flex-direction: column;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
-			-webkit-align-items: center;
-			        align-items: center;
+				-webkit-align-items: center;
+			        	align-items: center;
 			    .touch__container__left {
 			    	width: 100%;
-			    	-webkit-align-items: center;
-			    	        align-items: center;
 			    	    .touch__place {
 			    	    	margin: 10px;
 			    	    }
+			    	    .touch__phone {
+			    	    	margin: 10px;
+			    	    }
+			    	    .touch__email {
+			    	    	margin: 10px;
+			    	    }
 			    	 	.touch__social {
+			    	 		margin: 0 auto;
 				    		.touch__social__link {
 				    			padding-right: 0;
 				    			margin: 10px;
