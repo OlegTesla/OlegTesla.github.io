@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/navmobmenu.css">
   <link rel="stylesheet" href="css/normalize.css">  
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i|Roboto:300,400,500,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../TATTO/fontawesome-free-5.12.0-web/css/all.min.css">
+  <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.min.css">
   <title>Ink Tattoo</title>
 </head>
 <body>
   <header class="header" id="header"style="background-image: url(img/main-bgc.png);">
     <div class="wrapper">
         <!--main container of navigation-->
-        <div class="nav">
+        <div id="menu" class="nav">
             <ul class="menu__nav">
               <!--list item of navigation-->
               <li class="menu__nav__list"><a href="#header" class="nav__link">Главная</a></li>
@@ -29,6 +30,24 @@
               <li class="menu__nav__list"><a href="#contact" class="nav__link">Контакты</a></li>
               <li class="menu__nav__list"><a href="#map" class="nav__link">Местоположение</a></li>
             </ul>
+        </div>
+        <!--navmob menu-->
+        <div id="menu" class="navmob">
+          <!--block of logo-->
+          <div class="menu__left">
+          <div class="header__logo" style="background-image: url(img/main-logo.png);"></div>
+          </div>
+          <div class="menu__right">
+            <ul class="menu__nav">
+              <!--list item of navigation-->
+              <li class="menu__nav__list"><a href="#header" class="nav__link">Главная</a></li>
+              <li class="menu__nav__list"><a href="#about" class="nav__link">О нас</a></li>
+              <li class="menu__nav__list"><a href="#telegram" class="nav__link">эскизы</a></li>
+              <li class="menu__nav__list"><a href="#team" class="nav__link">Команда</a></li>
+              <li class="menu__nav__list"><a href="#contact" class="nav__link">Контакты</a></li>
+              <li class="menu__nav__list"><a href="#map" class="nav__link">Местоположение</a></li>
+            </ul>
+          </div>
         </div>
     </div>
   </header>
@@ -66,20 +85,66 @@
       <!--container about with images-->
       <div class="about__meddle">
         <div class="about__meddle__top">
-          <div class="about__image"style="background-image: url(img/about__images/1.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/3.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/5.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/7.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/9.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/11.png);background-position: center;background-repeat: no-repeat;"></div>
+          <div class="zoom"><div class="about__image"
+            style="background-image: url(img/about__images/1.png);background-position: center;background-repeat: no-repeat;">
+          </div></div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/3.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/5.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/7.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/9.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/11.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
         </div>
         <div class="about__meddle__bottom">
-          <div class="about__image"style="background-image: url(img/about__images/2.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/4.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/6.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/8.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/10.png);background-position: center;background-repeat: no-repeat;"></div>
-          <div class="about__image"style="background-image: url(img/about__images/12.png);background-position: center;background-repeat: no-repeat;"></div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/2.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/4.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/6.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/8.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/10.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
+          <div class="zoom">
+            <div class="about__image"
+              style="background-image: url(img/about__images/12.png);background-position: center;background-repeat: no-repeat;">
+            </div>
+          </div>
         </div>
       </div>
       <!--container about with text-->
@@ -285,12 +350,12 @@
   <footer class="footer" id="footer">
     <div class="wrapper">
       <!--main container of navigation-->
-      <div class="nav">
+      <div id="menu" class="nav">
           <ul class="menu__nav">
             <!--list item of navigation-->
             <li class="menu__nav__list"><a href="#header" class="nav__link">Главная</a></li>
             <li class="menu__nav__list"><a href="#about" class="nav__link">О нас</a></li>
-            <li class="menu__nav__list"><a href="#gallery" class="nav__link">эскизы</a></li>
+            <li class="menu__nav__list"><a href="#telegram" class="nav__link">эскизы</a></li>
             <!--block of logo-->
             <div class="header__logo"></div>
             <li class="menu__nav__list"><a href="#team" class="nav__link">Команда</a></li>
@@ -305,6 +370,7 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="/js/slide.js"></script>
   <script>
     $('[data-fancybox="gallery"]').fancybox({
       loop: true,
