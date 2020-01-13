@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/navmobmenu.css">
   <link rel="stylesheet" href="css/normalize.css">  
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i|Roboto:300,400,500,700&display=swap"
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700|Dancing+Script:400,500,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.min.css">
   <title>Ink Tattoo</title>
@@ -34,20 +34,23 @@
         <!--navmob menu-->
         <div id="menu" class="navmob">
           <!--block of logo-->
-          <div class="menu__left">
-          <div class="header__logo" style="background-image: url(img/main-logo.png);"></div>
+          <div class="navmob__left">
+          <a  href="#" class="header__logo"><img  src="img/main-logo.png" alt="logo img"></a>
+          <div class="navmob__burger">
+            <span></span>
           </div>
-          <div class="menu__right">
-            <ul class="menu__nav">
-              <!--list item of navigation-->
-              <li class="menu__nav__list"><a href="#header" class="nav__link">Главная</a></li>
-              <li class="menu__nav__list"><a href="#about" class="nav__link">О нас</a></li>
-              <li class="menu__nav__list"><a href="#telegram" class="nav__link">эскизы</a></li>
-              <li class="menu__nav__list"><a href="#team" class="nav__link">Команда</a></li>
-              <li class="menu__nav__list"><a href="#contact" class="nav__link">Контакты</a></li>
-              <li class="menu__nav__list"><a href="#map" class="nav__link">Местоположение</a></li>
-            </ul>
           </div>
+            <div class="navmob__right">
+              <ul class="menu__nav">
+                <!--list item of navigation-->
+                <li class="menu__nav__list"><a href="#header" class="nav__link">Главная</a></li>
+                <li class="menu__nav__list"><a href="#about" class="nav__link">О нас</a></li>
+                <li class="menu__nav__list"><a href="#telegram" class="nav__link">эскизы</a></li>
+                <li class="menu__nav__list"><a href="#team" class="nav__link">Команда</a></li>
+                <li class="menu__nav__list"><a href="#contact" class="nav__link">Контакты</a></li>
+                <li class="menu__nav__list"><a href="#map" class="nav__link">Местоположение</a></li>
+              </ul>
+            </div>
         </div>
     </div>
   </header>
@@ -202,7 +205,8 @@
               <div class="team__name">Оксана Роменская</div>
               <p class="team__history">
                 Человек — ощущает себя, свои мысли и чувства, отделенными от всего мира — и это его оптический обман. Эта
-                иллюзия стала темницей для нас, ограничивающей нас миром собственных желаний. Наша задача — освободиться
+                иллюзия стала темницей для нас, ограничивающей нас миром собственных желаний. 
+                <br>   Наша задача — освободиться
                 из этой тюрьмы, расширив сферу своего участия до всякого живого существа, до целого мира. Никто не сможет
                 выполнить эту задачу до конца, но попытки достичь этой цели, являются частью освобождения.
               </p>
@@ -370,7 +374,8 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
-  <script src="/js/slide.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/mobmenu.js"></script>
   <script>
     $('[data-fancybox="gallery"]').fancybox({
       loop: true,
