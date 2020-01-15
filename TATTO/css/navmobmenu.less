@@ -17,6 +17,7 @@
       z-index: 50;
       justify-content: center;
       align-items: center;
+      border-bottom: 1px solid #000;
       .navmob__left {
         position: relative;
         display: flex;
@@ -162,16 +163,8 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          .zoom {
-            padding-bottom: 10px;
-          }
-        }
-        &__bottom {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          .zoom {
-            padding-bottom: 10px;
+          .about__image {
+            margin: 5px;
           }
         }
       }
@@ -390,6 +383,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      border-bottom: 1ps solid #000;
       .navmob__left {
         position: relative;
         display: flex;
@@ -661,7 +655,6 @@
   .gallery {
     &__top {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       &__name {
         width: 100%;
@@ -994,14 +987,19 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        .team__head__right {
+          width: 100%;
+        }
       }
-
       .team__bottom {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-
+        .team__bottom__middle {
+          order: 1;
+          width: 100%;
+        }
         .team__bottom__right {
           .email__container {
             background-color: #fff;
@@ -1163,18 +1161,8 @@
         justify-content: center;
         width: 100%;
         .about__image {
-          width: 200px;
-          height: 200px;
-        }
-      }
-      .about__meddle__bottom {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        .about__image {
-          width: 200px;
-          height: 200px;
+          width: 250px;
+          height: 250px;
         }
       }
     }
@@ -1192,8 +1180,8 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        .team__head__left {
-          margin: 20px;
+        .team__head__right {
+          width: 100%;
         }
       }
       .team__bottom {
@@ -1201,8 +1189,9 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        .team__bottom__left {
-          margin: 20px;
+        .team__bottom__middle {
+          order: 1;
+          width: 100%;
         }
         .team__bottom__right {
           margin-bottom: 20px;
@@ -1375,8 +1364,8 @@
           margin: 0px;
 
           .about__image {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
           }
         }
       }
