@@ -10,18 +10,3 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
-
-
- const ball = document.querySelector('.ball');
-const ballY = value(0, styler(ball).set('y'));
-
-const gravity = physics({
-  acceleration: 2500,
-  restSpeed: false
-}).start(ballY);
-
-listen(ball, 'mousedown touchstart').start(() => {
-  gravity
-    .set(ballY.get())
-    .setVelocity(-1200);
-});
