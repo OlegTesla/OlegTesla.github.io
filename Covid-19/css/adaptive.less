@@ -1,3 +1,162 @@
+
+// Media  styles from 1000  to 1200
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+	// use section styles
+	.use {
+		.use__container {
+			//<!-- Middle Part -->
+			&__middle {
+			//<!-- Embed Part -->
+				.embed__part {
+					padding: 0px 30px;
+				}
+			}	
+		}
+	}
+	// footer section styles
+	.footer {
+		.wrapper {		
+			display: flex;
+			flex-wrap: wrap;
+			.footer__list {
+				margin: 0 auto;
+				padding-right: 0;
+			}
+		}
+		.container {
+			text-align: center;
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+}
+// Media  styles from 767  to 1000
+@media screen and (min-width: 767px) and (max-width: 999px) {
+	// people section styles
+	.people {
+		.people__box {
+			&__content {
+				.people__item {
+					margin: 10px;
+				}	
+			}
+		}
+	}
+	// use section styles
+	.use {
+		.use__container {
+			//Top part
+			&__top {
+				text-align: center;
+				p {
+					margin: 0 auto;
+					margin-top: 30px;
+					margin-bottom: 30px;
+				}
+			}
+			// Middle Part 
+			&__middle {
+				display: flex;
+				flex-wrap: wrap;
+				//<!-- Embed Part -->
+				.embed__part {
+					margin: 0 auto;
+					margin-bottom: 20px;
+					.embed__img {
+						text-align: center;
+					}
+				}
+				//<!-- Use Part -->
+				.use__part {
+					margin: 0 auto;
+					margin-bottom: 20px;
+					.use__img {
+						text-align: center;
+					}
+				}
+			}
+			//Bottom Part
+			&__bottom {
+				.use__bottom__info {
+					margin: 10px;
+					.bottom__btn {
+						display: inline-block;
+						margin-top: 50px;
+					}
+				}
+				.use__bottom__img {
+					margin: 10px;
+				}
+			}
+		}
+	}
+	// trust section styles
+	.trust {
+		.trust__container {
+			display: flex;
+			flex-wrap: wrap;
+			h2 {
+				margin: 0 auto;
+			}
+			//<!--Trust  top Section -->
+			.trust__container__top {
+				.sources,.doctors {
+					margin: 10px;
+				}
+			}
+			//<!--Trust  bottom Section -->
+			.trust__container__bottom {
+				margin: 0 auto;
+				h3 {
+					text-align: center;
+				}
+				.trust__merch  {
+					img {
+						margin: 10px;
+					}
+				}
+			}
+		}
+	}
+	// footer section styles
+	.footer {
+		.wrapper {		
+			display: flex;
+			flex-wrap: wrap;
+			.footer__list {
+				margin: 0 auto;
+				padding-right: 0;
+			}
+		}
+		.container {
+			text-align: center;
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+	// languages section styles
+	.languages {
+		//<!--Languages top part -->
+		.languages__top {
+			.languages__title {
+				text-align: center;
+			}
+			.languages__text {
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+		}
+		//<!--Languages bottom part -->
+		.languages__bottom {
+			padding: 41px 40px;
+			.languages__message {
+				font-size: 15px;
+			}
+		}
+	}
+}
 // Media  styles for 767
 @media screen and (max-width: 767px) {
 	header {
@@ -181,6 +340,7 @@
 			&__bottom {
 				display: flex;
 				flex-wrap: wrap;
+				margin: 0 auto;
 				h3 {
 					margin: 0 auto;
 				}
@@ -191,7 +351,7 @@
 					padding-bottom: 10px;
 					margin: 0 auto;
 					img {
-						
+						padding-left: 10px;
 					}
 				}
 			}
@@ -243,14 +403,53 @@
 			display: flex;
 			flex-direction: column;
 			.footer__list {
-				margin: 0 auto;				
+				margin: 0 auto;	
+				padding-right: 0;			
 			}
 			.footer__social {
 				padding-left: 0;
 			}
 		}
+		.container {
+			text-align: center;
+		}
 	}
 }
+// Media  styles from 320p  to 355
+@media screen and (min-width: 320px) and (max-width: 355px) {
+	// menu section styles
+	.menu {
+		.navigation {
+			border-bottom: 2px solid #324b72;
+			&__name {
+				margin: 0 auto;
+			}
+			.menu__list {
+				margin: 0 auto;
+				padding-top: 20px;
+				.menu__list__item {
+					padding: 0 25px 0 0;
+				}
+			}
+		}
+	}
+		// trust section styles
+	.trust {
+		.trust__container {
+			//container bottom styles
+			.trust__container__bottom {
+				.trust__merch {
+					display: flex;
+				    flex-direction: column;
+					padding: 5px;
+					padding-bottom: 10px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+// Media  styles from 320 to 515
 @media screen and (min-width: 320px) and (max-width: 515px) {
 	// menu section styles
 	.menu {
@@ -262,6 +461,46 @@
 			.menu__list {
 				margin: 0 auto;
 				padding-top: 20px;
+			}
+		}
+	}
+		// trust section styles
+	.trust {
+		.trust__container {
+			display: flex;
+			flex-wrap: wrap;
+			h2 {
+				margin: 0 auto;
+			}
+			//container top styles
+			&__top {
+				display: flex;
+				flex-wrap: wrap;
+				.sources {
+					padding-bottom: 100px;
+					margin: 0 auto;
+				}
+				.doctors {
+					padding-bottom: 50px;
+					margin: 0 auto;
+				}
+			}
+			//container bottom styles
+			&__bottom {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				h3 {
+					margin: 0 auto;
+				}
+				.trust__merch {
+					display: flex;
+					flex-direction: column;
+					margin: 0 auto;
+					img {
+						margin: 10px;
+					}
+				}
 			}
 		}
 	}
@@ -278,23 +517,7 @@
 		}
 	}
 }
-@media screen and (min-width: 320px) and (max-width: 355px) {
-	.menu {
-		.navigation {
-			border-bottom: 2px solid #324b72;
-			&__name {
-				margin: 0 auto;
-			}
-			.menu__list {
-				margin: 0 auto;
-				padding-top: 20px;
-				.menu__list__item {
-					padding: 0 25px 0 0;
-				}
-			}
-		}
-	}
-}
+// Media  styles from 320  to 370
 @media screen and (min-width: 320px) and (max-width: 370px) {
 	// use section styles
 	.use {
@@ -309,3 +532,4 @@
 		}
 	}
 }
+
