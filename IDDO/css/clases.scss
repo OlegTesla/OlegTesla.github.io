@@ -1,0 +1,41 @@
+// main-colors
+$red: #ca3c3c;
+$title-color: #363636;
+$footer: #252525;
+// main classes
+.wrapper {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.df {
+	display: flex;
+}
+.jcsb {
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.jcsa {
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.aic {
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.jcc {
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.fww {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.hide {
+	display: none;
+}
+.viz {
+	opacity: 1;
+	transition: 1s;
+}

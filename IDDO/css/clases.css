@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.df {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}

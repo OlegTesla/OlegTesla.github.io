@@ -1,0 +1,824 @@
+@import "nullstyle.scss";
+// Импорт файла с классами и цветами на странице
+@import "clases.scss";
+// Импорт шрифтов 
+@import "fonts.scss";
+// Основные стили на странице
+
+// Стили для Header
+.header {
+	background-color: #000;
+	//Блок навигации
+	.nav {
+		height: 60px;
+		padding: 0px 15px;
+		max-width: 1200px;
+		margin: 0 auto;
+		.header__burger {
+			display: none;
+		}
+		// блок логотипа
+		.nav__logo {
+			color: #FFF;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			font-size: 30px;
+			text-transform: uppercase;
+			transition: all 0.3s ease 0s;
+		}
+		.nav__logo:hover {
+			color: $red;
+		}
+		.nav__container {
+			width: 100%;
+			padding-left: 100px;
+			// блок навигации страницы
+			.nav__navigation {
+				// .nav__links
+				.nav__links {
+					color: #FFF;
+				   font-family: 'ProximaRg';
+				   font-size: 14px;
+				   padding-right: 40px;
+				   transition: all 0.3s ease 0s;
+				}
+				.nav__links:hover {
+					color: $red;
+				}
+			}
+			// блок регистрации на сайте
+			.nav__info {
+				color: $red;
+				transition: all 0.3s ease 0s;
+				font-family: 'ProximaRg';
+			   font-size: 16px;
+				border: 1px solid $red;
+				padding: 7px 15px 7px 16px;
+				-webkit-border-radius: 7px;
+				        border-radius: 7px;
+			}
+			.nav__info:hover {
+				background-color: $red;
+				color: #fff;
+				border: 1px solid #fff;
+			}
+		}
+	}
+}
+// section video 
+.video {
+	min-height: 100vh;
+	padding-top: 300px;
+	width: 100%;
+	// background: url(../video/ocean.jpg)no-repeat center;
+	// -webkit-background-size: cover;
+	//      -o-background-size: cover;
+	//         background-size: cover;
+	.video__title {
+		display: flex;
+		    -webkit-align-items: center;
+		            align-items: center;
+		.video__link {
+			width: 100px;
+			height: 100px;
+			background: url(../img/play.png);
+		}
+		.video__name {
+			padding-left: 40px;
+		}
+		.video__text {
+			font-size: 50px;
+			color: #FFF;
+			font-family: 'ProximaTh';
+		}
+		.video__decription {
+			font-size: 16px;
+			color: $red;
+			font-family: 'ProximaRg';
+		}
+	}
+}
+// section services
+.services {
+	background-color: $red;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.services__title {
+		.services__name {
+			font-size: 72px;
+			color: #FFF;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 60px;
+		}
+		.line {
+			width: 105%;
+			height: 10px;
+			background-color: #FFF;
+		}
+	}
+	// cтили блока с контентом
+	.services__feature {
+		margin-left: 50px;
+		margin-bottom: 20px;
+		.services__item {
+			// стили для иконки
+			.services__icon {
+				border: 1px solid #fff;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+				    width: 100px;
+				    height: 100px;
+				    display: flex;
+				    -webkit-align-items: center;
+				            align-items: center;
+				    margin: 0 auto;
+				    margin-right: 20px;
+				    img {
+				    	margin: 0 auto;
+				    }
+			}
+			//стили для текста 
+			.services__text {
+				.services__main {
+					font-size: 16px;
+					font-family: 'ProximaRg';
+					font-weight: 700;
+					color: #FFF;
+					text-transform: uppercase;
+				}
+				.services__lorem {
+					font-size: 14px;
+					font-family: 'ProximaTn';
+					color: #FFF;
+					max-width: 240px;
+					padding-top: 15px;
+				}
+			}
+		}
+	}
+}
+// icons styles
+.icons {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #FFF;
+	.icons__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		.icons__item {
+			width: 35px;
+			height: 35px;
+			display: block;
+		}
+	}
+}
+// works 
+.works {
+	background-color: #EBEBEB;
+	padding-bottom: 100px;
+	.works__title {
+		padding-top: 70px;
+		font-size: 72px;
+		color: #363636;
+		font-family: 'ProximaRg';
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 60px;
+	}
+	.line {
+		width: 370px;
+		height: 10px;
+		background-color: #363636;
+	}
+	.works__tabs {
+		.tabs__items {
+			text-align: center;
+			.tabs__item {
+				width: 80px;
+				margin-top: 30px;
+				height: 30px;
+				border: 1px solid $red;
+				display: block;
+				line-height: 30px;
+				font-family: 'ProximaRg';
+				font-size: 14px;
+				color: $red;
+				border-radius: 8px;
+				margin-right: 10px;
+				margin-bottom: 40px;
+				transition: 0.4s linear;
+			}
+			.tabs__item:hover {
+				background-color: $red;
+				color: #FFF;
+				transition: 0.3s linear;
+			}
+		}
+	}
+	.tabs__body {
+		.tabs__block {
+			position: relative;
+			width: 370px;
+			height: 370px;
+			background-color: #CCC;
+			margin: 0px 15px 15px 0;
+			.tabs__text {
+				position: absolute;
+				bottom: 0;
+				background-color: #FFF;
+				width: 100%;
+				height: 20%;
+				display: none;
+				text-align: center;
+				transition: all 0.3s ease 0s;
+				.tabs__name {
+					font-size: 16px;
+					color: $red;
+					text-transform: uppercase;
+					font-family: 'ProximaRg';
+					font-weight: 700;
+					padding-top: 20px;
+					padding-bottom: 10px;
+				}
+				.tabs__description {
+					font-size: 14px;
+					font-family: 'ProximaRg';
+					font-weight: 700;
+					color: #CCC;
+				}
+			}
+		}
+		.tabs__block:hover {
+			.tabs__text {
+				transition: all 0.3s ease 0s;
+				display: block;
+			}
+		}
+	}
+}
+// slaider 
+.slaider {
+	background-color: #666;
+	padding-bottom: 50px;
+	.slaider__box {
+		text-align: center;
+		.slaider__content  h2{
+			font-size: 36px;
+			font-family: 'ProximaTh';
+			color: #FFF;
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+		.slaider__content img {
+			display: block;
+			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		.slaider__content span {
+			color: #FFF;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			text-transform: uppercase;	
+		}
+	}
+}
+// our team
+.team {
+	position: relative;
+	margin-bottom: 250px;
+	.team__header {
+		.team__title {
+			padding-top: 70px;
+			font-size: 72px;
+			color: #363636;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 60px;		
+		}
+			.line {
+			width: 370px;
+			height: 10px;
+			background-color: #363636;
+			margin-bottom: 50px;
+		}
+	}
+	.team__body {
+		position: relative;
+		.team__body-top {
+			width: 100%;
+			.team__item {
+				width: 100%;
+				.team__photo {
+					position: relative;
+					.team__social {
+						position: absolute;
+						display: none;
+						bottom: 60px;
+						right: -160px;
+						.team__twit,.team__face,.team__inst {
+							width: 50px;
+							display: inline-block;
+							height: 50px;
+							background-color: $red;
+							-webkit-border-radius: 50%;
+							        border-radius: 50%;
+							margin-left: 5px;
+						}
+						.team__face {
+							left: 60px;
+						}
+						.team__inst {
+							left: 120px;
+						}
+						.team__img {
+							display: block;
+							margin: 0 auto;
+							margin-top: 15px;
+							
+						}
+					}
+				}
+				.team__photo {
+					width: 170px;
+					height: 170px;
+					-webkit-border-radius: 50%;
+					        border-radius: 50%;
+					background-color: #ccc;
+				}
+				.team__photo:nth-child(2) {
+					left: -50px;
+				}
+				.team__photo:hover {
+					.team__social {
+						display: block;
+					}
+				}
+			}
+		}
+		.team__body-botom {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			padding-top: 40px;
+			.team__text {
+				position: absolute;
+				left: 85px;
+				.team__people {
+					font-size: 18px;
+					color: $red;
+					font-family: 'ProximaRg';
+					font-weight: 700;
+					padding-bottom: 10px;
+				}
+				.team__job {
+					font-size: 14px;
+					font-family: 'ProximaTh';
+					color: grey;
+					display: block;
+					padding-bottom: 20px;
+				}
+				.team__desc {
+					font-size: 14px;
+					font-family: 'ProximaTh';
+					color: #111;
+					max-width: 270px;
+					line-height: 20px;
+				}
+			}
+			.team__text:nth-child(2) {
+				left: 480px;
+			}
+			.team__text:nth-child(3) {
+				left: 880px;
+			}
+		}
+	}
+}
+// total 
+.total {
+	background-color: #666;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	.total__item {
+		color: #FFF;
+		text-align: center;
+		// .item__num
+		.item__num {
+			font-family: 'ProximaTh';
+			font-size: 72px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			text-transform: uppercase;
+			
+		}
+		// .item__name
+		.item__name {
+			font-family: 'ProximaRg';
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+}
+// skills
+.skills {
+	.skills__header {
+		margin-bottom: 100px;
+		.skills__title {
+			padding-top: 70px;
+			font-size: 72px;
+			color: #363636;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 60px;		
+		}
+		.line {
+			width: 370px;
+			height: 10px;
+			background-color: #363636;
+			margin-bottom: 50px;
+		}
+	}
+	// часть с прогрес баром
+	.skills__progres-top {
+		max-width: 770px;
+		max-height: 200px;
+		.skills__progres {
+			// стили для прогресс бара
+			max-height: 200px;
+			.round {
+				min-height: 170px;
+				position: relative;
+				margin-bottom: 20px;
+				margin-right: 30px;
+			}
+			.round strong {
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				margin-top: -50px;
+				transform: translate(-50%);
+				font-size: 20px;
+				color: $red;
+				font-weight: 100;
+			}
+			.round span {
+				display: block;
+				color: $red;
+				font-size: 17px;
+				margin-top: 10px;
+			}
+		}
+		// стили для кнопки
+		.btn {
+			margin: 0 auto;
+			display: block;
+			padding: 5px 10px;
+			font-size: 16px;
+			color: #000;
+			border: 1px solid $red;
+			background-color: #FFF;
+			border-radius: 5px;
+			transition: 0.3s linear;
+			font-family: 'ProximaRg';
+			letter-spacing: 0.3px;
+			margin-bottom: 20px;
+		}
+		.btn:hover {
+			background-color: $red;
+			color: #FFF;
+			transition: 0.3s linear;
+		}
+	}
+	//нижняя часть контента с текстом
+	.skills__progres-bottom {
+		max-width: 670px;
+		margin: 0 auto;
+		margin-left: 70px;
+		margin-right: 0;
+		.skills__title {
+			font-size: 18px;
+			font-weight: 700;
+			font-family: 'ProximaRg';
+			text-transform: uppercase;
+			color: $red;
+			margin-bottom: 10px;
+		}
+		.skills__desc, .skills__text	 {
+			font-size: 14px;
+			font-family: 'ProximaTh';
+			line-height: 20px;
+			display: block;
+			color: #7f7f7f;
+		}
+		.skills__text {
+			display: block;
+			margin-top: 10px;
+			color: #7f7f7f;
+		}
+	}
+	// выпадающие окна
+	.skills__colapse {
+		margin-left: 30px;
+		.accordion {
+			background-color: transparent;
+		    color: #444;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 100%;
+		    max-width: 370px;
+		    border: 1px solid grey;
+		    outline: none;
+		    font-size: 15px;
+		    transition: 0.4s;
+		    -webkit-border-radius: 10px;
+		            border-radius: 10px;
+		    .btn__block img {
+		    	padding-right: 20px;
+		    }
+		}
+			h2 {
+				font-size: 14px;
+				font-weight: 700;
+				font-family: 'ProximaRg';
+			}
+		}
+		.active, .accordion:focus {
+		    color: $red;
+		}
+		.panel {
+		    padding: 0 20px;
+		    background-color: white;
+		    max-height: 0;
+		    overflow: hidden;
+		    transition: max-height 0.2s ease-out;
+		    max-width: 370px;
+		    color: #000;
+		    font-size: 14px;
+		    font-family: 'ProximaTh';
+		    line-height: 20px;
+		    margin: 5px;
+		    p {
+		    	padding-top: 20px;
+		    	padding-bottom: 20px;
+		    }
+		}
+}
+// email styles
+.email {
+	background-color: $red;
+	margin-top: 150px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	.email__tittle {
+		font-family: 'ProximaTh';
+		font-size: 36px;
+		color: #FFF;
+		padding-right: 108px;
+	}
+	#btn__email {
+		display: block;
+		color: $red;
+		background-color: #FFF;
+		padding: 12px 9px;
+		font-family: 'ProximaRg'; 
+		font-size: 16px;
+		border: 1px solid transparent;
+		font-weight: 700;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+		transition: all 0.3s ease 0s;
+	}
+	#btn__email:hover {
+		background-color: #666;
+		color: #fff;
+		border: 1px solid #fff;
+	}
+
+// modal styles
+	#modal {
+		.fancybox-content {
+			width: 500px;
+			height: 500px;
+		}
+		.email__enter {
+			width: 300px;
+			border: 1px solid #000;
+		}	
+	}
+}
+// styles for modal window
+.swal-modal {
+	.swal-text {
+		font-size: 20px;
+	}
+	.swal-content__input {
+		background-color: $red;
+		color: #fff; 
+		font-size: 20px;	
+	}
+	.swal-button.swal-button--confirm {
+		background-color: #666;
+	}
+}
+// brand styles
+.brand {
+	background-color: #7F7F7F;
+	.brand__item {
+		display: block;
+		height: 95px;
+		width: 170px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background-color: #A6A6A6;
+		position: relative;
+		transition: 0.4s linear;
+		img {
+			display: block;
+			position: absolute;
+			top: 33%;
+			left: 6%;
+		}
+	}
+	.brand__item:hover {
+		background-color: #bdbbbb;
+		transition: 0.2s linear;
+	}
+	.brand__item:nth-child(3) img {
+		left: 10%;
+	}
+}
+// contact
+.contact {
+	background-color: #ebebeb;
+	padding-bottom: 100px;
+	// top content
+	.contact__header {
+		.contact__title {
+			padding-top: 70px;
+			font-size: 72px;
+			color: #363636;
+			font-family: 'ProximaRg';
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 60px;		
+		}
+		.line {
+			width: 370px;
+			height: 10px;
+			background-color: #363636;
+			margin-bottom: 50px;
+		}
+		.contact__street, .contact__num {
+			font-family: 'ProximaRg';
+			font-size: 16px;
+			color: #898989;
+			display: block;
+		}
+		.contact__num {
+			display: block;
+			margin-bottom: 20px;
+		}
+		.contact__social {
+			max-width: 220px;
+			padding-bottom: 20px;
+			.contact__item {
+				width: 20px;
+				margin: 0 auto;
+				height: 20px;
+			}
+		}
+	}
+	//bottom content
+	.contact__bottom {
+		// styles of form
+		.contact__form {
+			.contact__email,.contact__name {
+				border: 2px solid #000;
+				width: 370px;
+				padding: 17px 20px;
+				font-family: 'ProximaRg';
+				font-size: 16px;
+				font-weight: 700;
+				color: #000;
+				cursor: pointer;
+				background-color: transparent;
+				transition: all 0.3s ease 0s;
+			}
+			input::placeholder {
+				color: #000;
+			}
+			input:hover {
+				border: 2px solid $red;
+			}
+			textarea::placeholder {
+				color: #000;
+			}
+			.contact__name {
+				margin-left: 20px;
+			}
+			.contact__message {
+				margin-top: 30px;
+				.contact__mail {
+					background-color: transparent;
+					width: 764px;
+					height: 75px;
+					cursor: pointer;
+					border: 2px solid #000;
+					padding: 17px 0px 10px 17px;
+					resize: none;
+					font-family: 'ProximaRg';
+					font-size: 16px;
+					font-weight: 700;
+					color: #000;
+					transition: all 0.3s ease 0s;
+				}
+				textarea:hover {
+					border: 2px solid $red;
+				}
+			}
+		}
+		// styles of btn
+		.contact__btn {
+			position: relative;
+			margin-left: 30px;
+			height: 75px;
+			#contact__submit {
+				width: 370px;
+				position: absolute;
+				color: $red;
+				font-weight: 700;
+				font-family: 'ProximaRg';
+				letter-spacing: 0.5px;
+				font-size: 17px;
+				bottom: 2%;
+				height: 73px;
+				display: block;
+				background-color: #FFF;
+				transition: 0.4s linear;
+				text-align: center;
+				-webkit-border-radius: 10px;
+				        border-radius: 10px;
+			}
+			#contact__submit:hover {
+				background-color: $red;
+				color: #FFF;
+				transition: 0.4s linear;
+			}
+		}
+	}
+}
+
+// footer
+.footer {
+	background-color: #252525;
+	.footer__body {
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 20px;
+		.footer__title {
+			font-size: 30px;
+			font-weight: 700;
+			font-family: 'ProximaRg';
+			text-transform: uppercase;
+			color: #FFF;
+			display: inline-block;
+			padding-top: 50px;	
+			padding-bottom: 10px;
+			transition: all 0.3s ease 0s;
+		}
+		.footer__title:hover {
+			color: $red;
+		}
+		.footer__data, .footer__design {
+			color: #424242;
+			font-family: 'ProximaTh';
+			font-size: 14px;
+			padding-bottom: 5px;
+		}
+		.footer__btn {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background-color: transparent;
+			border-left: 2px solid $red;
+			border-top: 2px solid $red;
+			margin: 0 auto;
+			margin-top: 10px;
+			transform: rotate(44deg);
+		}
+	}
+}
+// адаптив 
+@import "mobile.scss";
+
+
+
