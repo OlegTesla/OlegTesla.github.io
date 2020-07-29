@@ -1,4 +1,4 @@
-@import "nullstyle.scss";
+	@import "nullstyle.scss";
 // Импорт файла с классами и цветами на странице
 @import "clases.scss";
 // Импорт шрифтов 
@@ -222,6 +222,7 @@
 			position: relative;
 			width: 370px;
 			height: 370px;
+			cursor: pointer;
 			background-color: #CCC;
 			margin: 0px 15px 15px 0;
 			.tabs__text {
@@ -229,8 +230,8 @@
 				bottom: 0;
 				background-color: #FFF;
 				width: 100%;
-				height: 20%;
-				display: none;
+				height: 0;
+				opacity: 0;
 				text-align: center;
 				transition: all 0.3s ease 0s;
 				.tabs__name {
@@ -249,11 +250,15 @@
 					color: #CCC;
 				}
 			}
+			img {
+				width: 100%;
+			}
 		}
 		.tabs__block:hover {
 			.tabs__text {
 				transition: all 0.3s ease 0s;
-				display: block;
+				opacity: 1;
+				height: 20%;
 			}
 		}
 	}
@@ -319,8 +324,9 @@
 					position: relative;
 					.team__social {
 						position: absolute;
-						display: none;
+						opacity: 0;
 						bottom: 60px;
+						transition: all 0.3s ease 0s;
 						right: -160px;
 						.team__twit,.team__face,.team__inst {
 							width: 50px;
@@ -357,7 +363,8 @@
 				}
 				.team__photo:hover {
 					.team__social {
-						display: block;
+						opacity: 1;
+						transition: all 0.3s ease 0s;
 					}
 				}
 			}
@@ -544,14 +551,38 @@
 		    .btn__block img {
 		    	padding-right: 20px;
 		    }
+		    .plus {
+		    	width: 6px;
+		    	height: 1px;
+		    	background-color: #000;
+		    	display: block;
+		    	position: relative;
+		    	transition: all 0.3s ease 0s;
+		    }
+		    .plus:before {
+		    	content: "";
+		    	position: absolute;
+		    	width: 6px;
+		    	top: 0;
+		    	right: 0;
+		    	background-color: #000;
+		    	height: 1px;
+		    	opacity: 1;
+		    	transform: rotate(90deg);
+		    	transition: all 0.3s ease 0s;
+		    }
+		   .plus.minus:before {
+				transform: rotate(0deg);
+			}
 		}
+
 			h2 {
 				font-size: 14px;
 				font-weight: 700;
 				font-family: 'ProximaRg';
 			}
 		}
-		.active, .accordion:focus {
+		.active,.accordion:focus {
 		    color: $red;
 		}
 		.panel {
@@ -709,7 +740,6 @@
 				font-size: 16px;
 				font-weight: 700;
 				color: #000;
-				cursor: pointer;
 				background-color: transparent;
 				transition: all 0.3s ease 0s;
 			}
@@ -731,7 +761,6 @@
 					background-color: transparent;
 					width: 764px;
 					height: 75px;
-					cursor: pointer;
 					border: 2px solid #000;
 					padding: 17px 0px 10px 17px;
 					resize: none;
@@ -799,7 +828,7 @@
 			color: $red;
 		}
 		.footer__data, .footer__design {
-			color: #424242;
+			color: #666;
 			font-family: 'ProximaTh';
 			font-size: 14px;
 			padding-bottom: 5px;

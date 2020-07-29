@@ -289,7 +289,7 @@
 					border: 1px solid #fff;
 					color: #fff;
 					left: 0;
-					top: -100%;
+					top: -110%;
 					font-size: 24px;	
 					transition: all 0.3s ease 0s;
 				}
@@ -328,6 +328,20 @@
 		.video__text {
 			padding-top: 10px;
 			padding-bottom: 10px;
+		}
+	}
+
+	// icons 
+	.icons {
+		.icons__container  {
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+			    .icons__item {
+			    	margin: 2px;
+			    	display: block;
+			    }
 		}
 	}
 	// services
