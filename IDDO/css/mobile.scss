@@ -179,6 +179,7 @@
 					margin: 0 auto;
 					width: 350px;
 					height: 350px;
+					margin-bottom: 5px;
 					background-color: transparent;
 					img {
 						width: 350px;
@@ -425,16 +426,16 @@
 	}
 	// team
 	.team {
-			.team__header {
-				.team__title {
-					font-size: 45px;
-					line-height: 40px;
-				}
-				.line {
-					width: 129px;
-					height: 6px;
-				}
+		.team__header {
+			.team__title {
+				font-size: 45px;
+				line-height: 40px;
 			}
+			.line {
+				width: 129px;
+				height: 6px;
+			}
+		}
 		.team__body  {
 			display: flex;
 			-webkit-flex-wrap: wrap;
@@ -556,7 +557,6 @@
 		.contact__header {
 			.contact__title,.contact__street,.contact__num {
 				text-align: center;
-			
 			}
 			.contact__title {
 				font-size: 45px;
@@ -700,11 +700,10 @@
 			    	}
 			    }
 			    .contact__btn {
-			    	width: 300px;
 			    	margin: 0 auto;
 			    	margin-top: 20px;
 			    	#contact__submit {
-			    		width: 300px;
+			    		width: 250px;
 			    		margin: 0 auto;
 			    	}
 			    }
@@ -712,8 +711,8 @@
 		}
 }
 @media (min-width: 390px) and (max-width: 539px) {
-// skills
-	.skills {
+	// skills
+		.skills {
 		.skills__body  {
 		    .skills__progres-top {
 		    	.skills__progres-bottom {

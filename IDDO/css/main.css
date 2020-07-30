@@ -614,7 +614,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-left: 70px;
   margin-right: 0;
-  text-align: center;
 }
 .skills .skills__progres-bottom .skills__title {
   font-size: 18px;
@@ -1081,6 +1080,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     width: 350px;
     height: 350px;
+    margin-bottom: 5px;
     background-color: transparent;
   }
   .works .works__tabs .tabs__body .tabs__block img {
@@ -1506,12 +1506,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 220px;
   }
   .contact .contact__bottom .contact__btn {
-    width: 300px;
     margin: 0 auto;
     margin-top: 20px;
   }
   .contact .contact__bottom .contact__btn #contact__submit {
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
   }
 }
