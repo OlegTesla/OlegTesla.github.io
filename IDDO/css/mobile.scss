@@ -657,9 +657,8 @@
 			.skills__body  {
 			    .skills__progres-top {
 			    	.skills__progres-bottom {
-			    		margin-top: 50px;
 			    		margin-left: 0;
-			    		width: 200px;
+			    		width: auto;
 			    		text-align: center;
 			    	}
 			    }
@@ -667,7 +666,7 @@
 		    	margin-left: 0;
 		    	width: 300px;
 		    	margin: 0 auto;
-		    	margin-top: 1150px;
+		    	margin-top: 1350px;
 		    }
 			}
 		}
@@ -711,4 +710,24 @@
 			    }
 			}
 		}
+}
+@media (min-width: 390px) and (max-width: 539px) {
+// skills
+	.skills {
+		.skills__body  {
+		    .skills__progres-top {
+		    	.skills__progres-bottom {
+		    		margin-left: 0;
+		    		width: auto;
+		    		text-align: center;
+		    	}
+		    }
+	    .skills__colapse {
+	    	margin-left: 0;
+	    	width: 300px;
+	    	margin: 0 auto;
+	    	margin-top: 1200px;
+	    }
+		}
+	}
 }

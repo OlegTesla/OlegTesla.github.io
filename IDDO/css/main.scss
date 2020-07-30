@@ -357,7 +357,17 @@
 							background-color: $red;
 							-webkit-border-radius: 50%;
 							        border-radius: 50%;
+							transition: all 0.3s ease 0s;
 							margin-left: 5px;
+						}
+						.team__inst:hover {
+							background-color: #E54747;
+						}
+						.team__face:hover {
+							background-color: #E54747;
+						}
+						.team__twit:hover {
+							background-color: #E54747;
 						}
 						.team__face {
 							left: 60px;
@@ -534,6 +544,7 @@
 		margin: 0 auto;
 		margin-left: 70px;
 		margin-right: 0;
+		text-align: center;
 		.skills__title {
 			font-size: 18px;
 			font-weight: 700;
@@ -685,7 +696,7 @@
 		font-size: 20px;
 	}
 	.swal-content__input {
-		color: #fff; 
+		color: #000; 
 		font-size: 20px;	
 	}
 	.swal-button.swal-button--confirm {

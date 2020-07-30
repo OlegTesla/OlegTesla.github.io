@@ -445,7 +445,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   background-color: #ca3c3c;
   border-radius: 50%;
+  transition: all 0.3s ease 0s;
   margin-left: 5px;
+}
+.team .team__body .team__item .team__photo .team__social .team__inst:hover {
+  background-color: #E54747;
+}
+.team .team__body .team__item .team__photo .team__social .team__face:hover {
+  background-color: #E54747;
+}
+.team .team__body .team__item .team__photo .team__social .team__twit:hover {
+  background-color: #E54747;
 }
 .team .team__body .team__item .team__photo .team__social .team__face {
   left: 60px;
@@ -604,6 +614,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-left: 70px;
   margin-right: 0;
+  text-align: center;
 }
 .skills .skills__progres-bottom .skills__title {
   font-size: 18px;
@@ -745,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .swal-modal .swal-content__input {
-  color: #fff;
+  color: #000;
   font-size: 20px;
 }
 .swal-modal .swal-button.swal-button--confirm {
@@ -1463,16 +1474,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .skills .skills__body .skills__progres-top .skills__progres-bottom {
-    margin-top: 50px;
     margin-left: 0;
-    width: 200px;
+    width: auto;
     text-align: center;
   }
   .skills .skills__body .skills__colapse {
     margin-left: 0;
     width: 300px;
     margin: 0 auto;
-    margin-top: 1150px;
+    margin-top: 1350px;
   }
 
   .contact .contact__header .contact__title {
@@ -1503,5 +1513,18 @@ h1, h2, h3, h4, h5, h6 {
   .contact .contact__bottom .contact__btn #contact__submit {
     width: 300px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 390px) and (max-width: 539px) {
+  .skills .skills__body .skills__progres-top .skills__progres-bottom {
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+  }
+  .skills .skills__body .skills__colapse {
+    margin-left: 0;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 1200px;
   }
 }
