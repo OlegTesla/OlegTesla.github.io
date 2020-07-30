@@ -175,8 +175,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .nav .nav__container .nav__info:hover {
   background-color: #ca3c3c;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #FFF;
+  transition: 0.4s linear;
 }
 
 .video {
@@ -385,8 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team {
-  position: relative;
-  margin-bottom: 250px;
+  padding-bottom: 50px;
 }
 .team .team__header .team__title {
   padding-top: 70px;
@@ -405,24 +404,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team .team__body {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.team .team__body .team__body-top {
-  width: 100%;
+.team .team__body .team__item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.team .team__body .team__body-top .team__item {
-  width: 100%;
-}
-.team .team__body .team__body-top .team__item .team__photo {
+.team .team__body .team__item .team__photo {
   position: relative;
 }
-.team .team__body .team__body-top .team__item .team__photo .team__social {
+.team .team__body .team__item .team__photo .team__social {
   position: absolute;
   opacity: 0;
   bottom: 60px;
   transition: all 0.3s ease 0s;
   right: -160px;
 }
-.team .team__body .team__body-top .team__item .team__photo .team__social .team__twit, .team .team__body .team__body-top .team__item .team__photo .team__social .team__face, .team .team__body .team__body-top .team__item .team__photo .team__social .team__inst {
+.team .team__body .team__item .team__photo .team__social .team__twit, .team .team__body .team__item .team__photo .team__social .team__face, .team .team__body .team__item .team__photo .team__social .team__inst {
   width: 50px;
   display: inline-block;
   height: 50px;
@@ -430,66 +432,67 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   margin-left: 5px;
 }
-.team .team__body .team__body-top .team__item .team__photo .team__social .team__face {
+.team .team__body .team__item .team__photo .team__social .team__face {
   left: 60px;
 }
-.team .team__body .team__body-top .team__item .team__photo .team__social .team__inst {
+.team .team__body .team__item .team__photo .team__social .team__inst {
   left: 120px;
 }
-.team .team__body .team__body-top .team__item .team__photo .team__social .team__img {
+.team .team__body .team__item .team__photo .team__social .team__img {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
 }
-.team .team__body .team__body-top .team__item .team__photo {
+.team .team__body .team__item .team__photo {
   width: 170px;
   height: 170px;
   border-radius: 50%;
   background-color: #ccc;
+  margin: 5px;
 }
-.team .team__body .team__body-top .team__item .team__photo:nth-child(2) {
+.team .team__body .team__item .team__photo:nth-child(2) {
   left: -50px;
 }
-.team .team__body .team__body-top .team__item .team__photo:hover .team__social {
+.team .team__body .team__item .team__photo:hover .team__social {
   opacity: 1;
   transition: all 0.3s ease 0s;
 }
-.team .team__body .team__body-botom {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 40px;
+.team .team__body .team__item .team__text {
+  text-align: center;
+  padding-top: 20px;
+  margin: 5px;
 }
-.team .team__body .team__body-botom .team__text {
-  position: absolute;
-  left: 85px;
-}
-.team .team__body .team__body-botom .team__text .team__people {
+.team .team__body .team__item .team__text .team__people {
   font-size: 18px;
   color: #ca3c3c;
   font-family: "ProximaRg";
   font-weight: 700;
   padding-bottom: 10px;
 }
-.team .team__body .team__body-botom .team__text .team__job {
+.team .team__body .team__item .team__text .team__job {
   font-size: 14px;
   font-family: "ProximaTh";
   color: grey;
-  display: block;
   padding-bottom: 20px;
 }
-.team .team__body .team__body-botom .team__text .team__desc {
+.team .team__body .team__item .team__text .team__desc {
   font-size: 14px;
   font-family: "ProximaTh";
   color: #111;
   max-width: 270px;
   line-height: 20px;
 }
-.team .team__body .team__body-botom .team__text:nth-child(2) {
+.team .team__body .team__item .team__text:nth-child(2) {
   left: 480px;
 }
-.team .team__body .team__body-botom .team__text:nth-child(3) {
+.team .team__body .team__item .team__text:nth-child(3) {
   left: 880px;
+}
+.team .team__body .team__body-botom {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
 }
 
 .total {
@@ -684,8 +687,11 @@ h1, h2, h3, h4, h5, h6 {
 .email .email__tittle {
   font-family: "ProximaTh";
   font-size: 36px;
-  color: #FFF;
-  padding-right: 108px;
+  color: #000;
+  display: block;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 .email #btn__email {
   display: block;
@@ -700,9 +706,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease 0s;
 }
 .email #btn__email:hover {
-  background-color: #666;
-  color: #fff;
   border: 1px solid #fff;
+  background-color: #ca3c3c;
+  color: #FFF;
+  transition: 0.4s linear;
 }
 .email #modal .fancybox-content {
   width: 500px;
@@ -717,7 +724,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .swal-modal .swal-content__input {
-  background-color: #ca3c3c;
   color: #fff;
   font-size: 20px;
 }
@@ -734,7 +740,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 170px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #A6A6A6;
   position: relative;
   transition: 0.4s linear;
 }
@@ -743,10 +748,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 33%;
   left: 6%;
-}
-.brand .brand__item:hover {
-  background-color: #bdbbbb;
-  transition: 0.2s linear;
 }
 .brand .brand__item:nth-child(3) img {
   left: 10%;
@@ -804,7 +805,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact .contact__bottom .contact__form input::placeholder {
   color: #000;
 }
-.contact .contact__bottom .contact__form input:hover {
+.contact .contact__bottom .contact__form input:focus {
   border: 2px solid #ca3c3c;
 }
 .contact .contact__bottom .contact__form textarea::placeholder {
@@ -829,7 +830,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   transition: all 0.3s ease 0s;
 }
-.contact .contact__bottom .contact__form .contact__message textarea:hover {
+.contact .contact__bottom .contact__form .contact__message textarea:focus {
   border: 2px solid #ca3c3c;
 }
 .contact .contact__bottom .contact__btn {
@@ -838,15 +839,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 75px;
 }
 .contact .contact__bottom .contact__btn #contact__submit {
-  width: 370px;
+  width: 300px;
   position: absolute;
   color: #ca3c3c;
   font-weight: 700;
   font-family: "ProximaRg";
   letter-spacing: 0.5px;
   font-size: 17px;
-  bottom: 2%;
-  height: 73px;
+  padding: 17px 20px;
   display: block;
   background-color: #FFF;
   transition: 0.4s linear;
@@ -1201,6 +1201,9 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
+  .services {
+    padding-top: 20px;
+  }
   .services .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1211,10 +1214,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .services .wrapper .services__title .services__name {
     text-align: center;
+    font-size: 45px;
   }
   .services .wrapper .line {
     width: auto;
     margin: 0 auto;
+    height: 6px;
   }
   .services .wrapper .services__content .services__feature {
     margin: 0 auto;
@@ -1228,10 +1233,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .works .works__tabs .works__title {
     text-align: center;
+    font-size: 45px;
+    line-height: 40px;
+    padding-top: 30px;
   }
   .works .works__tabs .line {
     width: auto;
     margin: 0 auto;
+    height: 6px;
   }
   .works .works__tabs .tabs__items .tabs__item {
     margin: 0 auto;
@@ -1240,6 +1249,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .works .works__tabs .tabs__body .tabs__block {
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 300px;
     height: 300px;
     background-color: transparent;
@@ -1249,55 +1259,28 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     padding: 10px;
   }
+  .works .works__tabs .tabs__body .tabs__block:hover .tabs__text {
+    height: 25%;
+  }
 
-  .team {
-    margin-bottom: 50px;
-  }
-  .team .team__header {
-    text-align: center;
-  }
-  .team .team__header .line {
-    width: auto;
-    margin: 0 auto;
-  }
   .team .team__body {
-    position: static;
-    margin-top: 20px;
-  }
-  .team .team__body .team__body-top {
     display: flex;
     flex-wrap: wrap;
   }
-  .team .team__body .team__body-top .team__item {
-    width: 170px;
-    height: 170px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  .team .team__body .team__item {
+    width: 100%;
   }
-  .team .team__body .team__body-top .team__item .team__photo .team__social {
-    bottom: 60px;
-    right: 20px;
-    z-index: 20;
+  .team .team__body .team__item .team__photo .team__social {
+    right: 0px;
+    left: 4px;
+    bottom: 0;
   }
-  .team .team__body .team__body-top .team__item .team__photo .team__social .team__twit, .team .team__body .team__body-top .team__item .team__photo .team__social .team__face, .team .team__body .team__body-top .team__item .team__photo .team__social .team__inst {
-    width: 35px;
-    height: 35px;
+  .team .team__body .team__item .team__photo .team__social .team__twit, .team .team__body .team__item .team__photo .team__social .team__face, .team .team__body .team__item .team__photo .team__social .team__inst {
+    width: 45px;
+    height: 45px;
   }
-  .team .team__body .team__body-top .team__item .team__photo .team__social .team__twit img, .team .team__body .team__body-top .team__item .team__photo .team__social .team__face img, .team .team__body .team__body-top .team__item .team__photo .team__social .team__inst img {
-    margin-top: 6px;
-  }
-  .team .team__body .team__body-botom {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding-top: 0;
-    margin-top: 50px;
-  }
-  .team .team__body .team__body-botom .team__text {
-    position: static;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
+  .team .team__body .team__item .team__photo .team__social .team__twit .team__img, .team .team__body .team__item .team__photo .team__social .team__face .team__img, .team .team__body .team__item .team__photo .team__social .team__inst .team__img {
+    margin-top: 12px;
   }
 
   .total .wrapper {
@@ -1313,9 +1296,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 20px;
   }
+  .skills .skills__header .skills__title {
+    font-size: 45px;
+    line-height: 40px;
+  }
   .skills .skills__header .line {
     width: auto;
     margin: 0 auto;
+    height: 6px;
   }
   .skills .skills__body {
     display: flex;
@@ -1340,6 +1328,7 @@ h1, h2, h3, h4, h5, h6 {
   .skills .skills__body .skills__progres-top .skills__progres-bottom {
     margin-top: 50px;
     margin-left: 0;
+    width: 100%;
   }
   .skills .skills__body .skills__colapse {
     margin-left: 0;
@@ -1348,8 +1337,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1050px;
   }
 
-  .email .email__tittle {
-    padding-right: 20px;
+  .email .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .email .wrapper .email__tittle {
+    font-size: 28px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .brand .wrapper {
@@ -1363,10 +1359,15 @@ h1, h2, h3, h4, h5, h6 {
   .contact .contact__header .contact__title, .contact .contact__header .contact__street, .contact .contact__header .contact__num {
     text-align: center;
   }
+  .contact .contact__header .contact__title {
+    font-size: 45px;
+    line-height: 40px;
+  }
   .contact .contact__header .line {
     margin: 0 auto;
     margin-bottom: 20px;
     width: auto;
+    height: 6px;
   }
   .contact .contact__header .contact__social {
     margin: 0 auto;
@@ -1430,6 +1431,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
     margin-left: 0;
     width: 200px;
+    text-align: center;
   }
   .skills .skills__body .skills__colapse {
     margin-left: 0;
@@ -1439,7 +1441,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact .contact__header .contact__title {
-    font-size: 60px;
+    font-size: 45px;
+    line-height: 40px;
   }
   .contact .contact__bottom .contact__form {
     margin: 0 auto;
