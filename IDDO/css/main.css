@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.9s;
 }
 .icons .icons__container .icons__item:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .works {
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 370px;
   height: 370px;
   cursor: pointer;
-  background-color: #CCC;
+  background-color: #cccccc;
   margin: 0px 15px 15px 0;
 }
 .works .tabs__body .tabs__block .tabs__text {
@@ -451,6 +451,27 @@ h1, h2, h3, h4, h5, h6 {
 .team .team__body .team__item .team__photo .team__social .team__inst:hover {
   background-color: #E54747;
 }
+.team .team__body .team__item .team__photo .team__social .team__inst a {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.team .team__body .team__item .team__photo .team__social .team__twit a {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.team .team__body .team__item .team__photo .team__social .team__face a {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
 .team .team__body .team__item .team__photo .team__social .team__face:hover {
   background-color: #E54747;
 }
@@ -464,9 +485,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 120px;
 }
 .team .team__body .team__item .team__photo .team__social .team__img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team .team__body .team__item .team__photo {
   width: 170px;
@@ -714,7 +735,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   color: #fff;
   display: block;
-  padding: 0px 10px 0px 10px;
   background-color: transparent;
   margin-right: 20px;
 }
@@ -772,6 +792,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
   transition: 0.4s linear;
 }
 .brand .brand__item img {
@@ -779,6 +800,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 33%;
   left: 6%;
+}
+.brand .brand__item:hover {
+  transform: scale(1.1);
 }
 .brand .brand__item:nth-child(3) img {
   left: 10%;
@@ -938,7 +962,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .team .team__header .line {
-    width: auto;
     margin: 0 auto;
   }
   .team .team__body {
@@ -985,7 +1008,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
   }
   .skills .skills__header .line {
-    width: auto;
     margin: 0 auto;
   }
   .skills .skills__body {
@@ -1028,7 +1050,6 @@ h1, h2, h3, h4, h5, h6 {
   .contact .contact__header .line {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: auto;
   }
   .contact .contact__header .contact__social {
     margin: 0 auto;
@@ -1068,7 +1089,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .works .works__tabs .line {
-    width: auto;
     margin: 0 auto;
   }
   .works .works__tabs .tabs__items .tabs__item {
@@ -1258,6 +1278,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     margin-top: 10px;
   }
+  .services .wrapper .services__content .services__feature .services__text {
+    width: calc(100% - 60px);
+    padding-left: 15px;
+  }
+  .services .wrapper .services__content .services__feature .services__icon {
+    margin-right: 0;
+  }
 
   .icons .icons__container {
     padding-left: 10px;
@@ -1316,13 +1343,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 4px;
     bottom: 0;
   }
-  .team .team__body .team__item .team__photo .team__social .team__twit, .team .team__body .team__item .team__photo .team__social .team__face, .team .team__body .team__item .team__photo .team__social .team__inst {
-    width: 45px;
-    height: 45px;
-  }
-  .team .team__body .team__item .team__photo .team__social .team__twit .team__img, .team .team__body .team__item .team__photo .team__social .team__face .team__img, .team .team__body .team__item .team__photo .team__social .team__inst .team__img {
-    margin-top: 12px;
-  }
 
   .total .wrapper {
     display: flex;
@@ -1370,6 +1390,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
     margin-left: 0;
     width: 100%;
+    text-align: center;
   }
   .skills .skills__body .skills__colapse {
     margin-left: 0;
@@ -1434,7 +1455,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 300px;
   }
   .contact .contact__bottom .contact__btn {
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -1497,13 +1518,13 @@ h1, h2, h3, h4, h5, h6 {
   .contact .contact__bottom .contact__form .contact__email, .contact .contact__bottom .contact__form .contact__name {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 220px;
+    width: 280px;
   }
   .contact .contact__bottom .contact__form .contact__message {
     margin-top: 0;
   }
   .contact .contact__bottom .contact__form .contact__message .contact__mail {
-    width: 220px;
+    width: 280px;
   }
   .contact .contact__bottom .contact__btn {
     margin: 0 auto;

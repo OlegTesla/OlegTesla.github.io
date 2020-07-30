@@ -184,7 +184,7 @@
 			transition: 0.9s;
 		}
 		.icons__item:hover {
-			transform: scale(1.5);
+			transform: scale(1.1);
 		}
 	}
 }
@@ -237,7 +237,7 @@
 			width: 370px;
 			height: 370px;
 			cursor: pointer;
-			background-color: #CCC;
+			background-color: #cccccc;
 			margin: 0px 15px 15px 0;
 			.tabs__text {
 				position: absolute;
@@ -363,6 +363,33 @@
 						.team__inst:hover {
 							background-color: #E54747;
 						}
+						.team__inst a {
+							width: 50px;
+							display: flex;
+							-webkit-justify-content: center;
+							        justify-content: center;
+							-webkit-align-items: center;
+							        align-items: center;
+							height: 50px;
+						}
+						.team__twit a {
+							width: 50px;
+							display: flex;
+							-webkit-justify-content: center;
+							        justify-content: center;
+							-webkit-align-items: center;
+							        align-items: center;
+							height: 50px;
+						}
+						.team__face a {
+							width: 50px;
+							display: flex;
+							-webkit-justify-content: center;
+							        justify-content: center;
+							-webkit-align-items: center;
+							        align-items: center;
+							height: 50px;
+						}
 						.team__face:hover {
 							background-color: #E54747;
 						}
@@ -376,9 +403,11 @@
 							left: 120px;
 						}
 						.team__img {
-							display: block;
-							margin: 0 auto;
-							margin-top: 15px;
+							display: flex;
+							-webkit-justify-content: center;
+							        justify-content: center;
+							    -webkit-align-items: center;
+							            align-items: center;
 							
 						}
 					}
@@ -647,7 +676,6 @@
 		font-size: 36px;
 		color: #fff;
 		display: block;
-		padding: 0px 10px 0px 10px;
 		background-color: transparent;
 		margin-right: 20px;
 	}
@@ -712,13 +740,18 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 		position: relative;
+		overflow: hidden;
 		transition: 0.4s linear;
+		
 		img {
 			display: block;
 			position: absolute;
 			top: 33%;
 			left: 6%;
 		}
+	}
+	.brand__item:hover {
+		transform: scale(1.1);
 	}
 	.brand__item:nth-child(3) img {
 		left: 10%;
