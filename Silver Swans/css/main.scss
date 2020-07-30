@@ -1,0 +1,30 @@
+// импорт обнуления стилей
+@import "nullstyle.scss";
+// импорт шрифтов
+@import "fonts.scss";
+// импорт готовых классов
+@import "clasess.scss";
+
+html {
+	font-size: 15px;
+}
+body {
+	margin: 0;
+	font-size: 1rem;
+	color: $black;
+}
+// container 
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+
+
+
+// Sections
+@import "sections/header.scss";

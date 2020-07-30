@@ -1,0 +1,48 @@
+// header 
+.header {
+	padding: 2rem 0;
+	background: url('../images/header/BG.svg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	height: 100vh;
+	&__inner {
+    .nav {
+    	display: flex;
+    	-webkit-justify-content: space-between;
+    	        justify-content: space-between;
+    	    -webkit-align-items: center;
+    	            align-items: center;
+    	&__link {
+    		 color: $white;
+    		 font-family: 'LouisGeorgeCafe';
+    		 font-size: 1.27rem;
+    		 text-transform: uppercase;
+    		 font-weight: 700;
+    		 
+    		 position: relative;
+    		 
+    		 &:after {
+    		 	content: "";
+    		 	width: 0;
+    		 	height: 2px;
+    		 	background-color: $white;
+    		 	
+    		 	position: absolute;
+    		 	bottom: -10px;
+    		 	right: 0;
+    		 	z-index: 1;
+    		 	
+    		 	transition: width .2s linear;
+    		 }
+
+    		 &:hover {
+    		 	&:after {
+    		 		width: 100%;
+    		 	}
+    		 }
+    	 }
+     }
+	}
+}
