@@ -139,6 +139,9 @@ h1, h2, h3, h4, h5, h6 {
 .header .nav .header__burger {
   display: none;
 }
+.header .nav .mfp-hide {
+  display: none !important;
+}
 .header .nav .nav__logo {
   color: #FFF;
   font-family: "ProximaRg";
@@ -257,6 +260,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
 }
 
+#demo {
+  width: 20px;
+  height: 20px;
+  background-color: #ca3c3c;
+  display: block;
+}
+
 .icons {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -270,6 +280,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 35px;
   height: 35px;
   display: block;
+  overflow: hidden;
+  transition: 0.9s;
+}
+.icons .icons__container .icons__item:hover {
+  transform: scale(1.5);
 }
 
 .works {
@@ -419,10 +434,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team .team__body .team__item .team__photo .team__social {
   position: absolute;
+  display: flex;
   opacity: 0;
   bottom: 60px;
   transition: all 0.3s ease 0s;
-  right: -160px;
 }
 .team .team__body .team__item .team__photo .team__social .team__twit, .team .team__body .team__item .team__photo .team__social .team__face, .team .team__body .team__item .team__photo .team__social .team__inst {
   width: 50px;
@@ -687,11 +702,17 @@ h1, h2, h3, h4, h5, h6 {
 .email .email__tittle {
   font-family: "ProximaTh";
   font-size: 36px;
-  color: #000;
+  color: #fff;
   display: block;
   padding: 0px 10px 0px 10px;
-  border-radius: 10px;
+  background-color: transparent;
   margin-right: 20px;
+}
+.email .email__tittle:focus {
+  border-bottom: 1px solid #fff;
+}
+.email .email__tittle::placeholder {
+  color: #FFF;
 }
 .email #btn__email {
   display: block;
@@ -1215,9 +1236,10 @@ h1, h2, h3, h4, h5, h6 {
   .services .wrapper .services__title .services__name {
     text-align: center;
     font-size: 45px;
+    line-height: 40px;
   }
   .services .wrapper .line {
-    width: auto;
+    width: 215px;
     margin: 0 auto;
     height: 6px;
   }
@@ -1238,7 +1260,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 30px;
   }
   .works .works__tabs .line {
-    width: auto;
+    width: 163px;
     margin: 0 auto;
     height: 6px;
   }
@@ -1263,6 +1285,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 25%;
   }
 
+  .team .team__header .team__title {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .team .team__header .line {
+    width: 129px;
+    height: 6px;
+  }
   .team .team__body {
     display: flex;
     flex-wrap: wrap;
@@ -1301,7 +1331,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 40px;
   }
   .skills .skills__header .line {
-    width: auto;
+    width: 146px;
     margin: 0 auto;
     height: 6px;
   }
@@ -1366,7 +1396,7 @@ h1, h2, h3, h4, h5, h6 {
   .contact .contact__header .line {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: auto;
+    width: 205px;
     height: 6px;
   }
   .contact .contact__header .contact__social {
@@ -1405,7 +1435,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 320px) and (max-width: 539px) {
   .services .wrapper .services__title .services__name {
-    font-size: 60px;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .services .wrapper .services__title .line {
+    width: 215px;
+    height: 6px;
   }
   .services .wrapper .services__content .services__feature {
     margin: 0 auto;

@@ -358,10 +358,11 @@
 			    	.services__name {
 			    		text-align: center;
 			    		font-size: 45px;
+			    		line-height: 40px;
 			    	}
 			    }
 			    .line {
-			    	width: auto;
+			    	width: 215px;
 			    	margin: 0 auto;
 			    	height: 6px;
 			    }
@@ -390,7 +391,7 @@
 				padding-top: 30px;
 			}
 			.line {
-				width: auto;
+				width: 163px;
 				margin: 0 auto;
 				height: 6px;
 			}
@@ -424,6 +425,16 @@
 	}
 	// team
 	.team {
+			.team__header {
+				.team__title {
+					font-size: 45px;
+					line-height: 40px;
+				}
+				.line {
+					width: 129px;
+					height: 6px;
+				}
+			}
 		.team__body  {
 			display: flex;
 			-webkit-flex-wrap: wrap;
@@ -471,7 +482,7 @@
 				line-height: 40px;
 			}
 			.line {
-				width: auto;
+				width: 146px;
 				margin: 0 auto;
 				height: 6px;
 			}
@@ -554,7 +565,7 @@
 			.line {
 				margin: 0 auto;
 				margin-bottom: 20px;
-				width: auto;
+				width: 205px;
 				height: 6px;
 			}
 			.contact__social {
@@ -604,7 +615,12 @@
 			.wrapper {
 				.services__title {
 					.services__name {
-						font-size: 60px;
+						font-size: 45px;
+						line-height: 40px;
+					}
+					.line {
+						width: 215px;
+						height: 6px;
 					}
 				}
 		    .services__content  {

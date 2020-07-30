@@ -17,6 +17,9 @@
 		.header__burger {
 			display: none;
 		}
+		.mfp-hide {
+			display: none !important;
+		}
 		// блок логотипа
 		.nav__logo {
 			color: #FFF;
@@ -159,6 +162,12 @@
 		}
 	}
 }
+#demo {
+	width: 20px;
+	height: 20px;
+	background-color: $red;
+	display: block;
+}
 // icons styles
 .icons {
 	padding-top: 40px;
@@ -171,6 +180,11 @@
 			width: 35px;
 			height: 35px;
 			display: block;
+			overflow: hidden;
+			transition: 0.9s;
+		}
+		.icons__item:hover {
+			transform: scale(1.5);
 		}
 	}
 }
@@ -332,10 +346,10 @@
 					position: relative;
 					.team__social {
 						position: absolute;
+						display: flex;
 						opacity: 0;
 						bottom: 60px;
 						transition: all 0.3s ease 0s;
-						right: -160px;
 						.team__twit,.team__face,.team__inst {
 							width: 50px;
 							display: inline-block;
@@ -621,11 +635,17 @@
 	.email__tittle {
 		font-family: 'ProximaTh';
 		font-size: 36px;
-		color: #000;
+		color: #fff;
 		display: block;
 		padding: 0px 10px 0px 10px;
-		border-radius: 10px;
+		background-color: transparent;
 		margin-right: 20px;
+	}
+	.email__tittle:focus {
+		border-bottom: 1px solid #fff;
+	}
+	.email__tittle::placeholder {
+		color: #FFF;
 	}
 	#btn__email {
 		display: block;
