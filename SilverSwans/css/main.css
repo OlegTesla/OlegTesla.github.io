@@ -272,11 +272,267 @@ body {
   font-family: "LouisGeorgeCafe";
   font-size: 1.06rem;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   margin-top: 30px;
-  transition: 0.6s linear;
+  transition: 0.4s linear;
 }
 .about .wrapper .about__info .about__btn:hover {
   background-color: #000000;
   color: #ffffff;
+  opacity: 80%;
+}
+
+.portfolio {
+  background-image: url("/images/portfolio/Group.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+.portfolio .wrapper .portfolio__header {
+  text-align: center;
+  padding-top: 30px;
+}
+.portfolio .wrapper .portfolio__header .portfolio__title {
+  font-family: "Brushwell";
+  font-size: 5rem;
+  color: #000000;
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 {
+  padding-bottom: 40px;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle {
+  color: #ffffff;
+  font-family: "RedVelvet";
+  font-size: 4.46rem;
+  position: relative;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.3s linear;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle:hover:after {
+  width: 100%;
+}
+.portfolio .wrapper .portfolio__header .portfolio__description {
+  font-size: 1.91rem;
+  color: #000000;
+  opacity: 60%;
+  padding-bottom: 25px;
+  font-family: "RedVelvet";
+}
+.portfolio .wrapper .portfolio__header .portfolio__btn {
+  padding: 10px 35px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+}
+.portfolio .wrapper .portfolio__header .portfolio__btn:hover {
+  background-color: #ffffff;
+  opacity: 80%;
+}
+
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery .gallery__slides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery__slides .gallery__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px 20px 0px 0px;
+}
+.gallery .gallery__slides .gallery__block .gallery__border {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.gallery .gallery__slides .gallery__block .gallery__middle {
+  margin-bottom: 23px;
+  overflow: hidden;
+}
+.gallery .gallery__slides .gallery__block img {
+  transition: 0.6s linear;
+  display: block;
+}
+.gallery .gallery__slides .gallery__block img:hover {
+  transform: scale(1.2);
+}
+.gallery .slick-initialized .slick-slide {
+  display: flex;
+}
+.gallery .slick-dots {
+  position: absolute;
+  bottom: -40px;
+}
+.gallery .slick-dots li button {
+  opacity: 80%;
+}
+.gallery .slick-dots li button:before {
+  color: #707070;
+}
+
+.video {
+  padding-bottom: 50px;
+}
+.video .video__header {
+  background-image: url("/images/video/video-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.video .video__header .video__title {
+  font-family: "RedVelvet";
+  padding-top: 90px;
+  display: block;
+  font-size: 4.44rem;
+  color: #ffffff;
+  padding-bottom: 10px;
+  width: 250px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: relative;
+}
+.video .video__header .video__title:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.3s linear;
+}
+.video .video__header .video__title:hover:after {
+  width: 100%;
+}
+.video .video__header .video__description {
+  margin-top: 30px;
+  font-family: "RedVelvet";
+  font-size: 1.66rem;
+  opacity: 64%;
+}
+.video .video__body .video__play .video__border {
+  overflow: hidden;
+  width: 936px;
+  height: 521px;
+  margin: 0 auto;
+}
+.video .video__body .video__play .video__border .video__link {
+  display: block;
+  background-image: url("/images/video/video-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 521px;
+  margin: 0 auto;
+  opacity: 1;
+  margin-top: 59px;
+  position: relative;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link .btn__play {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  bottom: 45%;
+  right: 47%;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link .btn__play::after {
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  border-left: 40px solid #ffffff;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.video .video__body .video__play .video__border .video__link:hover .btn__play::after {
+  border-left: 40px solid #eb2f06;
+}
+.video .video__body .video__play .line {
+  width: 23px;
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 13px;
+}
+.video .video__body .video__play .video__description {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+  opacity: 80%;
+  margin-bottom: 46px;
+}
+.video .video__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video .video__bottom .video__img {
+  margin-bottom: 24px;
+}
+.video .video__bottom .line {
+  width: 23px;
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+.video .video__bottom .video__name {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 30px;
+}
+.video .video__btn .video__more {
+  padding: 10px 35px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.video .video__btn .video__more:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 80%;
 }
