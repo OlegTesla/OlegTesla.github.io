@@ -283,7 +283,7 @@ body {
 }
 
 .portfolio {
-  background-image: url("images/portfolio/Group.svg");
+  background-image: url("../images/portfolio/Group.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
@@ -396,7 +396,7 @@ body {
   padding-bottom: 50px;
 }
 .video .video__header {
-  background-image: url("images/video/video-bg.svg");
+  background-image: url("../images/video/video-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
