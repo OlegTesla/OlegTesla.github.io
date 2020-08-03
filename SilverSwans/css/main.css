@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 @font-face {
-  font-family: "Conv_Brushwell";
+  font-family: "Brushwell";
   src: url("fonts/Brushwell/Brushwell.eot");
   src: url("fonts/Brushwell/Brushwell.woff") format("woff"), url("fonts/Brushwell/Brushwell.ttf") format("truetype"), url("fonts/Brushwell/Brushwell.svg") format("svg");
   font-weight: normal;
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "RedVelvet-Regular";
+  font-family: "RedVelvet";
   src: url("fonts/RedVelvet/RedVelvet-Regular.eot");
   src: url("fonts/RedVelvet/RedVelvet-Regular.woff") format("woff"), url("fonts/RedVelvet-Regular.ttf") format("truetype"), url("fonts/RedVelvet-Regular.svg") format("svg");
   font-weight: normal;
@@ -113,10 +113,11 @@ body {
 
 .header {
   padding: 2rem 0;
+  position: relative;
   background: url("../images/header/BG.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  padding-bottom: 200px;
 }
 .header__inner .nav {
   display: flex;
@@ -144,4 +145,138 @@ body {
 }
 .header__inner .nav__link:hover:after {
   width: 100%;
+}
+.header__inner .nav__search {
+  background-color: transparent;
+  background-image: url("/images/header/Search.svg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 0px 20px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1rem;
+  width: 10%;
+}
+.header .header__slider {
+  padding-top: 150px;
+}
+.header .header__slider .header__slides .slider__img {
+  width: 119px;
+  height: 119px;
+  margin: 0 auto;
+  background-image: url("/images/header/logimg.svg");
+}
+.header .header__slider .header__slides .slider__name {
+  text-align: center;
+  color: #ffffff;
+}
+.header .header__slider .header__slides .slider__name h2 {
+  font-family: "Brushwell";
+  font-size: 5rem;
+  padding-bottom: 10px;
+}
+.header .header__slider .header__slides .slider__name span {
+  width: 351px;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.header .header__slider .header__slides .slider__title {
+  text-align: center;
+  color: #ffffff;
+}
+.header .header__slider .header__slides .slider__title h1 {
+  font-size: 4.4rem;
+  font-family: "RedVelvet";
+  padding-bottom: 31px;
+}
+.header .header__slider .header__slides .slider__title p {
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin: 0 auto;
+  font-family: "LouisGeorgeCafe";
+}
+.header .header__social {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 3%;
+  top: 40%;
+}
+.header .header__social .social__link {
+  margin-bottom: 42px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.header .header__social .social__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.header .header__social .social__link:hover:after {
+  width: 100%;
+}
+
+.about {
+  color: #000000;
+}
+.about .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 107px;
+  padding-bottom: 116px;
+}
+.about .wrapper .about__img {
+  width: 303px;
+  height: 303px;
+  margin-right: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about .wrapper .about__img .my__img {
+  display: block;
+  transition: 0.6s linear;
+}
+.about .wrapper .about__img .my__img:hover {
+  transform: scale(1.2);
+}
+.about .wrapper .about__info {
+  border-left: 1px solid #000000;
+  height: 368px;
+  padding: 5px 0px 5px 25px;
+}
+.about .wrapper .about__info .about__title {
+  font-size: 5.192rem;
+  padding-left: 20px;
+  font-family: "Brushwell";
+  padding-bottom: 15px;
+}
+.about .wrapper .about__info .about__decription {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  width: 530px;
+  opacity: 80%;
+}
+.about .wrapper .about__info .about__btn {
+  padding: 10px 15px;
+  letter-spacing: 1.82px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 2px solid #000000;
+  margin-top: 30px;
+  transition: 0.6s linear;
+}
+.about .wrapper .about__info .about__btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
