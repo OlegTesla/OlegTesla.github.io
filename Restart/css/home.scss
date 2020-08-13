@@ -1,0 +1,250 @@
+// импорт обнуления стилей
+@import "nullstyle.scss";
+// импорт основных стилей классов
+@import "clasess.scss";
+
+.header {
+	background-color: $grey;
+	position: relative;
+	height: 130px;
+	// header styles
+	&__inner {
+		display: flex;
+		-webkit-align-items: center;
+		        align-items: center;
+		padding-top: 23px;
+		.header__burger {
+			display: none;
+		}
+		.logo {
+			display: flex;
+		   font-weight: bold;
+			font-style: italic;
+			.header__logo {
+				font-size: 2.5rem;
+				background-color: red;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+				width: 57px;
+				height: 57px;
+				display: flex;
+				-webkit-justify-content: center;
+				        justify-content: center;
+				-webkit-align-items: center;
+				        align-items: center;
+				color: #FFF;
+			}
+			.logo__dis {
+				color: $black;
+				font-size: 1.7rem;
+				text-transform: uppercase;
+				line-height: 66px;
+				
+			}
+		}
+		.header__discription {
+			display: flex;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			-webkit-align-items: center;
+			        align-items: center;
+			width: 100%;
+			color: $text;
+			span {
+				width: 10px;
+				height: 1px;
+				display: inline-block;
+				background-color: grey;
+				margin: 4px;
+			}
+		}
+	}
+	// navigation styles
+	.header__nav {
+		height: 80px;
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		background-color: #FFF;
+		position: absolute;
+		width: 1355px;
+		border: 1px solid #E2E2E2;
+		bottom: -35px;
+		display: flex;
+		.nav__item {
+			position: relative;
+			display: flex;
+			-webkit-align-items: center;
+			        align-items: center;
+			.nav__links {
+				display: block;
+				padding: 30px 70px;
+				font-size: 1.06rem;
+				line-height: 19px;
+				color: $black;
+			}
+				.line {
+					position: absolute;
+					width: 50px;
+					height: 0;
+					right: -23px;
+					border: 1px solid #E2E2E2;
+					transform: rotate(90deg);
+				}
+		}
+	}
+}
+// restart
+.restart {
+	background-color: #E5E5E5;
+	// restart__header
+	.restart__header {
+		padding-top: 50px;
+		.logo {
+			display: flex;
+			-webkit-justify-content: center;
+			        justify-content: center;
+		   font-weight: bold;
+			font-style: italic;
+			.header__logo {
+				font-size: 2.5rem;
+				background-color: red;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+				width: 57px;
+				height: 57px;
+				display: flex;
+				-webkit-justify-content: center;
+				        justify-content: center;
+				-webkit-align-items: center;
+				        align-items: center;
+				color: #FFF;
+			}
+			.logo__dis {
+				color: $black;
+				font-size: 1.7rem;
+				text-transform: uppercase;
+				line-height: 66px;
+				
+			}
+		}
+		.restart__title {
+			font-size: 1.33rem;
+			line-height: 26px;
+			color: $black;
+			text-align: center;
+			margin-bottom: 29px;
+		}
+	}
+	// restart__bottom
+	.restart__bottom {
+		.restart__row {
+			display: flex;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			    -webkit-align-items: center;
+			            align-items: center;
+			    .restart__item {
+			    	margin-right: 17px;
+			    	background-color: #FFF;
+			    	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+					border-radius: 5px;
+			    	&:last-child {
+			    		margin-right: 0;
+			    	}
+			    	.restart__middle {
+			    		text-align: center;
+						font-size: 1.33rem;
+						line-height: 26px;
+						width: 80%;
+						margin: 0 auto;	
+						margin-top: 22px;
+						padding-bottom: 17px;
+						color: $black;
+						border-bottom: 1px solid #E2E2E2;
+			    	}
+			    	.restart__bottom {
+			    		margin: 0 auto;
+						margin-top: 25px;
+						font-size: 1.06rem;
+						line-height: 19px;
+						margin-bottom: 41px;
+						text-align: center;
+			    	}
+			   }
+		}
+	}
+	// restart__text
+	.restart__text {
+		font-size: 1.06rem;
+		line-height: 24px;
+		text-align: center;
+		color: $black;
+		width: 850px;
+		margin: 0 auto;
+		margin-top: 48px;
+		padding-bottom: 80px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mobile web
+@media screen and (max-width: 767px) {
+	.header {
+		height: 80px;
+		position: relative;
+		&__inner {
+			position: relative;
+			padding-top: 10px;
+			z-index: 10;
+			.header__burger {
+				display: block;
+				width: 30px;
+				span {
+					display: block;
+					background-color: $black;
+					width: 100%;
+					height: 2px;
+					position: relative;
+					&:before,
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: -10px;
+						width: 100%;
+						height: 2px;
+						background-color: $black;
+					}
+					&:after {;
+						top: -10px;
+					}
+				}
+			}
+		}
+		.header__nav {
+			border: none;
+			left: 0;
+			top: -200px;
+			width: 100%;
+			&.active {
+				top: 100px;
+				bottom: -400px;
+				height: 400px;
+				background-color: red;
+				display: block;
+			}
+		}
+	}
+}
+

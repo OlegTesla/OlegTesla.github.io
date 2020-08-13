@@ -1,0 +1,42 @@
+// импорт обнуления стилей
+@import "nullstyle.scss";
+// импорт основных стилей классов
+@import "clasess.scss";
+// parts
+.parts {
+	.parts__title {
+		font-size: 1.33rem;
+		padding-top: 100px;
+		margin-bottom: 42px;
+		line-height: 26px;
+		color: $black;
+	}
+	.parts__inner {
+		// header img
+		.parts__header {
+			display: flex;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			.parts__item {
+				width: 190px;
+				.parts__img {
+					margin: 0 auto;
+					margin-bottom: 16px;
+					display: block;
+				}
+				.parts__description {
+					text-align: center;
+					font-size: 1.06rem;
+					line-height: 22px;
+					color: $black;
+				}
+			}
+		}
+		// middle img
+		.parts__middle {
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.wrapper {
+	max-width: 1375px;
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+}
+
+html {
+	font-size: 15px;
+}
+.lock {
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+
+// основные цвета на странице
+$grey: #E5E5E5;
+$black: #333333;
+$text: #666666;
