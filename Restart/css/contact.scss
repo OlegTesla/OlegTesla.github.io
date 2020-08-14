@@ -104,6 +104,14 @@
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
 		.contact__item {
+			&:last-child {
+				width: 100%;
+				margin-left: 50px;
+			}
+			.map {
+				width: 100%;
+				height: 550px;
+			}
 			.contact__title {
 				margin-bottom: 40px;
 				font-size: 1.33rem;
@@ -144,13 +152,6 @@
 		.contact__item:nth-child(2) {
 			position: relative;
 			overflow: hidden;
-			img {
-				display: block;
-				transition: 0.3s linear;
-				&:hover {
-					transform: scale(1.2);
-				}
-			}
 			.little {
 				position: absolute;
 				left: 20px;

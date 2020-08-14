@@ -167,6 +167,14 @@
 					line-height: 19px;
 					border: 1px solid #CECECE;
 					color: $black;
+					transition: 0.3s linear;
+				    &:hover {
+ 						background: $black;
+ 						color: #FFF;
+ 					}
+ 					&:focus {
+ 						border: 2px solid #CECECE;
+ 					}
 				}
 			}
 		}
@@ -231,3 +239,4 @@
 		}
 	}
 }
+
