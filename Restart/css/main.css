@@ -1517,6 +1517,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .form .form__image:before {
+    border-radius: 10px 10px 10px 10px;
+  }
   .form .form__image .form__title h2 {
     padding: 0;
     padding: 10px;
@@ -1850,6 +1853,12 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .form .form__image:before {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .form .form__image .form__select {
+    width: 100%;
+  }
   .form .form__image .form__title h2 {
     padding: 0;
     padding: 10px;
@@ -2152,6 +2161,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .form .form__image:before {
+    border-radius: 10px 10px 10px 10px;
+  }
   .form .form__image .form__title h2 {
     padding: 0;
     padding: 10px;
@@ -2159,6 +2171,9 @@ body {
     font-size: 2rem;
     width: 100%;
     line-height: 40px;
+  }
+  .form .form__image .form__select {
+    width: 100%;
   }
   .form .form__image .form__contact {
     margin: 0 auto;

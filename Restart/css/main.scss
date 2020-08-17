@@ -434,6 +434,10 @@
 			-webkit-flex-wrap: wrap;
 			    -ms-flex-wrap: wrap;
 			        flex-wrap: wrap;
+				&:before {
+					-webkit-border-radius: 10px 10px 10px 10px;
+					        border-radius: 10px 10px 10px 10px;
+				}
 			.form__title h2 {
 				padding: 0;
 				padding: 10px;
@@ -839,6 +843,13 @@
 			-webkit-flex-wrap: wrap;
 			    -ms-flex-wrap: wrap;
 			        flex-wrap: wrap;
+			&:before {
+				-webkit-border-radius: 10px 10px 10px 10px;
+				        border-radius: 10px 10px 10px 10px;
+			}
+			.form__select {
+				width: 100%;
+			}
 			.form__title h2 {
 				padding: 0;
 				padding: 10px;
@@ -1200,6 +1211,9 @@
 			-webkit-flex-wrap: wrap;
 			    -ms-flex-wrap: wrap;
 			        flex-wrap: wrap;
+			&:before {
+				border-radius: 10px 10px 10px 10px;
+			}
 			.form__title h2 {
 				padding: 0;
 				padding: 10px;
@@ -1207,6 +1221,9 @@
 				font-size: 2rem;
 				width: 100%;
 				line-height: 40px;
+			}
+			.form__select {
+				width: 100%;
 			}
 			.form__contact {
 				margin: 0 auto;
