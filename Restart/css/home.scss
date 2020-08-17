@@ -75,6 +75,11 @@
 				height: 100%;
 				line-height: 19px;
 				color: $black;
+					&:hover {
+ 						background: $text;
+ 						color: #FFF;
+ 						transition: all 0.4s ease-in-out;
+ 					}
 			}
 				.line {
 					position: absolute;
@@ -346,15 +351,20 @@
 				font-size: 1.06rem;
 				line-height: 19px;
 				color: $black;
+					&:hover {
+ 						background: $text;
+ 						color: #FFF;
+ 						transition: all 0.4s ease-in-out;
+ 					}
 			}
-				.line {
-					position: absolute;
-					width: 50px;
-					height: 0;
-					right: -23px;
-					border: 1px solid #E2E2E2;
-					transform: rotate(90deg);
-				}
+			.line {
+				position: absolute;
+				width: 50px;
+				height: 0;
+				right: -23px;
+				border: 1px solid #E2E2E2;
+				transform: rotate(90deg);
+			}
 		}
 	}
 	.footer__info {

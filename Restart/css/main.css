@@ -161,6 +161,11 @@ body {
   line-height: 19px;
   color: #333333;
 }
+.header .header__nav .nav__item .nav__links:hover {
+  background: #666666;
+  color: #FFF;
+  transition: all 0.4s ease-in-out;
+}
 .header .header__nav .nav__item .line {
   position: absolute;
   width: 50px;
@@ -400,6 +405,11 @@ body {
   font-size: 1.06rem;
   line-height: 19px;
   color: #333333;
+}
+.footer .footer__nav .nav__item .nav__links:hover {
+  background: #666666;
+  color: #FFF;
+  transition: all 0.4s ease-in-out;
 }
 .footer .footer__nav .nav__item .line {
   position: absolute;
@@ -1931,10 +1941,6 @@ body {
   }
   .form .form__image:before {
     border-radius: 10px 10px 10px 10px;
-  }
-  .form .form__image .select {
-    margin-left: 26px;
-    margin-right: 26px;
   }
   .form .form__image .select_mate {
     width: 100%;
