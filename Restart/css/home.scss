@@ -2,7 +2,7 @@
 	background-color: $grey;
 	position: relative;
 	height: 130px;
-	z-index: 20;
+	z-index: 70;
 	// header styles
 	&__inner {
 		display: flex;
@@ -92,6 +92,7 @@
 	.cocoen {
 		.slide {
 			height: 866px;
+			z-index: 20;
 			&__item {
 				width: 100%;
 				display: block;
@@ -209,6 +210,8 @@
 		background-color: #FF0000;
 		-webkit-border-radius: 50%;
 		        border-radius: 50%;
+		z-index: 30;
+		cursor: pointer;
 	}
 }
 // restart

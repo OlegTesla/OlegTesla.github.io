@@ -95,7 +95,7 @@ body {
   background-color: #F9F9F9;
   position: relative;
   height: 130px;
-  z-index: 20;
+  z-index: 70;
 }
 .header__inner {
   display: flex;
@@ -172,6 +172,7 @@ body {
 
 .img .cocoen .slide {
   height: 866px;
+  z-index: 20;
 }
 .img .cocoen .slide__item {
   width: 100%;
@@ -281,6 +282,8 @@ body {
   border: 1px solid #FF0000;
   background-color: #FF0000;
   border-radius: 50%;
+  z-index: 30;
+  cursor: pointer;
 }
 
 .restart {
@@ -800,6 +803,7 @@ body {
   height: 100%;
   position: absolute;
   display: block;
+  z-index: 30;
 }
 .road .road__row .road__item .road__block .road__video {
   display: block;
