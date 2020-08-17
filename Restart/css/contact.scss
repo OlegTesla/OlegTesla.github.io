@@ -1,111 +1,14 @@
-// импорт обнуления стилей
-@import "nullstyle.scss";
-// импорт основных стилей классов
-@import "clasess.scss";
-
-.header {
-	background-color: $grey;
-	position: relative;
-	height: 130px;
-	// header styles
-	&__inner {
-		display: flex;
-		-webkit-align-items: center;
-		        align-items: center;
-		padding-top: 23px;
-		.header__burger {
-			display: none;
-		}
-		.logo {
-			display: flex;
-		   font-weight: bold;
-			font-style: italic;
-			.header__logo {
-				font-size: 2.5rem;
-				background-color: red;
-				-webkit-border-radius: 50%;
-				        border-radius: 50%;
-				width: 57px;
-				height: 57px;
-				display: flex;
-				-webkit-justify-content: center;
-				        justify-content: center;
-				-webkit-align-items: center;
-				        align-items: center;
-				color: #FFF;
-			}
-			.logo__dis {
-				color: $black;
-				font-size: 1.7rem;
-				text-transform: uppercase;
-				line-height: 66px;
-				
-			}
-		}
-		.header__discription {
-			display: flex;
-			-webkit-justify-content: center;
-			        justify-content: center;
-			-webkit-align-items: center;
-			        align-items: center;
-			width: 100%;
-			color: $text;
-			span {
-				width: 10px;
-				height: 1px;
-				display: inline-block;
-				background-color: grey;
-				margin: 4px;
-			}
-		}
-	}
-	// navigation styles
-	.header__nav {
-		height: 80px;
-		display: flex;
-		-webkit-justify-content: center;
-		        justify-content: center;
-		background-color: #FFF;
-		position: absolute;
-		width: 1355px;
-		border: 1px solid #E2E2E2;
-		bottom: -35px;
-		display: flex;
-		.nav__item {
-			position: relative;
-			display: flex;
-			-webkit-align-items: center;
-			        align-items: center;
-			.nav__links {
-				display: block;
-				padding: 30px 70px;
-				font-size: 1.06rem;
-				line-height: 19px;
-				color: $black;
-			}
-				.line {
-					position: absolute;
-					width: 50px;
-					height: 0;
-					right: -23px;
-					border: 1px solid #E2E2E2;
-					transform: rotate(90deg);
-				}
-		}
-	}
-}
 
 // contact
 .contact {
 	padding-top: 100px;
-	padding-bottom: 50px;
 	.contact__inner {
 		display: flex;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
 		.contact__item {
 			&:last-child {
-				width: 100%;
+				width: 1000px;
 				margin-left: 50px;
 			}
 			.map {
@@ -148,6 +51,12 @@
 				line-height: 24px;
 				color: $black;
 			}
+			.viber {
+				color:  #7360f2;
+			}
+			.text {
+				color: $text;
+			}
 		}
 		.contact__item:nth-child(2) {
 			position: relative;
@@ -165,63 +74,4 @@
 	background-color: $grey;
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-// footer 
-.footer {
-	position: relative;
-		padding-bottom: 20px;
-	// navigation styles
-	.footer__nav {
-		height: 80px;
-		display: flex;
-		-webkit-justify-content: center;
-		        justify-content: center;
-		background-color: #FFF;
-		position: absolute;
-		width: 1375px;
-		border: 1px solid #E2E2E2;
-		top: -40px;
-		display: flex;
-		.nav__item {
-			position: relative;
-			display: flex;
-			-webkit-align-items: center;
-			        align-items: center;
-			.nav__links {
-				display: block;
-				padding: 30px 70px;
-				font-size: 1.06rem;
-				line-height: 19px;
-				color: $black;
-			}
-				.line {
-					position: absolute;
-					width: 50px;
-					height: 0;
-					right: -23px;
-					border: 1px solid #E2E2E2;
-					transform: rotate(90deg);
-				}
-		}
-	}
-	.footer__info {
-		padding-top: 69px;
-		position: relative;
-		.footer__text {
-			word-spacing: 1px;
-			font-size: 0.93rem;
-			line-height: 20px;
-			color: $text;
-			padding-bottom: 10px;
-		}
-		.copyright {
-			position: absolute;
-			display: block;
-			right: 0;
-			bottom: 0;
-			font-size: 0.93rem;
-			line-height: 20px;
-			color: $text;
-		}
-	}
 }

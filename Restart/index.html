@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- шрифты -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+	<!-- cocoen library for img slider -->
+	<link rel="stylesheet" href="css/cocoen.min.css">
 	<!-- Подключение стилей для слайдера -->
 	<!-- slick slaider -->
 <!-- 	<link rel="stylesheet" href="slick/slick.css">
@@ -34,7 +36,7 @@
 					<a href="#" class="header__logo">Re</a>
 					<a href="#" class="logo__dis">start</a>
 				</div>
-				<h2 class="header__discription">Restart <span></span>Ваша зона автокомфорту</h2>
+				<h2 class="header__discription">Restart — Ваша зона автокомфорту</h2>
 				<div class="header__burger">
 					<span></span>
 				</div>
@@ -63,7 +65,28 @@
 		</div>
 	</header>
 	<section class="img">
-		<img src="images/home/background1.jpg" alt="company img" class="slider">
+		<div class="cocoen">
+			<div class="slide">
+				<img class="slide__item" src="images/enjine.jpg" alt="">
+				<div class="img__info">
+					<div class="img__header">
+						<img src="images/home1.svg" alt="header image" class="slide__img">
+						<h2 class="img__head">Діагностика та ремонт стартерів, генераторів, кондиціонерів</h2>
+					</div>
+					<button src="" class="info__btn">Мережа сервисив</button>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="slide__item" src="images/enjinnee.jpg" alt="">
+				<div class="img__right">
+					<div class="img__header">
+						<img src="images/home1.svg" alt="header image" class="slide__img">
+						<h2 class="img__head">Діагностика та ремонт стартерів, генераторів, кондиціонерів</h2>
+					</div>
+					<button src="" class="info__btn">Мережа сервисив</button>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- restart -->
 	<section class="restart">
@@ -143,6 +166,12 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- mobile menu -->
 	<script src="js/script.js"></script>
+	<!-- slider library -->
+	<script src="js/cocoen.min.js"></script>
+	<script src="js/cocoen-jquery.min.js"></script>
+	<script>
+		$('.cocoen').cocoen();
+	</script>
 
 	
 </body>

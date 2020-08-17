@@ -4,3 +4,16 @@ $(document).ready(function(){
 		$('body').toggleClass('lock');
 	})
 });
+
+//  Set caption from card text
+$('.video a').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.card-text').html();
+  }
+});
+//  Set caption from card text
+$('.road__block a').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.card-text').html();
+  }
+});

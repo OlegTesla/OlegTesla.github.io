@@ -1,7 +1,3 @@
-// импорт обнуления стилей
-@import "nullstyle.scss";
-// импорт основных стилей классов
-@import "clasess.scss";
 
 // categories styles
 .categories {
@@ -55,7 +51,6 @@
 	}
 	// categories text
 	.categories__row {
-		margin-bottom: 46px;
 		.categories__text {
 			width: 332px;
 			margin-right: 10px;
@@ -65,6 +60,7 @@
 				line-height: 22px;
 				color: $text;
 				margin: 0 auto;
+				margin-bottom: 20px;
 				text-align: center;
 				.categories__link {
 					color: #00A8FF;
@@ -78,7 +74,7 @@
 }
 // address
 .address {
-	background-color: #E5E5E5;
+	background-color: #F9F9F9;
 	padding-top: 85px;
 	.address__title {
 		font-size: 1.33rem;
@@ -118,6 +114,7 @@
 	    	.address__bottom {
 	    		width: 660px;
 	    		border: 1px solid #CECECE;
+	    		border-radius: 5px 5px 5px 5px;
 	    		.address__street {
 	    			background-color: #FFF;
 	    			display: flex;
@@ -179,7 +176,7 @@
 }
 // road
 .road {
-	background-color: #E5E5E5;
+	background-color: #F9F9F9;
 	padding-top: 60px;
 	padding-bottom: 100px;
 	.road__title {
@@ -204,6 +201,12 @@
 		    		background-color: #FFF;
 		    		width: 426px;
 		    		position: relative;
+		    		.fancy {
+		    			width: 100%;
+		    			height: 100%;
+		    			position: absolute;
+		    			display: block;
+		    		}
 		    		.road__video {
 			    		display: block;
 			    		margin: 0 auto;
@@ -232,16 +235,28 @@
 }
 // form
 .form {
-	background-color: #E5E5E5;
+	background-color: #F9F9F9;
 	padding-bottom: 90px;
 	.form__image {
 		background-image: url("../images/shop/form.jpg");
 		background-repeat: no-repeat;
 		height: 537px;
 		display: flex;
+		position: relative;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
-		// background-color: rgba(0,0,0,0.4);
+		z-index: 1;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			background: linear-gradient(87.2deg, rgba(0, 0, 0, 0.6) 34.43%, rgba(0, 0, 0, 0.594812) 37.13%, rgba(0, 0, 0, 0.578694) 39.83%, rgba(0, 0, 0, 0.551004) 42.53%, rgba(0, 0, 0, 0.511553) 45.23%, rgba(0, 0, 0, 0.460935) 47.93%, rgba(0, 0, 0, 0.40087) 50.63%, rgba(0, 0, 0, 0.334385) 53.33%, rgba(0, 0, 0, 0.265615) 56.03%, rgba(0, 0, 0, 0.19913) 58.73%, rgba(0, 0, 0, 0.139065) 61.43%, rgba(0, 0, 0, 0.0884468) 64.13%, rgba(0, 0, 0, 0.0489959) 66.83%, rgba(0, 0, 0, 0.021306) 69.53%, rgba(0, 0, 0, 0.00518832) 72.23%, rgba(0, 0, 0, 0) 74.93%);
+		}
 		border-radius: 8px;
 		.form__title h2 {
 			font-size: 3.2rem;
@@ -251,12 +266,36 @@
 			width: 701px;
 			padding: 137px 0px 0px 36px;
 		}
+		.form__title {
+			z-index: 20;
+		}
+		// select
+		.form__select {
+			width: 350px;
+			height: 50px;
+			padding: 11px 0px 13px 12px;
+			border-radius: 2px;
+			margin: 0 auto;
+			border: 1px solid #E6E6E6;
+			transition: 0.3s linear;
+			font-size: 1.1rem;
+			color: $text;
+			option {
+				font-size: 1.2rem;
+				line-height: 21px;
+				color: $black;
+			}
+			&:focus {
+				border: 1px solid #27AE60;
+			}
+		}
 		// form contact
 		.form__contact {
 			background-color: #FFF;
 			margin: 36px 75px;
 			height: 466px;
 			border-radius: 8px;
+			z-index: 10;
 			.form__header {
 				.form__info {
 					font-size: 1.2rem;
@@ -295,6 +334,13 @@
 				font-size: 0.93rem;
 				color: $black;
 			}
+			.your__name,
+			.your__phone,
+			.your__city  {
+				span {
+					color: red;
+				}
+			}
 			.name {
 				width: 350px;
 				height: 50px;
@@ -308,6 +354,8 @@
 			}
 			.form__send {
 				margin-top: 15px;
+				margin-left: 26px;
+				margin-right: 26px;
 				.form__btn {
 					margin: 0 auto;
 					display: block;
@@ -315,6 +363,7 @@
 					color: #FFF;
 					background: #27AE60;
 					border-radius: 3px;
+					width: 100%;
 					transition: 0.4s linear;
 					&:hover {
 						background: #2EBF6B;
@@ -326,7 +375,7 @@
 }
 // services
 .services {
-	background-color: #E5E5E5;
+	background-color: #F9F9F9;
 	padding-bottom: 116px;
 	.services__title {
 		font-size: 1.33rem;
