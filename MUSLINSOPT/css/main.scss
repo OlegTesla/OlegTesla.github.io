@@ -1,0 +1,229 @@
+// import основных шрифтов на страниу
+@import"fonts.scss";
+// обнуление всех стилей на странице
+@import"nullstyle.scss";
+
+// основные цвета на странице
+$btn-color: #00BC8E;
+$purple: #FF8CC3;
+$links: #444444;
+$black: #000000;
+$grey: #333333;
+
+html {
+	font-size: 15px;
+}
+body {
+	z-index: 2;
+}
+input {
+	color: #333;	
+	font-size: 0.93rem;
+	line-height: 1.33rem;
+	padding: 19px 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 20px rgba(203, 207, 206, 0.4);
+	border-radius: 10px;
+	border: 1px solid #EEEEEE;
+	background-color: #FFF;
+	font-family: 'Inter';
+	width: 240px;
+	height: 50px;
+}
+.btn {
+	border-radius: 10px;
+	padding: 16px 40px;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.46rem;
+	font-family: Gilroy;
+	font-weight: 700;
+	background-color: transparent;
+	box-shadow: 0px 8px 20px rgba(54, 190, 152, 0.4);
+}
+.wrapper {
+	width: 100%;
+	max-width: 1430px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.lock {
+	overflow: hidden;
+}
+
+// sections
+@import "header.scss";
+@import "banner.scss";
+@import "test.scss";
+@import "logic.scss";
+
+
+
+// mobile
+@media screen and (max-width: 767px) {
+	.header {
+		position: relative;
+		.bg__container {
+			.header__inner {
+				position: absolute;
+				height: 300px;
+				left: -1000px;
+				margin-top: 144px;
+				transition: 0.3s linear;
+				// left: -100%;
+				background-color: #F1F6F6;
+				.nav {
+					display: block;
+					margin: 0 auto;
+					.nav__link {
+						display: block;
+						text-align: center;
+						padding-top: 20px;
+						height: 60px;
+						position: relative;
+						&:after {
+							content: "";
+							position: absolute;
+							bottom: 0;
+							height: 2px;
+							width: 100%;
+							background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 22.4%, #000000 77.6%, rgba(0, 0, 0, 0) 100%);
+							opacity: 0.1;
+						}
+					}
+				}
+				&.active {
+					left: 0;
+				}
+			}
+		}
+		.header__footer {
+			display: flex;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			    margin-top: 0;
+			    margin-top: 32px;
+			.header__logo {
+		   	width: 100%;
+		   	.description {
+		   		display: none;
+		   	}
+				.header__burger {
+					display: block;
+					position: absolute;
+					right: 25px;
+					width: 30px;
+					height: 20px;
+					z-index: 6;
+					border-radius: 8px;
+				}
+				.header__burger:before,
+				.header__burger:after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					background-color: $black;
+					height: 4px;
+					border-radius: 8px;
+					left: 0;
+					transition: all 0.3s ease 0s;
+				}
+				.header__burger:before {
+					top: 0;
+				}
+				.header__burger:after {
+					bottom: -2px;
+				}
+				.header__burger span {
+					position: absolute;
+					background-color: $black;
+					left: 0;
+					width: 100%;
+					border-radius: 8px;
+					height: 4px;
+					top: 9px;
+					transition: all 0.3s ease 0s;
+				}
+				.header__burger.active span {
+					transform: scale(0);
+				}
+				.header__burger.active:before {
+					transform: rotate(45deg);
+					top: 8px;
+				}
+				.header__burger.active:after {
+					transform: rotate(-45deg);
+					bottom: 8px;
+				}
+		   } 
+			.header__contact {
+		    	top: 0;
+		    	position: absolute;
+		    	background-color: #F1F6F6;
+		    	padding-top: 8px;
+		    	padding-bottom: 8px;
+		    	width: 100%;
+		    	padding-left: 1rem;
+		    	padding-right: 1rem;
+		    	.number {
+		    		display: flex;
+		    		-webkit-flex-wrap: wrap;
+		    		    -ms-flex-wrap: wrap;
+		    		        flex-wrap: wrap;
+		    		    width: 100%;
+		    		.num {
+		    			order: 2;
+		    			margin-right: 0;
+		    			font-size: 1.1rem;
+		    			margin-left: 5px;
+		    		}
+		    		.wwhatsapp {
+		    			order: 1;
+		    			margin-right: 0;
+		    		}
+		    	}
+		    	.header__btn {
+		    		width: 100%;
+		    		.button {
+		    			padding: 15px 15px;
+		    			float: right;
+		    			-webkit-border-radius: 10px;
+		    			        border-radius: 10px;
+		    		}
+		    	}
+		   }
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.header {
+			.header__footer {
+				.header__contact {
+					.number {
+						display: flex;
+						flex-wrap: nowrap;
+						-webkit-align-items: center;
+						        align-items: center;
+						.num {
+							font-size: 1.1rem;
+							margin-right: 0;
+							margin-left: 5px;
+						}
+						.wwhatsapp {
+							width: 20px;
+							height: 20px;
+						}
+					}
+					.header__btn {
+						width: auto;
+						.button {
+							padding: 10px;
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

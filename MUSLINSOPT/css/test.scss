@@ -1,0 +1,50 @@
+// test
+.test {
+	padding-bottom: 90px;
+	.wrapper {
+		display: flex;
+		-webkit-align-items: center;
+		        align-items: center;
+		.test__img {
+			margin-right: 80px;
+		}
+		.test__text {
+			.test__title {
+				font-size: 3rem;
+				line-height: 3.06rem;
+				font-family: 'Gilroy';
+				font-weight: 600;
+				color: $grey;
+				display: block;
+			}
+			.test__description {
+				font-size: 1.86rem;
+				line-height: 3.06rem;
+				font-family: 'Gilroy';
+				margin-bottom: 20px;
+				display: block;
+				color: $grey;
+			}
+			.test__discount {
+				font-size: 1.2rem;
+				line-height: 1.86rem;
+				color: $grey;
+				font-family: 'Inter';
+				margin-bottom: 30px;
+			}
+			// input with btn styles
+			.test__form {
+				input {
+					margin-right: 20px;
+				}
+				.form__btn {
+					background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+					padding: 15px 67px;
+						&:hover {
+		    			background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%) ;
+		    		}
+				}
+			}
+		}
+	}
+}
