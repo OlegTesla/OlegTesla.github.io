@@ -1,0 +1,41 @@
+// calculator
+.calculator {
+	padding-top: 220px;
+	background: linear-gradient(180deg, #FFFFFF 0%, #FDF3F9 69.79%);
+	padding-bottom: 120px;
+	.calculator__container {
+		background: url("../image/calculator/bgc__calc.png") no-repeat;
+		height: 461px;
+		.calculator__text {
+			width: 50%;
+			padding-top: 80px;
+			padding-left: 80px;
+			.calculator__top {
+				font-size: 2.8rem;
+				line-height: 3.06rem;
+				color: $grey;
+				margin-bottom: 20px;
+				font-weight: 600;
+				font-family: 'Gilroy';
+			}
+			.calculator__description,.calculator__sale {
+				font-size: 1.85rem;
+				line-height: 2.53rem;
+				color: $grey;
+				font-family: 'Gilroy';
+			}
+			.calculator__sale {
+				color: #F64EBC;
+				font-weight: 600;
+				margin-bottom: 40px;
+			}
+			.calculator__btn {
+				padding: 15px 66px;
+				background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+	    		&:hover  {
+	    			background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%) ;
+	    		}
+			}
+		}
+	}
+}

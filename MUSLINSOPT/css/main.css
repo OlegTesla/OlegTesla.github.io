@@ -168,6 +168,34 @@ input {
   overflow: hidden;
 }
 
+progress {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+  background-attachment: fixed;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+  background-attachment: fixed;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -232,7 +260,7 @@ input {
   background-color: #00BC8E;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
   transition: width 0.2s linear;
 }
@@ -580,6 +608,10 @@ input {
 .logic {
   background: linear-gradient(180deg, #F9FBFD 0%, #FFEEF8 100%);
 }
+.logic .logic__title {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
 .logic .logic__row {
   display: flex;
   align-items: center;
@@ -588,7 +620,6 @@ input {
   border-radius: 20px;
   width: 100%;
   height: 347px;
-  margin-top: 80px;
 }
 .logic .logic__row .row__title {
   width: 100px;
@@ -655,6 +686,106 @@ input {
   line-height: 1.6rem;
   color: #707070;
   width: 283px;
+}
+.logic .stroke {
+  font-family: "Gilroy";
+  font-size: 2.13rem;
+  line-height: 2.53rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.logic .logic__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 120px;
+}
+.logic .logic__bottom .logic__left {
+  width: 50%;
+}
+.logic .logic__bottom .logic__left img {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  width: 700px;
+  height: 400px;
+}
+.logic .logic__bottom .logic__right {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.logic .logic__bottom .logic__right .logic__header {
+  font-size: 2.13rem;
+  font-family: "Gilroy";
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.logic .logic__bottom .logic__right .logic__points {
+  display: flex;
+  flex-direction: column;
+}
+.logic .logic__bottom .logic__right .logic__points .logic__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.logic .logic__bottom .logic__right .logic__points .logic__block span {
+  width: 8px;
+  height: 8px;
+  background-color: #00BC8E;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.logic .logic__bottom .logic__right .logic__points .logic__block h3 {
+  font-size: 1.2rem;
+  line-height: 1.46rem;
+  color: #333333;
+  font-family: "Inter";
+}
+
+.calculator {
+  padding-top: 220px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDF3F9 69.79%);
+  padding-bottom: 120px;
+}
+.calculator .calculator__container {
+  background: url("../image/calculator/bgc__calc.png") no-repeat;
+  height: 461px;
+}
+.calculator .calculator__container .calculator__text {
+  width: 50%;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+.calculator .calculator__container .calculator__text .calculator__top {
+  font-size: 2.8rem;
+  line-height: 3.06rem;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Gilroy";
+}
+.calculator .calculator__container .calculator__text .calculator__description, .calculator .calculator__container .calculator__text .calculator__sale {
+  font-size: 1.85rem;
+  line-height: 2.53rem;
+  color: #333333;
+  font-family: "Gilroy";
+}
+.calculator .calculator__container .calculator__text .calculator__sale {
+  color: #F64EBC;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.calculator .calculator__container .calculator__text .calculator__btn {
+  padding: 15px 66px;
+  background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+}
+.calculator .calculator__container .calculator__text .calculator__btn:hover {
+  background: linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
 }
 
 @media screen and (max-width: 767px) {

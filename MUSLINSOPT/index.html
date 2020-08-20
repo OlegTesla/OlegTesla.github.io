@@ -22,6 +22,7 @@
 	<title>Muslinopt</title>
 </head>
 <body>
+	<progress max="100" value="0"></progress>
 	<!-- header -->
 	<header class="header">
 		<div class="bg__container">
@@ -161,6 +162,38 @@
 					</div>
 				</div>
 				<div class="row__item">
+					<img src="image/logic/logic2.png" alt="working man image" class="row__image">
+					<div class="row__bottom">
+						<div class="icon">2</div>
+						<div class="row__description">
+							<h3 class="row__text">Заказываете уже <br>готовую ткань из <br>имеющихся цветов</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row__item">
+					<img src="image/logic/logic3.png" alt="working man image" class="row__image">
+					<div class="row__bottom">
+						<div class="icon">3</div>
+						<div class="row__description">
+							<h3 class="row__text">Получаете <br>выбранный <br>товар</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="stroke">или</p>
+			<div class="logic__row">
+				<div class="row__title"><h2 class="text">Готовое решение</h2></div>
+				<div class="row__item">
+					<img src="image/logic/logic1.png" alt="working man image" class="row__image">
+					<div class="row__bottom">
+						<div class="icon">1</div>
+						<div class="row__description">
+							<h3 class="row__text">Оставляете <br>  заявку на сайте</h3>
+							<p class="row__name">Нам менеджер связывается с Вами</p>
+						</div>
+					</div>
+				</div>
+				<div class="row__item">
 					<img src="image/logic/logic1.png" alt="working man image" class="row__image">
 					<div class="row__bottom">
 						<div class="icon">2</div>
@@ -210,6 +243,46 @@
 					</div>
 				</div>
 			</div>
+			<!-- logic footer -->
+			<div class="logic__bottom">
+				<div class="logic__left">
+					<img src="image/logic/hand.png" alt="image of hand">
+				</div>
+				<div class="logic__right">
+					<h2 class="logic__header">Также мы можем помочь</h2>
+					<div class="logic__points">
+						<div class="logic__block">
+							<span></span>
+							<h3>С пошивом готовых изделий</h3>
+						</div>
+						<div class="logic__block">
+							<span></span>
+							<h3>Фотосессия готовой продукции</h3>
+						</div>
+						<div class="logic__block">
+							<span></span>
+							<h3>Оформление сертификатов</h3>
+						</div>
+						<div class="logic__block">
+							<span></span>
+							<h3>Помогаем в заключении договоров с крупными Маркетплейсами</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- calculator -->
+	<section class="calculator">
+		<div class="wrapper">
+			<div class="calculator__container">
+				<div class="calculator__text">
+					<h2 class="calculator__top">Онлайн калькулятор <br>расчета стоимости </h2>
+					<p class="calculator__description">Рассчитайте стоимость и получите</p>
+					<p class="calculator__sale">дополнительную скидку 5%</p>
+					<button class="calculator__btn btn">Рассчитать стоимость</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -228,6 +301,17 @@
 			    $('.navbar-bgc').removeClass("navbar-color");
 			  }
 		});
+	</script>
+	<!-- all elements of progress line top -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+	<script>
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.to("progress",{
+			value: 100,
+			ease: "none",
+			scrollTrigger: {scrub: 0.3}
+		})
 	</script>
 </body>
 </html>
