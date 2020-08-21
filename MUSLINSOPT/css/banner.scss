@@ -18,6 +18,7 @@
 		z-index: 3;
 		.banner__text {
 			width: 50%;
+			z-index: 20;
 			// top styles of left part of banner
 			.banner__subtitle {
 				padding: 10px 20px;
@@ -95,7 +96,6 @@
 				font-size: 1.33rem;
 				line-height: 1.6rem;
 				padding-top: 39px;
-				padding-left: 14px;
 				color: #fff;
 				text-align: center;
 				font-family: 'Gilroy';

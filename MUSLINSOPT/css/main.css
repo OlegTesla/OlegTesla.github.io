@@ -126,7 +126,7 @@ html {
 }
 
 body {
-  z-index: 2;
+  z-index: 20;
 }
 
 input {
@@ -210,8 +210,6 @@ progress::-moz-progress-bar {
   background-color: #F1F6F6;
   margin-top: 0;
   position: absolute;
-  width: 100%;
-  left: 0;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 1rem;
@@ -316,6 +314,7 @@ progress::-moz-progress-bar {
   font-family: "Inter";
   font-weight: 600;
   color: #000000;
+  display: block;
   line-height: 1.93rem;
   font-size: 1.6rem;
   margin-right: 30px;
@@ -354,6 +353,7 @@ progress::-moz-progress-bar {
 }
 .banner__header .banner__text {
   width: 50%;
+  z-index: 20;
 }
 .banner__header .banner__text .banner__subtitle {
   padding: 10px 20px;
@@ -426,7 +426,6 @@ progress::-moz-progress-bar {
   font-size: 1.33rem;
   line-height: 1.6rem;
   padding-top: 39px;
-  padding-left: 14px;
   color: #fff;
   text-align: center;
   font-family: "Gilroy";
@@ -630,7 +629,8 @@ progress::-moz-progress-bar {
   font-size: 1.2rem;
   line-height: 2rem;
   color: #37BA9A;
-  bottom: 50%;
+  transform: rotate(-90deg);
+  top: 76px;
   display: block;
   position: absolute;
 }
@@ -950,13 +950,323 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 .advantages .advantages__container .advantages__column:last-child .advantages__img .advantages__image {
-  width: 55px;
-  height: 65px;
   display: block;
   margin-right: 10px;
 }
 .advantages .advantages__container .advantages__column:last-child .advantages__img .advantages__image:last-child {
   margin-right: 0;
+}
+
+.connection {
+  background-color: #F5F8FA;
+}
+.connection .wrapper {
+  display: flex;
+}
+.connection .wrapper .connection__img img {
+  width: 400px;
+  height: 100%;
+  display: block;
+}
+.connection .wrapper .connection__video {
+  display: flex;
+  align-items: center;
+}
+.connection .wrapper .connection__video .connection__info {
+  margin-left: 40px;
+  margin-right: 45px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.connection .wrapper .connection__video .connection__info .connection__title {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  font-family: "Gilroy";
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.connection .wrapper .connection__video .connection__info .connection__description {
+  font-family: "Inter";
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #333333;
+  margin-bottom: 40px;
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__wwhatsap {
+  padding: 10px 15px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 1.06rem;
+  line-height: 1.86rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__wwhatsap img {
+  margin-right: 15px;
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__get {
+  font-size: 1.2rem;
+  width: 285px;
+  line-height: 1.33rem;
+  background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__get:hover {
+  background: linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
+}
+.connection .wrapper .connection__video .connection__popup {
+  position: relative;
+}
+.connection .wrapper .connection__video .connection__popup img {
+  width: 660px;
+  height: 500px;
+  display: block;
+  border-radius: 20px;
+}
+.connection .wrapper .connection__video .connection__popup .link {
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 15%;
+  height: 100px;
+}
+.connection .wrapper .connection__video .connection__popup .link .popup {
+  font-family: "Gilroy";
+  font-size: 1.33rem;
+  line-height: 1.33rem;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  transition: 0.2s linear;
+}
+.connection .wrapper .connection__video .connection__popup .link .popup .play {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+}
+.connection .wrapper .connection__video .connection__popup .link .popup:hover {
+  color: #000;
+}
+.connection .wrapper .connection__video .connection__popup .link .popup:hover .play {
+  background-color: #000;
+}
+
+.fabrics {
+  padding-top: 80px;
+}
+.fabrics .fabrics__container .fabrics__header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.fabrics .fabrics__container .fabrics__header .fabrics__logo {
+  margin-bottom: 10px;
+}
+.fabrics .fabrics__container .fabrics__header .fabrics__title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 3.13rem;
+  color: #333333;
+}
+.fabrics .fabrics__container .fabrics__middle {
+  position: relative;
+  display: flex;
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__row {
+  width: 100%;
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 240px;
+  background: linear-gradient(262.69deg, #F0FFF2 0%, #E1F4F3 100%);
+  border-radius: 20px;
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item .fabric__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 59px;
+  margin-left: 80px;
+  width: 270px;
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item .fabric__content h3 {
+  font-size: 1.33rem;
+  line-height: 2rem;
+  color: #333333;
+  font-family: "Inter";
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__row:nth-child(2) .fabric__content {
+  padding-top: 0;
+}
+.fabrics .fabrics__container .fabrics__middle .fabrics__img {
+  display: block;
+  position: absolute;
+  right: 36%;
+  bottom: 15%;
+}
+.fabrics .fabrics__container .fabrics__bottom {
+  text-align: center;
+}
+.fabrics .fabrics__container .fabrics__bottom .fabrics__title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.fabrics .fabrics__container .fabrics__bottom .fabrics__description {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.questions {
+  background: linear-gradient(180deg, #F9FBFD 0%, #FFEEF8 100%);
+  padding-bottom: 80px;
+  position: relative;
+}
+.questions .questions__header {
+  padding-top: 80px;
+  text-align: center;
+}
+.questions .questions__header .fabrics__logo {
+  margin-bottom: 10px;
+}
+.questions .questions__header .fabrics__title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.33rem;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.questions .questions__accordion {
+  z-index: 20;
+  margin-bottom: 20px;
+}
+.questions .questions__accordion .accordion__item {
+  width: 940px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.questions .questions__accordion .line {
+  background: #000000;
+  opacity: 0.1;
+  height: 2px;
+  margin: 0 auto;
+  z-index: 20;
+  width: 940px;
+  margin-top: 40px;
+}
+.questions .questions__accordion .accordion-item__triger {
+  padding: 27px 30px;
+  border-radius: 20px;
+  z-index: 20;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.questions .questions__accordion .accordion-item__triger h3 {
+  font-size: 1.33rem;
+  line-height: 2.2rem;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Gilroy";
+}
+.questions .questions__accordion .accordion-item__triger h3 span {
+  color: #00BC8E;
+  margin-right: 5px;
+}
+.questions .questions__accordion .accordion-item__triger .arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #F74EBC;
+  border-right: 2px solid #F74EBC;
+  transform: rotate(45deg);
+}
+.questions .questions__accordion .accordion-item__content {
+  display: none;
+  width: 100%;
+  padding: 20px 30px;
+  z-index: 20;
+}
+.questions .questions__accordion .accordion-item__content p {
+  font-size: 1.2rem;
+  line-height: 1.86rem;
+  color: #333333;
+  font-family: "Inter";
+  z-index: 20;
+}
+.questions .questions__bottom {
+  margin-top: 40px;
+}
+.questions .questions__bottom .questions__head {
+  font-size: 1.6rem;
+  line-height: 2.13rem;
+  color: #333333;
+  font-family: "Gilroy";
+  font-weight: 600;
+  z-index: 30;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.questions .questions__bottom .questions__btn {
+  padding: 15px 54px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.06rem;
+  line-height: 1.33rem;
+  background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+}
+.questions .questions__bottom .questions__btn:hover {
+  background: linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
+}
+
+.text {
+  background: #FFF;
+  margin-bottom: 80px;
+}
+.text .wrapper .text__title {
+  margin-top: 70px;
+  font-size: 2.13rem;
+  line-height: 2.53rem;
+  color: #333333;
+  font-family: "Gilroy";
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.text .wrapper .text__container {
+  display: flex;
+  justify-content: space-between;
+}
+.text .wrapper .text__container .text__part-one {
+  width: 50%;
+  margin-right: 50px;
+}
+.text .wrapper .text__container .text__part-two {
+  width: 50%;
+}
+.text .wrapper .text__container .text__description {
+  font-size: 0.93rem;
+  line-height: 1.6rem;
+  color: #333333;
+  font-family: "Inter";
 }
 
 @media screen and (max-width: 767px) {

@@ -1,0 +1,82 @@
+// fabrics
+.fabrics {
+	padding-top: 80px;
+	.fabrics__container {
+		// top content
+		.fabrics__header {
+			text-align: center;
+			margin-bottom: 70px;
+			.fabrics__logo {
+				margin-bottom: 10px;
+			}
+			.fabrics__title {
+				font-family: 'Gilroy';
+				font-weight: 600;
+				font-size: 3.13rem;
+				color: $grey;
+			}
+		}
+		// middle content
+		.fabrics__middle {
+			position: relative;
+			display: flex;
+			.fabrics__row {
+				width: 100%;
+				.fabrics__item {
+					margin-right: 20px;
+					margin-bottom: 20px;
+					height: 240px;
+					background: linear-gradient(262.69deg, #F0FFF2 0%, #E1F4F3 100%);
+					border-radius: 20px;
+					.fabric__content {
+						display: flex;
+						-webkit-flex-direction: column;
+						    -ms-flex-direction: column;
+						        flex-direction: column;
+						padding-top: 59px;
+						margin-left: 80px;
+						width: 270px;
+						h3 {
+							font-size: 1.33rem;
+							line-height: 2rem;
+							color: $grey;
+							font-family: 'Inter';
+						}
+					}
+				}
+				.fabrics__row:nth-child(2) {
+					.fabric__content {
+						padding-top: 0;
+					}
+				}
+			}
+			.fabrics__img {
+				display: block;
+				position: absolute;
+				right: 36%;
+				bottom: 15%;
+				
+			}
+		}
+		// bottom content
+		.fabrics__bottom {
+			text-align: center;
+			.fabrics__title {
+				font-family: 'Gilroy';
+				font-weight: 600;
+				font-size: 1.6rem;
+				line-height: 2rem;
+				color: $grey;
+				margin-bottom: 30px;
+				margin-top: 20px;
+			}
+			.fabrics__description {
+				font-family: 'Inter';
+				font-size: 1.6rem;
+				line-height: 2rem;
+				color: $grey;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}

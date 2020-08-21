@@ -1,0 +1,111 @@
+// connection
+.connection {
+	background-color: #F5F8FA;
+	.wrapper {
+		display: flex;
+		.connection__img {
+	    	 img {
+	    	 	width: 400px;
+	    	 	height: 100%;
+	    	 	display: block;
+	    	 }
+	    }
+	    .connection__video {
+	    	display: flex;
+	    	-webkit-align-items: center;
+	    	        align-items: center;
+	    	.connection__info {
+	    		margin-left: 40px;
+	    		margin-right: 45px;
+	    		margin-top: 50px;
+	    		margin-bottom: 50px;
+	    		.connection__title {
+	    			font-size: 2.8rem;
+	    			line-height: 3rem;
+	    			font-family: 'Gilroy';
+	    			font-weight: 600;
+	    			color: $grey;
+	    			margin-bottom: 20px;
+	    		}
+	    		.connection__description {
+	    			font-family: 'Inter';
+	    			font-size: 1.2rem;
+	    			line-height: 1.70rem;
+	    			color: $grey;
+	    			margin-bottom: 40px;
+	    		}
+	    		.connection__link {
+	    			.connection__wwhatsap {
+	    				padding: 10px 15px;
+	    				background-color: #FFF;
+	    				display: flex;
+	    				-webkit-align-items: center;
+	    				        align-items: center;
+	    				-webkit-justify-content: center;
+	    				        justify-content: center;
+	    				border: 1px solid #E1E1E1;
+						box-sizing: border-box;
+						border-radius: 10px;
+						font-size: 1.06rem;
+						line-height: 1.86rem;
+						font-weight: 600;
+						margin-bottom: 20px;
+	    				img {
+	    					margin-right: 15px;
+	    				}
+	    			}
+	    			.connection__get {
+	    				font-size: 1.2rem;
+	    				width: 285px;
+	    				line-height: 1.33rem;
+	    				background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+			    		&:hover  {
+			    			background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%) ;
+			    		}
+	    			}
+	    		}
+	    	}
+	    	.connection__popup {
+	    		position: relative;
+	    		img {
+	    			width: 660px;
+	    			height: 500px;
+	    			display: block;
+	    			border-radius: 20px;
+	    		}
+	    		.link {
+	    			position: absolute;
+	    			display: block;
+	    			top: 40%;
+	    			left: 15%;
+	    			height: 100px;
+	    			.popup {
+	    				font-family: 'Gilroy';
+	    				font-size: 1.33rem;
+	    				line-height: 1.33rem;
+	    				font-weight: 600;
+	    				height: 100%;
+	    				display: flex;
+	    				-webkit-align-items: center;
+	    				        align-items: center;
+	    				color: #FFF;
+	    				transition: 0.2s linear;
+	    				.play {
+		    				width: 100px;
+		    				height: 100px;
+		    				border-radius: 50%;
+		    				position: relative;
+		    				margin-right: 20px;
+		    			}
+		    			&:hover {
+		    				color: #000;
+		    				.play {
+		    					background-color: #000;
+		    				}
+		    			}
+	    			}
+	    		}
+	    	}
+	    }
+	}
+}
