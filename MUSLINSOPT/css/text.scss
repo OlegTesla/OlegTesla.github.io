@@ -1,0 +1,34 @@
+// text
+.text {
+	background: #FFF;
+	margin-bottom: 80px;
+	.wrapper {
+		.text__title {
+			margin-top: 70px;
+			font-size: 2.13rem;
+			line-height: 2.53rem;
+			color: $grey;
+			font-family: 'Gilroy';
+			font-weight: 600;
+			margin-bottom: 40px;
+		}
+		.text__container {	
+			display: flex;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			.text__part-one {
+				width: 50%;
+				margin-right: 50px;
+			}
+			.text__part-two {
+				width: 50%;
+			}
+			.text__description {
+				font-size: 0.93rem;
+				line-height: 1.6rem;
+				color: $grey;
+				font-family: 'Inter';
+			}
+		}
+	}
+}

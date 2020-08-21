@@ -5,3 +5,9 @@ $(document).ready(function(){
 	})
 });
 
+// accordion
+$(document).ready(function(){
+	$(".accordion-item__triger").click(function(){
+		$(this).next('.accordion-item__content').slideToggle(200);
+	});
+});

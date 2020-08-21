@@ -212,8 +212,6 @@ progress::-moz-progress-bar {
   position: absolute;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .header .bg__container {
   background-color: #F1F6F6;
