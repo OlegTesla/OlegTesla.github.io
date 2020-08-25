@@ -1747,6 +1747,7 @@ progress::-moz-progress-bar {
   .mobbanner .bgc {
     position: absolute;
     height: 230px;
+    left: 0;
     width: 100%;
     bottom: -100px;
     z-index: 1;
@@ -1982,7 +1983,7 @@ progress::-moz-progress-bar {
   }
   .fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item {
     height: 330px;
-    width: 100%;
+    width: 160px;
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 20px 30px;
@@ -2000,6 +2001,7 @@ progress::-moz-progress-bar {
   .fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item .fabric__content h3 {
     font-size: 1.06rem;
     line-height: 1.43rem;
+    display: block;
   }
   .fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item:last-child {
     padding-top: 104px;
@@ -2017,6 +2019,7 @@ progress::-moz-progress-bar {
     margin: 0 auto;
   }
   .fabrics .fabrics__container .fabrics__middle .fabrics__row .fabrics__item .fabric__content-right h3 {
+    display: block;
     font-size: 1.06rem;
     line-height: 1.43rem;
   }
@@ -2026,7 +2029,7 @@ progress::-moz-progress-bar {
   .fabrics .fabrics__container .fabrics__middle .fabrics__img {
     width: 250px;
     height: 250px;
-    right: 20%;
+    right: 10%;
     top: 30%;
   }
   .fabrics .fabrics__container .fabrics__bottom .fabrics__description {
@@ -2115,6 +2118,9 @@ progress::-moz-progress-bar {
     font-size: 0.93rem;
     line-height: 1.6rem;
   }
+  .questions .questions__accordion .line {
+    width: 100%;
+  }
   .questions .questions__bottom {
     margin-top: 20px;
   }
@@ -2158,6 +2164,7 @@ progress::-moz-progress-bar {
   }
   .footer .footer__container .footer__contact {
     width: 100%;
+    margin-right: 0;
   }
   .footer .footer__container .footer__contact .footer__top .footer__title {
     font-size: 2.13rem;
@@ -2165,6 +2172,84 @@ progress::-moz-progress-bar {
   }
   .footer .footer__container .footer__contact .footer__top .footer__description, .footer .footer__container .footer__contact .footer__top .footer__num {
     font-size: 1.06rem;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man {
+    display: none;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob {
+    display: block;
+    margin-top: 20px;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__box {
+    display: flex;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__box img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text {
+    font-size: 1.2rem;
+    line-height: 1.73rem;
+    font-family: "Gilroy";
+    margin-left: 20px;
+    color: #333333;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text h2 {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text p {
+    opacity: 0.5;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text .footer__btn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 15px;
+    font-size: 1.06rem;
+    line-height: 1.33rem;
+    color: #333333;
+    box-shadow: none;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text .footer__btn img {
+    margin-right: 10px;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .footer__item .footer__text .footer__btn:hover {
+    background: linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
+    color: #FFF;
+  }
+  .footer .footer__container .footer__contact .footer__bottom .footer__man-mob .line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: 20px;
+    opacity: 0.1;
+  }
+  .footer .footer__container .footer__map {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footer .footer__container .footer__map .footer__first {
+    margin-bottom: 30px;
+  }
+  .footer .footer__container .footer__map .footer__first .footer__place .footer__text {
+    font-size: 1.06rem;
+    line-height: 1.6rem;
+  }
+  .footer .footer__container .footer__map .footer__second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer .footer__container .footer__map .footer__second img {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
