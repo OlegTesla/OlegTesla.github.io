@@ -16,6 +16,9 @@ html {
 body {
 	z-index: 20;
 }
+.hide {
+	display: none;
+}
 input {
 	color: #333;	
 	font-size: 0.93rem;
@@ -86,21 +89,24 @@ progress::-moz-progress-bar {
 @import "advantages.scss";
 @import "connection.scss";
 @import "fabrics.scss";
+@import "filter.scss";
 @import "questions.scss";
 @import "text.scss";
+@import "footer.scss";
+@import "mobile.scss";
+
 
 
 
 // mobile
 @media screen and (max-width: 767px) {
 	.header {
-		position: relative;
 		.bg__container {
 			.header__inner {
 				position: absolute;
 				height: 300px;
 				left: -1000px;
-				margin-top: 144px;
+				margin-top: 164px;
 				transition: 0.3s linear;
 				// left: -100%;
 				background-color: #F1F6F6;
@@ -135,9 +141,16 @@ progress::-moz-progress-bar {
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			    margin-top: 0;
-			    margin-top: 32px;
+			    width: 100%;
 			.header__logo {
 		   	width: 100%;
+		   	position: absolute;
+		   	background-color: #FFF;
+		   	height: 50px;
+		   	padding-top: 75px;
+		   	padding-left: 1rem;
+		   	padding-bottom: 40px;
+		   	border-bottom: 1px solid #F0F0F0;
 		   	.description {
 		   		display: none;
 		   	}
@@ -217,9 +230,9 @@ progress::-moz-progress-bar {
 		    	}
 		    	.header__btn {
 		    		width: 100%;
-		    		.button {
-		    			padding: 15px 15px;
+		    		.call  {
 		    			float: right;
+		    			padding: 11px 15px;
 		    			-webkit-border-radius: 10px;
 		    			        border-radius: 10px;
 		    		}

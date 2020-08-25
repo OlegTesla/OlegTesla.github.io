@@ -1,6 +1,9 @@
 // connection
 .connection {
 	background-color: #F5F8FA;
+	.connection__mobile {
+		display: none;
+	}
 	.wrapper {
 		display: flex;
 		.connection__img {

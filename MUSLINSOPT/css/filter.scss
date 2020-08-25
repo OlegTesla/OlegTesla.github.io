@@ -1,0 +1,103 @@
+// filter
+.filter {
+	padding-top: 80px;
+	.wrapper {
+		// top part
+		.filter__head {
+			.filter__logo  img {	
+				margin: 0 auto;
+				display: block;
+			}
+			.filter__text {
+				text-align: center;
+				.filter__title {
+					font-size: 2.8rem;
+					line-height: 3.33rem;
+					color: $grey;
+					font-family: 'Gilroy';
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+				.filter__description {
+					font-size: 1.6rem;
+					line-height: 1.86rem;
+					color: #F07EC8;
+					font-family: 'Gilroy';
+					font-weight: 500;
+					margin-bottom: 30px;
+				}
+			}
+		}
+		// nav part
+		.filter__nav {
+			width: 415px;
+			height: 50px;
+			background: #F6F7FA;
+			border-radius: 20px;
+			margin: 0 auto;
+			margin-bottom: 60px;
+			display: flex;
+			-webkit-align-items: center;
+			        align-items: center;
+			.filter__nav-link {
+				padding: 8px 36px;
+				font-size: 1.2rem;
+				line-height: 2rem;
+				font-family: 'Gilroy';
+				font-weight: 600;
+				color: $grey;
+				&.active {
+					background: linear-gradient(180deg, #37BA9A 0%, #2AE680 100%);
+					border-radius: 17px;
+					color: #FFF;
+				}
+			}
+		}
+		// content part
+		.filter__works {
+			.filter__col {
+				display: flex;
+				    -webkit-align-items: center;
+				            align-items: center;
+				    -webkit-justify-content: center;
+				            justify-content: center;
+				.work {
+					margin: 0px 20px 20px 0px;
+					img {
+						display: block;
+					}
+				}
+			}
+		}
+		.filter__works-mob {
+			display: none;
+		}
+		// bottom part
+		.filter__bottom {
+			display: flex;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			    -webkit-align-items: center;
+			            align-items: center;
+		   background: linear-gradient(262.69deg, #F0FFF2 0%, #E1F4F3 100%);
+			border-radius: 20px;
+			padding: 18px 45px;
+			margin-bottom: 100px;
+			.filter__info {
+				font-size: 1.6rem;
+				line-height: 1.93rem;
+				color: $grey;
+				font-family: 'Gilroy';
+				font-weight: 600;
+			}
+			.filter__btn {
+				padding: 15px 94px;
+				background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+				&:hover  {
+    				background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
+    				color: #FFF;
+    			}
+			}
+		}
+	}
+}

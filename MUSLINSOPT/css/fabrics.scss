@@ -35,25 +35,42 @@
 						        flex-direction: column;
 						padding-top: 59px;
 						margin-left: 80px;
-						width: 270px;
+						width: 291px;
 						h3 {
 							font-size: 1.33rem;
 							line-height: 2rem;
+							text-align: center;
 							color: $grey;
+							margin-top: 20px;
 							font-family: 'Inter';
 						}
 					}
-				}
-				.fabrics__row:nth-child(2) {
-					.fabric__content {
-						padding-top: 0;
+					.fabric__content-right {
+						display: flex;
+						-webkit-flex-direction: column;
+						    -ms-flex-direction: column;
+						        flex-direction: column;
+						    -webkit-align-items: center;
+						            align-items: center;
+						   width: 291px;
+						   padding-top: 59px;
+						   float: right;
+						   margin-right: 80px;
+						   h3 {
+								font-size: 1.33rem;
+								line-height: 2rem;
+								text-align: center;
+								color: $grey;
+								margin-top: 20px;
+								font-family: 'Inter';
+						}
 					}
 				}
 			}
 			.fabrics__img {
 				display: block;
 				position: absolute;
-				right: 36%;
+				right: 36.5%;
 				bottom: 15%;
 				
 			}
