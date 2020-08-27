@@ -1,0 +1,164 @@
+// properties
+.properties {
+	padding-top: 70px;
+	.properties__logo {
+		width: 46px;
+		height: 46px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.properties__title {
+		font-size: 4.13rem;
+		line-height: 4.93rem;
+		font-family: 'Gilroy';
+		font-weight: 600;
+		color: $grey;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	// middle content
+	.properties__content {
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		    -webkit-justify-content: space-between;
+		            justify-content: space-between;
+		    position: relative;
+	    .properties__item {
+	    	width: 48.5%;
+	    	height: 240px;
+	    	margin: 10px 0;
+	    	background: linear-gradient(262.69deg, #F0FFF2 0%, #E1F4F3 100%);
+	    	border-radius: 20px;
+	    	padding: 50px 90px;
+	    	display: flex;
+	    	-webkit-justify-content: flex-start;
+	    	        justify-content: flex-start;
+	    	&.second {
+	    		-webkit-justify-content: flex-end;
+	    		        justify-content: flex-end;
+	    	}
+	    	.item__inner {
+	    		width: 295px;
+	    		display: flex;
+	    		-webkit-flex-direction: column;
+	    		    -ms-flex-direction: column;
+	    		        flex-direction: column;
+	    		-webkit-justify-content: center;
+	    		        justify-content: center;
+	    		text-align: center;
+	    		font-size: 1.33rem;
+	    		line-height: 2rem;
+	    		color: $grey;
+	    		.item__image {
+	    			margin-bottom: 20px;
+	    		}
+	    	}
+	   }
+	   .properties__image {
+	   	display: block;
+	   	position: absolute;
+	   	height: 400px;
+	   	width: 400px;
+	   	top: 50%;
+	   	margin-top: -200px;
+	   	left: 50%;
+	   	margin-left: -200px;
+	   }
+	}
+	.properties__subtitle {
+		font-size: 2.4rem;
+		line-height: 1.93rem;
+		font-family: 'Gilroy';
+		font-weight: 600;
+		color: $grey;
+		margin-top: 40px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.properties__description {
+		font-size: 1.33rem;
+		line-height: 2rem;
+		font-family: 'Gilroy';
+		font-weight: 600;
+		color: $grey;	
+		margin-bottom: 70px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.properties {
+		.properties__content {
+			.properties__item {
+				padding: 50px 30px;
+			}
+			.properties__image {
+				height: 350px;
+				width: 350px;
+				margin-top: -175px;
+				margin-left: -175px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 980px) {
+	.properties {
+		.properties__content  {
+			.properties__item {
+				padding: 50px 10px;
+			}
+			.properties__image {
+				height: 300px;
+				width: 300px;
+				margin-top: -150px;
+				margin-left: -150px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.properties {
+		.properties__content  {
+			.properties__item {
+				height: 330px;
+				.item__inner {
+					font-size: 1.06rem;
+					line-height: 140%;					
+				}
+				&:nth-child(1) {
+					align-items: flex-start;
+				}
+				&:nth-child(2) {
+					align-items: flex-start;
+				}
+				&:nth-child(3) {
+					align-items: flex-end;
+				}
+				&:nth-child(4) {
+					align-items: flex-end;
+				}
+			}
+			.properties__image {
+				height: 300px;
+				width: 300px;
+				margin-top: -150px;
+				margin-left: -150px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.properties {
+		.properties__content {
+			.properties__image {
+				height: 200px;
+				width: 200px;
+				margin-top: -100px;
+				margin-left: -100px;
+			}
+		}
+	}
+}

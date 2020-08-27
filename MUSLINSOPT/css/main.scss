@@ -88,7 +88,7 @@ progress::-moz-progress-bar {
 @import "calculator.scss";
 @import "advantages.scss";
 @import "connection.scss";
-@import "fabrics.scss";
+@import "properties.scss";
 @import "filter.scss";
 @import "questions.scss";
 @import "text.scss";
@@ -106,7 +106,7 @@ progress::-moz-progress-bar {
 				position: absolute;
 				height: 300px;
 				left: -1000px;
-				margin-top: 164px;
+				margin-top: 145px;
 				transition: 0.3s linear;
 				// left: -100%;
 				background-color: #F1F6F6;
@@ -147,7 +147,7 @@ progress::-moz-progress-bar {
 		   	position: absolute;
 		   	background-color: #FFF;
 		   	height: 50px;
-		   	padding-top: 75px;
+		   	padding-top: 55px;
 		   	padding-left: 1rem;
 		   	padding-bottom: 40px;
 		   	border-bottom: 1px solid #F0F0F0;
@@ -243,6 +243,11 @@ progress::-moz-progress-bar {
 	@media screen and (max-width: 420px) {
 		.header {
 			.header__footer {
+				.header__logo {
+					.logo {
+						padding-top: 10px;
+					}
+				}
 				.header__contact {
 					.number {
 						display: flex;
