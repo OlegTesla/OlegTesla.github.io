@@ -78,6 +78,10 @@
 				border-bottom: 2px solid #F74EBC;
 				border-right: 2px solid #F74EBC;
 				transform: rotate(45deg);
+				transition: linear 0.2s;
+				&.active {
+					transform: rotate(225deg);
+				}
 			}
 		}
 		.accordion-item__content {

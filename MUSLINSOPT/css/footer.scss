@@ -17,27 +17,24 @@
 	   .footer__contact {
 	    	width: 50%;
 	    	margin-right: 50px;
-	    	.footer__top {
-	    		margin-bottom: 50px;
-	    		.footer__description {
-	    			font-size: 1.2rem;
-	    			line-height: 1.86rem;
-	    			font-family: 'Inter';
-	    			font-weight: 600;
-	    			color: $grey;
-	    			span {
-	    				color: #F74EBC;
-	    				
-	    			}
-	    		}
-	    		.footer__num {
-	    			font-size: 0.93rem;
-	    			line-height: 1.86rem;
-	    			color: $grey;
-	    			opacity: 0.5;
-	    			font-family: 'Inter';
-	    		}
-	    	}
+    		.footer__description {
+    			font-size: 1.2rem;
+    			line-height: 1.86rem;
+    			font-family: 'Inter';
+    			font-weight: 600;
+    			color: $grey;
+    			span {
+    				color: #F74EBC;
+    				
+    			}
+    		}
+    		.footer__num {
+    			font-size: 0.93rem;
+    			line-height: 1.86rem;
+    			color: $grey;
+    			opacity: 0.5;
+    			font-family: 'Inter';
+    		}
 	    	.footer__bottom {
 		   	.footer__title {
 		   		font-size: 1.6rem;
@@ -58,8 +55,13 @@
 		   				display: flex;
 		   				-webkit-align-items: center;
 		   				        align-items: center;
+		   				    width: 100%;
 		   			}
 		   			.footer__text {
+		   				width: 100%;
+		   				display: flex;
+		   				-webkit-justify-content: space-between;
+		   				        justify-content: space-between;
 		   				font-size: 1.2rem;
 		   				line-height: 1.73rem;
 		   				font-family: 'Gilroy';
