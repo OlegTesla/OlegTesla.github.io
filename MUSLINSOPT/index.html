@@ -54,7 +54,20 @@
 						<img src="image/header/wwhatsap.svg" alt="" class="wwhatsapp">
 					</div>
 					<div class="header__btn">
-						<button class="call btn">Заказать звонок</button>
+						<button data-fancybox data-animation-duration="700" data-src="#animatedModal" class="call btn ">Заказать звонок</button>
+						<div style="display: none;" id="animatedModal" class="animated-modal">
+			          	<h2>Заполните, <br>пожалуйста, форму!</h2>
+			          	<p>Наш менеджер свяжется с Вами</p>
+			          	<div class="form__head">
+			          		<input placeholder="Имя"  type="text" class="name__head">
+			          		<input placeholder="Номер" type="text" class="number__head">
+			          		<div class="after">
+			          			<button  class="call btn ">Заказать звонок</button>
+			          			<button class="form__after"></button>
+			          		</div>
+			          	</div>
+			        </div>
+			        <button class="form__after"></button>
 					</div>
 				</div>
 			</div>
@@ -103,7 +116,23 @@
 				<div class="form__bottom">
 					<input type="text" placeholder="Имя" class="name">
 					<input type="text" placeholder="Телефон" class="name">
-					<button class="form__btn btn">Получить консультацию</button>
+					<div class="after">
+						<button data-fancybox data-animation-duration="700" data-src="#animatedModalSecond" class="form__btn btn">Получить консультацию</button>
+						 <div style="display: none;" id="animatedModalSecond" class="animatedModalSecond">
+	         			<h2>Задать вопрос</h2>
+	          			<p>Наш менеджер свяжется с Вами</p>
+	          				<div class="form__head">
+	          					<textarea placeholder="Текст вопроса" class="text__head"></textarea>
+				          		<input placeholder="Имя"  type="text" class="name__head">
+				          		<input placeholder="Номер" type="text" class="number__head">
+				          		<div class="after">
+				          			<button  class="call btn ">Заказать звонок</button>
+				          			<button class="form__after"></button>
+				          		</div>
+				          	</div>
+	       			 </div>
+	       			 <button class="form__after"></button>
+					</div>
 				</div>
 			</div>
 			<div class="line"></div>
@@ -177,6 +206,7 @@
 				</div>
 				<div class="mobbanner__btn">
 					<button class="btn">Получить консультацию</button>
+					<button class="form__after"></button>
 				</div>
 			</div>
 			<div class="line"></div>
@@ -201,7 +231,10 @@
 				<div class="test__form">
 					<input type="text" placeholder="Имя" class="name">
 					<input type="text" placeholder="Телефон" class="name">
-					<button class="form__btn btn">Узнать цены</button>
+					<div class="after">
+						<button class="form__btn btn">Узнать цены</button>
+						<button class="form__after"></button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -327,6 +360,7 @@
 	<!-- mob logic -->
 	<section class="moblogic">
 		<div class="wrapper">
+			<h2 class="logic__title">Алгоритм Работы</h2>
 			<div class="tabs">
 				<div class="tabs__nav tabs-nav">
 					<div class="tabs-nav__item is-active" data-tab-name="tab-1">Готовое решение</div>
@@ -431,7 +465,10 @@
 					<h2 class="calculator__top">Онлайн калькулятор <br>расчета стоимости </h2>
 					<p class="calculator__description">Рассчитайте стоимость и получите</p>
 					<p class="calculator__sale">дополнительную скидку 5%</p>
-					<button class="calculator__btn btn">Рассчитать стоимость</button>
+					<div class="after">
+						<button class="calculator__btn btn">Рассчитать стоимость</button>
+						<button class="form__after"></button>
+					</div>			
 				</div>
 				<img src="image/calculator/calculator.png" alt="" class="calculator__image">
 			</div>
@@ -449,7 +486,6 @@
 			<div class="advantages__container">
 				<!-- first item -->
 				<div class="advantages__info">
-				
 					<div class="advantages__block">
 						<div class="advantages__item">
 							<img class="advantages__icon" src="image/advantages/icon1.svg" alt="advantages icon">
@@ -564,7 +600,11 @@
 					<p class="connection__description">Меня зовут Сергей. Я руководитель кампании "Muslinopt". В видео я расскажу  о проблемах, с которыми сталкиваются наши клиенты, и как их можно легко избежать, работая с нами.</p>
 					<div class="connection__link">
 						<buttton class="connection__wwhatsap"><img src="image/header/wwhatsap.svg" alt="">Написать в WhatsApp</buttton>
-						<button class="connection__get btn">Получить консультацию</button>
+						<div class="after">
+							<button class="connection__get btn">Получить консультацию</button>
+							<button class="form__after"></button>
+						</div>
+						
 					</div>
 				</div>
 				<div class="connection__popup">
@@ -687,59 +727,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="filter__works-mob" data-cat="all">
-				<div class="filter__col">
-					<div class="work">
-						<img src="image/filter/work1.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work2.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work3.jpg" alt="work image">
-					</div>
-				</div>
-				<div class="filter__col">
-					<div class="work">
-						<img src="image/filter/work5.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work6.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work7.jpg" alt="work image">
-					</div>
-				</div>
-			</div>
-			<div class="filter__works-mob" data-cat="pelenki">
-				<div class="filter__col">
-					<div class="work">
-						<img src="image/filter/work3.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work1.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work5.jpg" alt="work image">
-					</div>
-				</div>
-			</div>
-			<div class="filter__works-mob" data-cat="coat">
-				<div class="filter__col">
-					<div class="work">
-						<img src="image/filter/work8.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work5.jpg" alt="work image">
-					</div>
-					<div class="work">
-						<img src="image/filter/work3.jpg" alt="work image">
-					</div>
-				</div>
-			</div>
 			<div class="filter__bottom">
 				<h2 class="filter__info">Желаете больше больши принтов ? Скачайте наш PDF - Файл</h2>
-				<button class="filter__btn btn">Скачайте наш PDF-файл</button>
+				<div class="after">
+					<button class="filter__btn btn">Скачайте наш PDF-файл</button>
+					<button class="form__after"></button>
+				</div>				
 			</div>
 		</div>
 	</section>
@@ -804,7 +797,10 @@
 			</div>
 			<div class="questions__bottom">
 				<h2 class="questions__head">Не нашли ответ на нужный вопрос? <br>Задайте свой</h2>
-				<button class="questions__btn btn">Скачайте наш PDF-файл</button>
+				<div class="after">
+					<button class="questions__btn btn">Скачайте наш PDF-файл</button>
+					<button class="form__after"></button>
+				</div>
 			</div>
 		</div>
 		<div class="sky__bottom"></div>
@@ -845,7 +841,7 @@
 											<h2>Роман</h2>
 											<p>Директор</p>
 										</div>
-										<button class="footer__btn btn"> <img src="image/header/wwhatsap.svg" alt="">Написать в WhatsApp</button>
+										<button data-fancybox data-animation-duration="700" data-src="#animatedModal" class="footer__btn btn"> <img src="image/header/wwhatsap.svg" alt="">Написать в WhatsApp</button>
 									</div>
 								</div>
 							</div>
@@ -860,7 +856,7 @@
 											<h2>Виктория</h2>
 											<p>Управляющий партнер</p>
 										</div>
-										<button class="footer__btn btn"> <img src="image/header/wwhatsap.svg" alt="">Написать в WhatsApp</button>
+										<button data-fancybox data-animation-duration="700" data-src="#animatedModal" class="footer__btn btn"> <img src="image/header/wwhatsap.svg" alt="">Написать в WhatsApp</button>
 									</div>
 								</div>
 							</div>
