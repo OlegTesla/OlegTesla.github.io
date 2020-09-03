@@ -132,13 +132,142 @@
 		    	}
 		    }
 		    .header__btn {
+		    	position: relative;
+		    	z-index: 90;
 		    	.call {
+		    		position: relative;
+		    		z-index: 60;
 		    		background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
 		    		&:hover  {
 		    			background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%) ;
 		    		}
 		    	}
 		    }
+		    .form__after {
+				padding: 16px 40px;
+				position: absolute;
+				width: 100%;
+				z-index: 20;
+				bottom: -5px;
+				display: block;
+				background: #1C9877;
+				box-shadow: 0px 8px 20px rgba(54, 190, 152, 0.4);
+				border-radius: 15px;
+	    	}
 	    }
 	}
 }
+
+	// modal styles
+	.animated-modal {
+		width: 380px;
+		height: 377px;
+		border-radius: 4px;
+		overflow: hidden;
+		padding: 24px 30px;
+		
+		transform: translateY(-50px);
+		transition: all .7s;
+		background: #FCFCFC;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		h2 {
+			font-size: 1.6rem;
+			line-height: 1.92rem;
+			color: $grey;
+			font-weight: 600;
+			font-family: 'Gilroy';
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+			color: $grey;
+			font-family: 'Gilroy';
+			margin-bottom: 30px;
+		}
+	}
+
+	.animated-modal h2,
+	.animated-modal p,
+	.animated-modal input,
+	.animated-modal button {
+	  transform: translateY(-50px);
+	  opacity: 0;
+	  
+	  transition-property: transform, opacity;
+	  transition-duration: .4s;
+	}
+
+	/* Final state */
+	.fancybox-slide--current .animated-modal,
+	.fancybox-slide--current .animated-modal h2,
+	.fancybox-slide--current .animated-modal p,
+	.fancybox-slide--current .animated-modal input,
+	.fancybox-slide--current .animated-modal button {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+
+	/* Reveal content with different delays */
+	.fancybox-slide--current .animated-modal h2 {
+	  transition-delay: .1s;
+	}
+
+	.fancybox-slide--current .animated-modal p {
+	  transition-delay: .3s;
+	}
+	.fancybox-slide--current .animated-modal input {
+	  transition-delay: .5s;
+	}
+	.fancybox-slide--current .animated-modal button {
+	  transition-delay: .6s;
+	}
+	.form__head {
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    .after {
+	    	position: relative;
+		   .call {
+		   	position: relative;
+		   	z-index: 60;
+		   	width: 100%;
+	    		background: linear-gradient(180deg, #2AE680 0%, #37BA9A 100%);
+	    		&:hover  {
+	    			background:  linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%) ;
+	    		}
+	    	}
+	    	.form__after {
+			   position: absolute;
+				width: 100%;
+				z-index: 20;
+				height: 100%;
+				bottom: -5px;
+				display: block;
+				background: #1C9877;
+				box-shadow: 0px 8px 20px rgba(54, 190, 152, 0.4);
+				border-radius: 15px;
+			}
+	    }
+		input {
+			color: #333;
+		   font-size: 0.93rem;
+		   line-height: 1.33rem;
+		   padding: 19px 20px;
+		   box-sizing: border-box;
+		   box-shadow: 0px 8px 20px rgba(203, 207, 206, 0.4);
+		   border-radius: 10px;
+		   border: 1px solid #EEEEEE;
+		   background-color: #FFF;
+		   font-family: "Inter";
+		   width: 100%;
+		   margin-bottom: 20px;
+		   height: 50px;
+		}
+	}
+
+	.fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
+		padding: 24px 30px;
+	}
