@@ -848,8 +848,10 @@
 			.form__bottom {
 				.after {
 					width: 100%;
+					height: 100%;
 					.form__btn {
 						width: 100%;
+						height: 100%;
 					}
 				}
 			}
@@ -1560,6 +1562,10 @@
 					line-height: 1.33rem;
 					font-family: 'Gilroy';
 					width: 100%;
+					transition: all linear 0.2s;
+					&:focus {
+						border-color: #2AE680;
+					}
 				}
 			}
 			.mobbanner__btn {
@@ -1697,6 +1703,10 @@
 						width: 100%;
 						margin-right: 0;
 						margin-bottom: 20px;
+						transition: all linear 0.2s;
+						&:focus {
+							border-color: #2AE680;
+						}
 					}
 					.form__btn {
 						width: 100%;
@@ -1912,7 +1922,7 @@
 	.calculator {
 		.calculator__container {
 			padding-left: 1rem;
-			padding-right: s1rem;
+			padding-right: 1rem;
 		}
 		.calculator__box .calculator__container .calculator__text .after {
 			width: 100%;
@@ -3092,12 +3102,13 @@
 	}
 	// advantages
 	.advantages {
-		display: none;
+		
 		.advantages__logo {
 			text-align: center;
 		}
 		.advantages__container {
 			.advantages__info {
+				display: none;	
 				.advantages__title {
 					text-align: center;
 					margin-left: 0;
@@ -3106,6 +3117,7 @@
 				}
 				// first block
 				.advantages__block {
+					display: none;	
 					border-radius: 0;
 					width: 84px;
 					height: auto;
@@ -3193,12 +3205,11 @@
 			   		height: auto;
 			   	}
 			   	.link {
-			   		top: 50%;
-			   		margin-top: -50px;
-			   		right: 50%;
-			   		margin-right: -165px;
-			   		left: 50%;
-			   		margin-left: -165px;
+			   		right: 55%;	
+			   		margin-right: -100px;	
+			   		left: 55%;	
+			   		margin-left: -120px;	
+			   		width: 80%;
 			   		.popup {
 			   			display: flex;
 			   			-webkit-flex-direction: column;

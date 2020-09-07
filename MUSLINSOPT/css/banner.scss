@@ -368,5 +368,9 @@
 		   height: 160px;
 		   margin-bottom: 20px;
 		   resize: none;
+		   transition: all linear 0.1s;
+			&:focus {
+				border-color: #2AE680;
+			}
 		}
 	}

@@ -265,6 +265,10 @@
 		   width: 100%;
 		   margin-bottom: 20px;
 		   height: 50px;
+   		transition: all linear 0.1s;
+			&:focus {
+				border-color: #2AE680;
+			}
 		}
 	}
 

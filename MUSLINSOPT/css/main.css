@@ -461,6 +461,10 @@ progress::-moz-progress-bar {
   width: 100%;
   margin-bottom: 20px;
   height: 50px;
+  transition: all linear 0.1s;
+}
+.form__head input:focus {
+  border-color: #2AE680;
 }
 
 .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
@@ -826,6 +830,10 @@ progress::-moz-progress-bar {
   height: 160px;
   margin-bottom: 20px;
   resize: none;
+  transition: all linear 0.1s;
+}
+.form__head textarea:focus {
+  border-color: #2AE680;
 }
 
 .test {
@@ -2791,9 +2799,11 @@ progress::-moz-progress-bar {
   }
   .banner .banner__bottom .form__bottom .after {
     width: 100%;
+    height: 100%;
   }
   .banner .banner__bottom .form__bottom .after .form__btn {
     width: 100%;
+    height: 100%;
   }
   .banner .banner__services .wrapper {
     display: flex;
@@ -3388,6 +3398,10 @@ progress::-moz-progress-bar {
     line-height: 1.33rem;
     font-family: "Gilroy";
     width: 100%;
+    transition: all linear 0.2s;
+  }
+  .mobbanner .mobbanner__quest .mobbanner__info input:focus {
+    border-color: #2AE680;
   }
   .mobbanner .mobbanner__quest .mobbanner__btn {
     position: relative;
@@ -3513,6 +3527,10 @@ progress::-moz-progress-bar {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+    transition: all linear 0.2s;
+  }
+  .test .wrapper .test__text .test__form input:focus {
+    border-color: #2AE680;
   }
   .test .wrapper .test__text .test__form .form__btn {
     width: 100%;
@@ -3701,7 +3719,7 @@ progress::-moz-progress-bar {
 
   .calculator .calculator__container {
     padding-left: 1rem;
-    padding-right: s1rem;
+    padding-right: 1rem;
   }
   .calculator .calculator__box .calculator__container .calculator__text .after {
     width: 100%;
@@ -4707,11 +4725,11 @@ progress::-moz-progress-bar {
     background: linear-gradient(180deg, #37BA9A 0%, #37BA9A 100%);
   }
 
-  .advantages {
-    display: none;
-  }
   .advantages .advantages__logo {
     text-align: center;
+  }
+  .advantages .advantages__container .advantages__info {
+    display: none;
   }
   .advantages .advantages__container .advantages__info .advantages__title {
     text-align: center;
@@ -4720,6 +4738,7 @@ progress::-moz-progress-bar {
     line-height: 2.2rem;
   }
   .advantages .advantages__container .advantages__info .advantages__block {
+    display: none;
     border-radius: 0;
     width: 84px;
     height: auto;
@@ -4797,12 +4816,11 @@ progress::-moz-progress-bar {
     height: auto;
   }
   .connection .wrapper .connection__video .connection__popup .link {
-    top: 50%;
-    margin-top: -50px;
-    right: 50%;
-    margin-right: -165px;
-    left: 50%;
-    margin-left: -165px;
+    right: 55%;
+    margin-right: -100px;
+    left: 55%;
+    margin-left: -120px;
+    width: 80%;
   }
   .connection .wrapper .connection__video .connection__popup .link .popup {
     display: flex;
