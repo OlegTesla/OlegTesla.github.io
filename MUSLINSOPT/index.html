@@ -27,12 +27,12 @@
 	<header class="header">
 		<div class="bg__container">
 			<div class="header__inner">
-				<nav class="nav">
-					<a href="#" class="nav__link">Алгоритм работы</a>
-					<a href="#" class="nav__link">Онлайн расчет стоимости</a>
-					<a href="#" class="nav__link">Почему мы?</a>
-					<a href="#" class="nav__link">О компании</a>
-					<a href="#" class="nav__link">Часто задаваемые вопросы</a>
+				<nav id="menu" class="nav">
+					<a href="#logic" class="nav__link">Алгоритм работы</a>
+					<a href="#calculator" class="nav__link">Онлайн расчет стоимости</a>
+					<a href="#advantages" class="nav__link">Почему мы?</a>
+					<a href="#connection" class="nav__link">О компании</a>
+					<a href="#questions" class="nav__link">Часто задаваемые вопросы</a>
 				</nav>
 			</div>
 		</div>
@@ -240,7 +240,7 @@
 		</div>
 	</section>
 	<!-- logic -->
-	<section class="logic">
+	<section id="logic" class="logic">
 		<div class="wrapper">
 			<h2 class="logic__title">Алгоритм Работы</h2>
 			<!-- first item -->
@@ -457,7 +457,7 @@
 		</div>
 	</section>
 	<!-- calculator -->
-	<section class="calculator">
+	<section id="calculator" class="calculator">
 		<div class="wrapper">
 			<div class="calculator__box">
 			<div class="calculator__container">
@@ -477,7 +477,7 @@
 		</div>
 	</section>
 	<!-- advantages -->
-	<section class="advantages">
+	<section id="advantages" class="advantages">
 		<div class="wrapper">
 			<div class="advantages__logo">
 				<img src="image/advantages/advantages__logo.svg" alt="advantages logo image">
@@ -586,7 +586,7 @@
 		</div>
 	</section>
 	<!-- connection -->
-	<section class="connection">
+	<section id="connection" class="connection">
 		<div class="connection__mobile">
 			<img src="image/connection/man.jpg" alt="image of man">
 		</div>
@@ -660,8 +660,8 @@
 					<p class="filter__description">Посмотрите уже готовые Варианты</p>
 				</div>
 			</div>
-			<div class="filter__nav">
-				<a href="#" class="filter__nav-link" data-filter="all">Принты</a>
+			<div id="myDIV" class="filter__nav">
+				<a href="#" class="filter__nav-link active" data-filter="all">Принты</a>
 				<a href="#" class="filter__nav-link" data-filter="pelenki">Пеленки</a>
 				<a href="#" class="filter__nav-link" data-filter="coat">Одеяла</a>
 			</div>
@@ -737,7 +737,7 @@
 		</div>
 	</section>
 	<!-- questions -->
-	<section class="questions">
+	<section id="questions" class="questions">
 		<div class="questions__bgc"></div>
 		<div class="wrapper">
 			<div class="questions__header">
@@ -746,12 +746,12 @@
 			</div>
 			<div class="questions__accordion">
 				<div class="accordion__item">
-					<div class="accordion-item__triger">
+					<div  class="accordion-item__triger">
 						<div class="box">
 							<span>1.</span>
 							<h3>Как вы контролируете качество?</h3>
 						</div>
-						<span class="arrow"></span>
+						<span class="arrow "></span>
 					</div>
 					<div class="accordion-item__content">
 						<p>Контроль на всей дистанции печати, контроль перед отправкой ткани заказчику. Регулярная обратная связь с клиентами.</p>
@@ -806,7 +806,7 @@
 		<div class="sky__bottom"></div>
 	</section>
 	<!-- text -->
-	<section class="text">
+	<section  class="text">
 		<div class="wrapper">
 			<h2 class="text__title">Несколько фактов о нашей компании</h2>
 			<div class="text__container">
@@ -915,6 +915,30 @@
 			ease: "none",
 			scrollTrigger: {scrub: 0.3}
 		})
+	</script>
+	<!-- scrolling --> 
+	<script>
+		$(document).ready(function(){
+		    $("#menu").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1000);
+		    });
+		});
+	</script>
+	<!-- adding active -->
+	<script>
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("myDIV");
+		var btns = header.getElementsByClassName("filter__nav-link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		};
 	</script>
 </body>
 </html>

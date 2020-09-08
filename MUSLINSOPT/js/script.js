@@ -30,9 +30,6 @@ $(function() {
 			});
 		}
 	});
-	$('.filter__nav-link').click(function(event){
-		$(".filter__nav-link").toggleClass('active');
-	});
 });
 
 let tab = function () {
@@ -62,12 +59,8 @@ let tab = function () {
 };
 
 tab();
-
-// arrow on acordion function
-$(document).ready(function(){
-	$('.accordion-item__triger').click(function(event){
-		$(".arrow").toggleClass('active');
-	})
+// arrow class in accordion
+$(".accordion-item__triger").on("click", function() {
+	$(this).children('.arrow').toggleClass('active');
 });
-
 
