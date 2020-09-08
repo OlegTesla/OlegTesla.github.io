@@ -71,9 +71,9 @@
 				border-right: 2px solid #F74EBC;
 				transform: rotate(45deg);
 				transition: linear 0.2s;
-				&.active {
-					transform: rotate(225deg);
-				}
+			}
+			.active {
+				transform: rotate(225deg)
 			}
 		}
 		.accordion-item__content {
@@ -104,9 +104,12 @@
 		}
 		.after {
 			position: relative;
+			width: 300px;
+			margin: 0 auto;
 			.questions__btn {
 				position: relative;
 				z-index: 60;
+				width: 300px;
 				padding: 15px 54px;
 				display: block;
 				margin: 0 auto;

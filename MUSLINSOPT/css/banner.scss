@@ -180,6 +180,13 @@
 				font-family: 'Inter';
 				width: 240px;
 				height: 50px;
+				transition: all linear 0.2s;
+				&:focus {
+					border-color: #2AE680;
+				}
+				&:hover {
+					border-color: #2AE680;
+				}
 			}
 			.after {
 				position: relative;

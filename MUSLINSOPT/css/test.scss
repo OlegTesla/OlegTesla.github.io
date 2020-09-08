@@ -39,6 +39,13 @@
 				            align-items: center;
 				input {
 					margin-right: 20px;
+					transition: all linear 0.2s;
+					&:focus {
+						border-color: #2AE680;
+					}
+					&:hover {
+						border-color: #2AE680;
+					}
 				}
 				.after {
 					width: 260px;

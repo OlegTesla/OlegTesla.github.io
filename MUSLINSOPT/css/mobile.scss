@@ -252,7 +252,6 @@
 				}
 				.form__btn  {
 					width: 100%;
-					margin-top: 10px;
 				}
 			}
 		}
@@ -276,19 +275,28 @@
 			        flex-wrap: wrap;
 			    -webkit-justify-content: center;
 			            justify-content: center;
-			    .test__img {
-			    	margin: 0;
-			    }
-			    .test__form {
-			    	input {
-			    		width: 100%;
-			    		margin: 10px 0px;
-			    	}
-			    	.form__btn  {
-			    		width: 100%;
-			    		margin-top: 10px;
-			    	}
-			    }
+		   .test__img {
+		    	margin: 0;
+		   }
+		   .test__text {
+		    	.test__form {
+		   	 	display: flex;
+		    		-webkit-flex-wrap: wrap;
+		    	    -ms-flex-wrap: wrap;
+		    	        flex-wrap: wrap;
+		    	.after {
+		    		width: 100%;
+		    		.form__btn  {
+		    			width: 100%;
+		    			margin-top: 10px;
+		    		}
+		    	}
+		    	input {
+		    		width: 100%;
+		    		margin: 10px 0px;
+		    		}
+		  	 	}
+		   }
 		}
 	}
 	// logic
@@ -659,6 +667,7 @@
 		}
 		.questions__bottom {
 			.after {
+				width: 100%;
 				.questions__btn {
 					width: 100%;
 				}

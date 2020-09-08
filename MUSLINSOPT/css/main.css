@@ -646,6 +646,13 @@ progress::-moz-progress-bar {
   font-family: "Inter";
   width: 240px;
   height: 50px;
+  transition: all linear 0.2s;
+}
+.banner .banner__bottom .form__bottom input:focus {
+  border-color: #2AE680;
+}
+.banner .banner__bottom .form__bottom input:hover {
+  border-color: #2AE680;
 }
 .banner .banner__bottom .form__bottom .after {
   position: relative;
@@ -875,6 +882,13 @@ progress::-moz-progress-bar {
 }
 .test .wrapper .test__text .test__form input {
   margin-right: 20px;
+  transition: all linear 0.2s;
+}
+.test .wrapper .test__text .test__form input:focus {
+  border-color: #2AE680;
+}
+.test .wrapper .test__text .test__form input:hover {
+  border-color: #2AE680;
 }
 .test .wrapper .test__text .test__form .after {
   width: 260px;
@@ -1513,6 +1527,18 @@ progress::-moz-progress-bar {
   line-height: 1.86rem;
   font-weight: 600;
   margin-bottom: 20px;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__wwhatsap:focus {
+  border-color: #2AE680;
+  background: #37BA9A;
+  color: #fff;
+}
+.connection .wrapper .connection__video .connection__info .connection__link .connection__wwhatsap:hover {
+  border-color: #2AE680;
+  background: #37BA9A;
+  color: #fff;
 }
 .connection .wrapper .connection__video .connection__info .connection__link .connection__wwhatsap img {
   margin-right: 15px;
@@ -1767,8 +1793,10 @@ progress::-moz-progress-bar {
   font-family: "Gilroy";
   font-weight: 600;
   color: #333333;
+  border-radius: 17px;
+  transition: all linear 0.3s;
 }
-.filter .wrapper .filter__nav .filter__nav-link.active {
+.filter .wrapper .filter__nav .active, .filter .wrapper .filter__nav .filter__nav-link:hover {
   background: linear-gradient(180deg, #37BA9A 0%, #2AE680 100%);
   border-radius: 17px;
   color: #FFF;
@@ -1904,7 +1932,7 @@ progress::-moz-progress-bar {
   transform: rotate(45deg);
   transition: linear 0.2s;
 }
-.questions .questions__accordion .accordion-item__triger .arrow.active {
+.questions .questions__accordion .accordion-item__triger .active {
   transform: rotate(225deg);
 }
 .questions .questions__accordion .accordion-item__content {
@@ -1935,10 +1963,13 @@ progress::-moz-progress-bar {
 }
 .questions .questions__bottom .after {
   position: relative;
+  width: 300px;
+  margin: 0 auto;
 }
 .questions .questions__bottom .after .questions__btn {
   position: relative;
   z-index: 60;
+  width: 300px;
   padding: 15px 54px;
   display: block;
   margin: 0 auto;
@@ -2319,7 +2350,6 @@ progress::-moz-progress-bar {
   }
   .banner .banner__bottom .form__bottom .form__btn {
     width: 100%;
-    margin-top: 10px;
   }
   .banner .banner__services .wrapper {
     display: flex;
@@ -2335,13 +2365,20 @@ progress::-moz-progress-bar {
   .test .wrapper .test__img {
     margin: 0;
   }
-  .test .wrapper .test__form input {
-    width: 100%;
-    margin: 10px 0px;
+  .test .wrapper .test__text .test__form {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .test .wrapper .test__form .form__btn {
+  .test .wrapper .test__text .test__form .after {
+    width: 100%;
+  }
+  .test .wrapper .test__text .test__form .after .form__btn {
     width: 100%;
     margin-top: 10px;
+  }
+  .test .wrapper .test__text .test__form input {
+    width: 100%;
+    margin: 10px 0px;
   }
 
   .logic {
@@ -2652,6 +2689,9 @@ progress::-moz-progress-bar {
     width: 100%;
   }
   .questions .questions__accordion .line {
+    width: 100%;
+  }
+  .questions .questions__bottom .after {
     width: 100%;
   }
   .questions .questions__bottom .after .questions__btn {

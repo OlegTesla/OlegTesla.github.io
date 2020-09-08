@@ -54,6 +54,18 @@
 						line-height: 1.86rem;
 						font-weight: 600;
 						margin-bottom: 20px;
+						transition: all linear 0.2s;
+						cursor: pointer;
+						&:focus {
+							border-color: #2AE680;
+							background: #37BA9A;
+							color: #fff
+						}
+						&:hover {
+							border-color: #2AE680;
+							background: #37BA9A;
+							color: #fff
+						}
 	    				img {
 	    					margin-right: 15px;
 	    				}
